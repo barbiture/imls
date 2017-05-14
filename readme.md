@@ -1,4 +1,4 @@
-[8/20/15, 11:00:48 PM] Куценко Мария: > 9.html -> /home/details.html
+<!-- [8/20/15, 11:00:48 PM] Куценко Мария: > 9.html -> /home/details.html
 > 9_1.html -> /residential/details_house.html
 > 9_3.html -> /residential/details_land.html
 > 9_2.html -> /commercial/details.html
@@ -30,4 +30,4 @@
 [8/20/15, 11:50:36 PM] Куценко Мария: http://192.168.0.13:8090/26.html > myProfile
 [8/20/15, 11:51:18 PM] Куценко Мария: http://192.168.0.13:8090/26_2.html > myProfile(agent_yr)
 [8/20/15, 11:51:38 PM] Куценко Мария: http://192.168.0.13:8090/26_3.html > myProfile(agent)
-[8/20/15, 11:51:57 PM] Куценко Мария: http://192.168.0.13:8090/26_4.html > myProfile(owner)
+[8/20/15, 11:51:57 PM] Куценко Мария: http://192.168.0.13:8090/26_4.html > myProfile(owner) -->
