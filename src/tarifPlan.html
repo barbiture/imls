@@ -1,0 +1,922 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Тарифные планы (риелторы)</span></li>
+			</ul>
+		</div>
+		<h2 class="blue">
+			Тарифные планы<span class="cloud">Риелторы</span>
+		</h2>
+		<div class="tarif_plan">
+			<div class="tarif_block">
+				<div class="tabpanel switch-tab">
+					<div class="t_status">Ваш статус на IMLS.RU
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</div>
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs switch" role="tablist">
+							<li role="presentation"><a href="#agent" aria-controls="agent" role="tab" data-toggle="tab" aria-expanded="true">Агент</a></li>
+							<li role="presentation" class="active"><a href="#agency" aria-controls="agency" role="tab" data-toggle="tab" aria-expanded="false">Агентство</a></li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="tarif-region">
+							<div class="t_status">Регионы размещения объектов:
+								<div class="q_info">
+									<div class="tooltip">
+										<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+									</div>
+								</div>
+							</div>
+							<div class="select-control">
+								<select class="selectpicker form-control" multiple="" title="Выбрать регион">
+									<option value="r1">Регион 1</option>
+									<option value="r2">Регион 2</option>
+								</select>
+							</div>
+						</div>
+						<div class="tab-pane" id="agent">
+							<div class="scale_block">
+								<div class="t_status">Количество объектов (шт):
+									<div class="q_info">
+										<div class="tooltip">
+											<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+										</div>
+									</div>
+								</div>
+								<input type="text" id="input-scale2">
+								<a href="#" class="tdec">Более 300 объектов?</a>
+								<div class="scale">
+									<div id="slider-scale2"></div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane active" id="agency">
+							<div class="scale_block">
+								<div class="t_status">Количество объектов (шт):
+									<div class="q_info">
+										<div class="tooltip">
+											<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+										</div>
+									</div>
+								</div>
+								<input type="text" id="input-scale">
+								<a href="#" class="tdec">Более 5 000 объектов?</a>
+								<div class="scale">
+									<div id="slider-scale"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="subsc_tarif">
+				<p class="tarif_head">Подписка на тарифный план
+				<br><b>Агенство <span id="scale-plan">100</span></b> <span class="pro-label">pro</span></p>
+				<span class="colorGrey">Стоимость подписки:</span> <b>900 р./в месяц</b>
+				<div class="bil_cycle">
+					<span class="colorGrey">Платежный цикл:</span>
+					<div class="select-control">
+						<select class="selectpicker form-control" id="month-val">
+							<option value="1 мес.">1 месяц</option>
+							<option value="3 мес." selected="">3 месяца (10% скидки)</option>
+							<option value="6 мес.">6 месяцев (15% скидки)</option>
+						</select>
+					</div>
+				</div>
+				<div class="bil_cycle">
+					<span class="colorGrey">Способ оплаты:</span>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="" data-icon="glyphicon-imls">Баланс ИМЛС</option>
+							<option value="" data-icon="glyphicon-card" selected="">Банковской картой</option>
+							<option value="" data-icon="glyphicon-alfa">Альфа-Клик</option>
+							<option value="" data-icon="glyphicon-pb">Интернет банк Промсвязьбанка</option>
+							<option value="" data-icon="glyphicon-sb">Сбербанк: по SMS или Сбербанк Онлайн</option>
+							<option value="" data-icon="glyphicon-cash">Наличными в терминале</option>
+							<option value="" data-icon="glyphicon-wmr">WebMoney (WMR)</option>
+							<option value="" data-icon="glyphicon-yad">Яндекс.Деньги</option>
+							<option value="" data-icon="glyphicon-qiwi">QIWI Wallet</option>
+							<option value="" data-icon="glyphicon-mp">MasterPass</option>
+							<option value="" data-icon="glyphicon-mob">Оплата со счета мобильного телефона</option>
+						</select>
+					</div>
+				</div>
+				<div class="total_pay">
+					<span class="colorGrey">Итого к оплате за <span id="month">3 мес.</span>:</span>
+					<div class="payment">2 700 &#8381;</div>
+				</div>
+				<a href="#" class="no-border_btn btn_green block_btn">Оплатить подписку</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<script>
+			var bigValueSlider = document.getElementById('slider-scale');
+			noUiSlider.create(bigValueSlider, {
+				start: 1000,
+				format: wNumb({
+					decimals: 0,
+					thousand: ' '
+				}),
+				tooltips: true,
+				connect: [true, false],
+				range: {
+					min: 0,
+					max: 5000
+				},
+				pips: {
+					mode: 'values',
+					values: [0, 1000, 2000, 3000, 4000, 5000],
+					density: 2
+				}
+			});
+			var inputFormat = document.getElementById('input-scale'),
+				inputShow = document.getElementById('scale-plan');
+			bigValueSlider.noUiSlider.on('update', function( values, handle ) {
+				inputFormat.value = values[handle];
+				inputShow.innerHTML = values[handle];
+			});
+			inputFormat.addEventListener('change', function(){
+				bigValueSlider.noUiSlider.set(this.value);
+			});
+
+			var bigValueSlider2 = document.getElementById('slider-scale2');
+			noUiSlider.create(bigValueSlider2, {
+				start: 100,
+				format: wNumb({
+					decimals: 0,
+				}),
+				tooltips: true,
+				connect: [true, false],
+				range: {
+					min: 0,
+					max: 300
+				},
+				pips: {
+					mode: 'values',
+					values: [0, 100, 200, 300],
+					density: 2
+				}
+			});
+			var inputFormat2 = document.getElementById('input-scale2');
+			bigValueSlider2.noUiSlider.on('update', function( values, handle ) {
+				inputFormat2.value = values[handle];
+			});
+			inputFormat2.addEventListener('change', function(){
+				bigValueSlider2.noUiSlider.set(this.value);
+			});
+
+			var inputMonth = document.getElementById('month-val'),
+				valMonth = document.getElementById('month');
+			inputMonth.addEventListener('change', function(){
+				valMonth.innerText = inputMonth.value;
+			});
+			console.log(inputMonth.value);
+		</script>
+		<h4 class="header_h4">Тарифные планы включают в себя</h4>
+		<table class="tarif-realtors table-tarif_plan">
+			<tbody>
+				<tr>
+					<th class="tarif-plan">Тарифные планы</th>
+					<th class="free">Бесплатный</th>
+					<th class="lightgrey"><b>Агент</b> <span class="pro-label">pro</span></th>
+					<th class="grey"><b>Агентство</b> <span class="pro-label">pro</span></th>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">Статус</td>
+				</tr>
+				<tr>
+					<td> Публичный профиль на imls.ru 
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Размещение профиля в разделе "Поиск риелтора" на imls.ru
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Персональй сайт на домене imls.ru
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td> Отметка специальным знаком
+						<span class="pro-label">pro</span>
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Размещение профиля на главной странице imls.ru
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Размещение профиля в блоке "Лидеры региона"  на странице "Поиск риелтора" на imls.ru
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="empty"></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">Заявки</td>
+				</tr>
+				<tr>
+					<td>Заявки от клиентов (купить/снять)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Заявки от клиентов (продать/сдать)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Заявки от клиентов (получить дополнительные услуги)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="empty"></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">Реклама объектов недвижимости</td>
+				</tr>
+				<tr>
+					<td>Размещение объявлений (Объекты) на imls.ru
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+				</tr>
+				<tr>
+					<td>Размещение объявлений (Запросы) на imls.ru
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+				</tr>
+				<tr>
+					<td>Публикация объявлений на порталах по недвижимости <div class="prel in-bl"><a href="" class="tooltip-toggle">30 шт.</a>
+					<div class="screen-tooltip tooltip-click tooltip">
+						<div class="close-tooltip sprite"></div>
+						<div class="screen-tooltip-content item-wrap">
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/temp/slide_2.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/ui/map.png" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+							<div class="item">
+								<a href="#"><img src="images/screen/dom.jpg" alt=""></a>
+							</div>
+						</div>
+					</div></div>
+					 (рекламной сети ИМЛС) 
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для <br>"VIP" или "Премиум"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+				</tr>
+				<tr>
+					<td>Бесплатное подключение рекламной услуги "Премиум"
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Размещение профиля в разделе "Поиск риелтора" на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td>
+						<span class="status-close sprite"></span>
+					</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+				</tr>
+				<tr>
+					<td>Телефоны в контактах объявления
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-number">1</td>
+					<td class="blue-number">3</td>
+					<td class="blue-number">3</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="empty"></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">Изготовление рекламных промо - материалов объектов недвижимости</td>
+				</tr>
+				<tr>
+					<td>Промо-сайт объекта (Без лого ИМЛС)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для "VIP"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Для "VIP"<br> объявления</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Для "VIP"<br> объявления</td>
+				</tr>
+				<tr>
+					<td>Презентации объета WEB (Без лого ИМЛС)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для "VIP"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Для "VIP"<br> объявления</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Для "VIP"<br> объявления</td>
+				</tr>
+				<tr>
+					<td>Презентации объета PDF (Без лого ИМЛС)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для "VIP"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Для "VIP"<br> объявления</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Для "VIP"<br> объявления</td>
+				</tr>
+				<tr>
+					<td>Промо-сайт объекта (С лого ИМЛС)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для "VIP"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+				</tr>
+				<tr>
+					<td>Презентации объета WEB (С лого ИМЛС)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для "VIP"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+				</tr>
+				<tr>
+					<td>Презентации объета PDF (Без лого ИМЛС)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для "VIP"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+				</tr>
+				<tr>
+					<td>Расклейки для печати
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно для <br>"VIP" или "Премиум"</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>кол-во объявлений<br>согласно тарифу</td>
+				</tr>
+				<tr>
+					<td>Заказ видеоролика
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td>
+						<span class="status-active sprite"></span>
+					</td>
+					<td class="blue-txt">
+						<span class="status-active sprite">(скидка 20%)</span>
+					</td>
+					<td class="blue-txt">
+						<span class="status-active sprite">(скидка 20%)</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="empty"></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">CRM для работы с недвижимостью</td>
+				</tr>
+				<tr>
+					<td>CRM агента
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>CRM агенства
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Учет агентов в CRM агенства
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно до 5 сотрудников<br>для агенства</td>
+					<td><span class="status-close sprite"></td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+				</tr>
+				<tr>
+					<td>Учет клиентов (CRM)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно до 5 клиентов</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+				</tr>
+				<tr>
+					<td>Учет объектов (CRM)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+				</tr>
+				<tr>
+					<td>Учет запросов (CRM)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+					<td class="blue-txt"><span class="status-active sprite"></span> <br>Без ограничений</td>
+				</tr>
+				<tr>
+					<td>Учет и работа с совпадениями для запросов
+
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Учет и работа с совпадениями для объектов
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Органайзер ( с системой уведомлений)
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-close sprite"></span> <br>Доступно до 10 напоминаний</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Персональный кабинет для клиентов
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Уведомление клиентов о совпадениях
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Раздел "Архив" для длителного хранения неактуальныхобъявлений
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Прикрепление/хранение документов к объявлению 
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td class="blue-number">20 мб.</td>
+					<td class="blue-number">20 мб.</td>
+				</tr>
+				<tr>
+					<td>Отправка документов по объявлению в один клик
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Отправка промо-материалов по объявлению в один клик
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td>Настройка прав для агентов
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="empty"></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">Автоматическая загрузка объектов в формате XML</td>
+				</tr>
+				<tr>
+					<td>Автоматическая загрузка  объектов по XML
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в неделю</td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+				</tr>
+				<tr>
+					<td>Количество фото в объявлении
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td class="blue-number">5</td>
+					<td class="blue-number">10</td>
+					<td class="blue-number">20</td>
+				</tr>
+				<tr>
+					<td>Статистика загрузки по XML
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="empty"></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">Автоматическая генерация файлов в формате XML</td>
+				</tr>
+				<tr>
+					<td>Генерация файлов XML в формате "Яндекс Недвижимость"
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+				</tr>
+				<tr>
+					<td>Генерация файлов XML в формате "ЦИАН"
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+				</tr>
+				<tr>
+					<td>Генерация файлов XML в формате "ИРР"
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-close sprite"></span></td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+					<td class="blue-txt"><span class="status-active sprite"></span><br>Не реже 1 раза в сутки</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="empty"></td>
+				</tr>
+				<tr>
+					<td colspan="6" class="sub-header">Дополнительно</td>
+				</tr>
+				<tr>
+					<td>Еженедельные отчеты
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Партнерская программа
+						<div class="q_info">
+							<div class="tooltip">
+								<p>Бесплатная публикация объявлений (Объекты)на imls.ru</p>
+							</div>
+						</div>
+					</td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+					<td><span class="status-active sprite"></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="connection small-connection">
+			<tbody>
+				<tr>
+					<td class="blue-unique">
+						<div class="blue-advg sprite">
+							<p>Получайте уникальные преимущества и экономьте<br>
+						до 90% с подпиской на выгодные тарифные планы</p>
+						</div>
+					</td>
+					<td class="ch_tarif"><a href="#" class="orange-btn">Выбрать тарифный план</a> </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- <div class="container">
+		<table class="price-realtors">
+			<tbody>
+				<tr>
+					<td class="price-td">Цена</td>
+					<td class="free-conn">Бесплатно</td>
+					<td class="price-first"><span class="green-price">1,22</span><br>руб/мес</td>
+					<td class="price-second"><span class="green-price">1,80</span><br>руб/мес</td>
+					<td class="price-third"><span class="green-price">2,44</span><br>руб/мес</td>
+					<td class="price-fourth"><span class="green-price">4,50</span><br>руб/мес</td>
+				</tr>
+				<tr>
+					<td class="period-td">Период</td>
+					<td class="select-period" colspan="5">
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0">3 месяца - скидка 15%</option>
+								<option value="1">3 месяца - скидка 15%</option>
+								<option value="2">3 месяца - скидка 15%</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="price-td">Итог</td>
+					<td class="free-conn">Бесплатно</td>
+					<td class="price-first"><span class="green-price">31,11</span><br>руб/3 мес
+					<br>(0,5 руб/мес)</td>
+					<td class="price-second"><span class="green-price">53</span><br>руб/3 мес<br>(0,5 руб/мес)</td>
+					<td class="price-third"><span class="green-price">62,22</span><br>руб/3 мес<br>(0,5 руб/мес)</td>
+					<td class="price-fourth"><span class="green-price">114,75</span><br>руб/3 мес <br>(0,5 руб/мес)</td></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="connection">
+			<tbody>
+				<tr>
+					<td class="blue-unique">
+						<div class="blue-advg sprite">
+							<p>Получайте уникальные преимущества –<br>
+							подключите выгодный тарифный план</p>
+						</div>
+					</td>
+					<td></td>
+					<td><a href="#" class="orange-btn">Подключить</a>
+					</td>
+					<td><a href="#" class="orange-btn">Подключить</a></td>
+					<td><a href="#" class="orange-btn">Подключить</a></td>
+					<td><span>Подключено</span><br>до 16.08.2016</td>
+				</tr>
+			</tbody>
+		</table>
+	</div> -->
+</div>
+//= template/footer.html

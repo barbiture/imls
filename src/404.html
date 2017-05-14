@@ -1,0 +1,30 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content error-page">
+		//= template/header.html
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Главная</a></li> /
+					<li><span>Ошибка 404</span></li>
+				</ul>
+			</div>
+			<h1>Ошибка 404</h1>
+			<p>Извините! К сожалению мы не можем отобразить страницу, которую вы ищите. Возможно ее не существует, либо ссылка устарела, но вы можете перейти на <a href="main.html">главную</a></p>
+		</div>
+	</div>
+<script>
+// for full screen background
+	function mh() {
+		var minh = $(window).height() - $('.footer').outerHeight()
+		$('.error-page').css('min-height', minh);
+	};
+	$(document).ready(function () {
+		mh();
+		$(window).on("resize", function () {
+			mh();
+		});
+	});
+</script>
+//= template/footer.html

@@ -1,0 +1,299 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container profile">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Добавление объекта</span></li>
+			</ul>
+		</div>
+		<h2>Добавление объекта <span class="cloud">дома, участки</span> 
+			<a class="instruction sprite tooltip-toggle">Информация</a>
+			<div class="tooltip tooltip-click">
+				<div class="close-tooltip sprite"></div>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, aspernatur.
+			</div>
+		</h2>
+		<div class="steps">
+			<div class="step active"><span>Шаг 1 «Объект»</span></div>
+			<div class="step"><span>Шаг 2 «Фото»</span></div>
+			<div class="step"><span>Шаг 3 «Контакты»</span></div>
+			<div class="step"><span>Шаг 4 Публикация</span></div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				<div class="wrap-bg">
+					Объект
+					<div class="q_info">
+						<div class="tooltip">
+							<p>Введите основные параметры объекта. Обратите внимание на точность указываемых данных.</p>
+						</div>
+					</div>
+				</div>
+				<div class="dashed-line"></div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="step-field width_10">
+				<p>Я</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+						<option value="1">продаю</option>
+						<option value="2">ППА</option>
+						<option value="3">арендую</option>
+					</select>
+				</div>
+			</div>
+			<div class="step-field width_10">
+				<p>Объект</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+						<option value="4">любой</option>
+					</select>
+				</div>
+			</div>
+			<div class="step-field width_10">
+				<p>Площадью, м<sup>2</sup></p>
+				<input type="text" placeholder="- указать -">
+			</div>
+			<div class="step-field width_10">
+				<p>Ед. измерения:</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+						<option value="10">общ. ст.</option>
+						<option value="11">м2</option>
+						<option value="12">общ. ст. в месяц</option>
+						<option value="13">общ. ст. в сутки</option>
+					</select>
+				</div>
+			</div>
+			<div class="step-field width_10">
+				<p>По цене:</p>
+				<div class="custom-input-block">
+					<input type="text" placeholder="- указать -" class="input-validation-error" aria-describedby="PriceFrom-error">
+					<span class="field-validation-error" data-valmsg-for="PriceFrom" data-valmsg-replace="true"><span id="PriceFrom-error" class="">Обязательное поле</span></span>
+				</div>
+			</div>
+			<div class="step-field width_10">
+				<p>Валюта:</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+						<option value="7">EUR</option>
+						<option value="8">USD</option>
+						<option value="9">RUB</option>
+					</select>
+				</div>
+			</div>
+			<div class="step-field width_10">
+				<p>Ед. измерения:</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+						<option value="10">общ. ст.</option>
+						<option value="11">м2</option>
+						<option value="12">общ. ст. в месяц</option>
+						<option value="13">общ. ст. в сутки</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				<div class="wrap-bg">
+					местоположение
+					<div class="q_info">
+						<div class="tooltip">
+							<p>Введите местоположение объекта. Обратите внимание на точность указываемых данных.</p>
+						</div>
+					</div>
+				</div>
+				<div class="dashed-line"></div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="map">
+				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=unuD4gaSqp5ke_W2Stz5tCleYPY002Hk&width=568&height=276"></script>
+			</div>
+			<div class="step-field width_3">
+				<input type="text" placeholder="- указать -">
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				<div class="wrap-bg">
+					дополнительная информация
+					<div class="q_info">
+						<div class="tooltip">
+							<p>Введите дополнительные параметры объекта. Полное и подробное указание всех параметров повышает рейтинг и количество просмотров объявления.</p>
+						</div>
+					</div>
+				</div>
+				<div class="dashed-line"></div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="col col-2">
+				<div class="step-field width_4">
+					<p>Особенности расположения</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+							<option value="1">не важно</option>
+						</select>
+					</div>
+				</div>
+				<div class="step-field width_4">
+					<p>Назначение участка</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+							<option value="1">не важно</option>
+						</select>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col col-2">
+				<div class="step-field width_5">
+					<p>Особенности:</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+							<option value="1">особенности</option>
+						</select>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>Отопление</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+							<option value="1">не важно</option>
+						</select>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>Освещение</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+							<option value="1">не важно</option>
+						</select>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>Канализиция</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+							<option value="1">не важно</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<p>Описание для клиентов:</p>
+			<textarea></textarea>
+		</div>
+		<div class="step-field full_width">
+			<h5 style="z-index: 22">
+				<div class="wrap-bg">
+					Условия сделки
+					<div class="q_info">
+						<div class="tooltip">
+							<p>Введите условия проведения сделки по данному объекту. Обратите внимание на точность указываемых данных.</p>
+						</div>
+					</div>
+				</div>
+				<div class="dashed-line"></div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="step-field width_4">
+				<p>Форма сделки</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+						<option value="1">не важно</option>
+					</select>
+				</div>
+			</div>
+			<div class="step-field width_8">
+				<p>Основание собственности:</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+						<option value="1">не важно</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<input type="checkbox" class="check" id="credit"> <label for="credit">возможна покупка по ипотеке</label>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				<div class="wrap-bg">
+					работа с посредниками
+					<div class="q_info">
+						<div class="tooltip">
+							<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+						</div>
+					</div>
+				</div>
+				<div class="dashed-line"></div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="step-field width_8">
+				<p>Готовность работать с посредниками:</p>
+				<div class="flag-switch">
+					<input id="switch1" name="switch" type="checkbox">
+					<label for="switch1"></label>
+					<span></span>
+				</div>
+			</div>
+			<div class="step-field width_8">
+				<p>Комиссия:</p>
+				<div class="custom-input-block">
+					<input type="radio" name="komis" id="me" checked=""> <label for="me" class="sprite rate_ico">мне</label>
+					<input type="radio" name="komis" id="no" checked=""> <label for="no">нет</label>
+					<input type="radio" name="komis" id="agent"> <label for="agent" class="sprite bonus_ico">посреднику</label>
+				</div>
+			</div>
+			<div class="step-field width_1">
+				<p>Размер комиссии:</p>
+				<div class="custom-input-block">
+					<input class="valid" placeholder="0.00">
+					<span class="field-validation-valid" data-valmsg-for="PriceFrom" data-valmsg-replace="true"></span>
+					<div class="commission-hint">0 ₽</div>
+				</div>
+			</div>
+			<div class="step-field width_1">
+				<p>&nbsp;</p>
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="1">% от стоимости</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<input type="checkbox" class="check" id="acept"> <label for="acept"><a href="#">Принимаю условия раздела комиссионного вознаграждения</a></label>
+		</div>
+		<div class="clearfix"></div>
+		<div class="next-step">
+			<a href="#" class="no-border_btn btn_grey">сохранить как черновик</a>
+			<a href="#" class="no-border_btn btn_blue">далее</a>
+		</div>
+	</div>
+</div>
+//= template/footer.html

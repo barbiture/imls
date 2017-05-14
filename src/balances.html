@@ -1,0 +1,140 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header_reg.html
+	<div class="container my_obj">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Мои финансы</span></li>
+			</ul>
+		</div>
+		<h2>Мои финансы</h2>
+		<div role="tabpanel" class="tabpanel">
+			<div class="tabpanel-nav">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Мой баланс</a></li>
+					<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab">Движение средств</a></li>
+					<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab">Документы</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="search-result-title border-b">
+			<h3>
+				<span class="color-black">Баланс:</span> 10 000 руб.
+				<span class="pull-right">
+					<span class="color-black">Лицевой счет (ID):</span> 63234
+				</span>
+			</h3>
+		</div>
+	</div>
+	<div class="container profile">
+		<h2>Пополнение баланса</h2>
+		<div class="steps">
+			<div class="step active"><a href="#">Шаг 1 «Сумма»</a></div>
+			<div class="step"><span>Шаг 2 «Подтверждение»</span></div>
+		</div>
+		<form class="register-form sum-form">
+			<label class="register-form_label">Введите сумму</label>
+			<div class="register-form_field sum-field">
+				<input type="text" placeholder="2 500" name="summa">
+				<div class="error"></div>
+			</div>
+			<div class="register-form_field"><p>Комиссия 10% (сумма к зачислению 90 руб.)</p></div>
+			<div class="register-form_field">&nbsp;</div>
+			<div class="register-form_field pull-left">
+				<input type="radio" name="sum" id="sum1">
+				<label for="sum1" class="sprite visa radiobox">
+					Банковские карты
+				</label>
+			</div>
+			<div class="register-form_field pull-left small-w">
+				<input type="radio" name="sum" id="sum3">
+				<label for="sum3" class="sprite wm radiobox">
+					WebMoney (WMR)
+				</label>
+			</div>
+			<div class="register-form_field pull-left">
+				<input type="radio" name="sum" id="sum5">
+				<label for="sum5" class="sprite alfa radiobox">
+					Альфа-Клик
+				</label>
+			</div>
+			<div class="register-form_field pull-left small-w">
+				<input type="radio" name="sum" id="sum2">
+				<label for="sum2" class="sprite yad radiobox">
+					Яндекс.Деньги
+				</label>
+			</div>
+			<div class="register-form_field pull-left">
+				<input type="radio" name="sum" id="sum9">
+				<label for="sum9" class="sprite ib radiobox">
+					Интернет банк Промсвязьбанка
+				</label>
+			</div>
+			<div class="register-form_field pull-left small-w">
+				<input type="radio" name="sum" id="sum10">
+				<label for="sum10" class="sprite qiwi radiobox">
+					QIWI Wallet
+				</label>
+			</div>
+			<div class="register-form_field pull-left">
+				<input type="radio" name="sum" id="sum6">
+				<label for="sum6" class="sprite sber radiobox">
+					Сбербанк: оплата по SMS или<br> Сбербанк Онлайн
+				</label>
+			</div>
+			<div class="register-form_field pull-left small-w">
+				<input type="radio" name="sum" id="sum8">
+				<label for="sum8" class="sprite mpass radiobox">
+					MasterPass
+				</label>
+			</div>
+			<div class="register-form_field pull-left">
+				<input type="radio" name="sum" id="sum4">
+				<label for="sum4" class="sprite nal radiobox">
+					Наличными в терминале
+				</label>
+			</div>
+			<div class="register-form_field pull-left small-w">
+				<input type="radio" name="sum" id="sum7">
+				<label for="sum7" class="sprite mobile-tel radiobox">
+					Оплата со счета мобильного<br> телефона
+				</label>
+			</div>
+			<div class="clearfix"></div>
+			<div class="next-step">
+				<input class="no-border_btn btn_blue" onclick="valid(this.form)" value="Подтвердить" type="button">
+				<div class="clearfix"></div>
+			</div>
+		</form>
+<script>
+	function showError(container, errorMessage) {
+	  container.className = 'error-field';
+	  var msgElem = document.createElement('span');
+	  msgElem.className = "hint";
+	  msgElem.innerHTML = errorMessage;
+	  container.appendChild(msgElem);
+	}
+
+	function resetError(container) {
+	  container.className = 'register-form_field';
+	  if (container.lastChild.className == "hint") {
+	    container.removeChild(container.lastChild);
+	  }
+	}
+
+	function valid(form) {
+	  var elems = form.elements;
+
+	  resetError(elems.summa.parentNode);
+	  if (!elems.summa.value) {
+	    showError(elems.summa.parentNode, 'Это поле заполненно неверно. Введите сумму пополения.');
+	  }
+	}
+</script>
+	</div>
+</div>
+
+//= template/footer.html

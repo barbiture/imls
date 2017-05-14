@@ -1,0 +1,37 @@
+<li class="button-dropdown">
+	<a class="sprite share dropdown-toggle"><span class="tooltip align_right">Поделиться</span></a>
+	<div class="tooltip form-share dropdown-modal">
+		<div class="close-tooltip sprite"></div>
+		<p class="blue">Ваш друг получит письмо с ссылкой на это объявление</p>
+		<form novalidate="novalidate" action="/HomeRe/AddNote" class="note-form" method="get">
+			<div>
+				<input type="text" placeholder="Ваша почта">
+			</div>
+			<div>
+				<div class="custom-input-block">
+                    <input aria-invalid="true" aria-describedby="NameFriend-error" class="input-validation-error" aria-required="true" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" data-val-required="Обязательное поле" id="NameFriend" name="NameFriend" placeholder="Имя друга" value="" type="text">
+                    <span class="field-validation-error" data-valmsg-for="NameFriend" data-valmsg-replace="true"><span style="display: inline;" class="" id="NameFriend-error">Обязательное поле</span></span>
+                </div>
+			</div>
+			<div>
+				<div class="custom-input-block">
+                    <input aria-describedby="EmailFriend-error" class="input-validation-error" aria-required="true" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" data-val-regex="Неверно указан E-mail" data-val-regex-pattern="^([0-9a-zA-Z]+[-._+&amp;])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$" data-val-required="Обязательное поле" id="EmailFriend" name="EmailFriend" placeholder="Почта вашего друга" value="" type="text">
+                    <span class="field-validation-error" data-valmsg-for="EmailFriend" data-valmsg-replace="true"><span style="display: inline;" class="" id="EmailFriend-error">Обязательное поле</span></span>
+                </div>
+			</div>
+			<div class="enter-code">
+				<input type="text" placeholder="Код с картинки">
+				<img src="images/temp/capcha-small.png" alt="">
+			</div>
+			<div class="btn-divider">
+				<span class="subm_btn send-note">Поделиться</span>
+			</div>
+			<div>
+				Поделиться:
+				<script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+				<script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+				<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter"></div>
+			</div>
+		</form>
+	</div>
+</li>

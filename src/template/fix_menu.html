@@ -1,0 +1,115 @@
+<div class="fix_menu">
+	<ul>
+		<li class="button-dropdown">
+			<span class="sprite ico_notif dropdown-toggle"><span class="tooltip">Напоминание</span></span>
+			<span class="ico_bell-count">5</span>
+			<div class="tooltip add_notif dropdown-modal">
+				<div class="close-tooltip sprite"></div>
+				<p class="blue">Создайте напоминание</p>
+				<div class="wrap-daterange">
+					<div class='input-group date custom-input-block datetimepicker'>
+	                    <input type='text' class="form-control" placeholder="дд.мм.гггг чч.мм" name="date-calend" />
+	                    <span class="input-group-addon">
+	                    </span>
+	                </div>
+				</div>
+				<div class="form-control">
+					Через (мин.):
+					<span class="time-check">5</span>
+					<span class="time-check">10</span>
+					<span class="time-check">15</span>
+					<span class="time-check">20</span>
+					<span class="time-check">30</span>
+				</div>
+				<textarea placeholder="Комментарий"></textarea>
+				<span class="subm_btn pull-right">Создать напоминание</span>
+			</div>
+		</li>
+		<li>
+			<span class="sprite star"><span class="tooltip">Добавить <nobr>в избранное</nobr></span></span>
+		</li>
+		<li class="button-dropdown">
+			<span class="sprite note dropdown-toggle"><span class="tooltip">Мое примечание</span></span>
+			<div class="tooltip add_comment dropdown-modal">
+				<div class="close-tooltip sprite"></div>
+				<form novalidate="novalidate" action="/HomeRe/AddNote" class="note-form" method="get">
+					<div>
+		                <textarea cols="20" data-val="true" data-val-length="Максимум 300 символов" data-val-length-max="300" id="Text" name="Text" rows="2"></textarea>
+		                <span class="field-validation-valid" data-valmsg-for="Text" data-valmsg-replace="true"></span>
+		                <input data-val="true" data-val-required="The ReId field is required." id="ReId" name="ReId" value="67" type="hidden">
+		            </div>
+		            <div>
+		                <span data-id="67" class="subm_btn send-note">Сохранить</span>
+		            </div>
+				</form>
+			</div>
+		</li>
+		<li class="button-dropdown">
+			<span class="sprite report dropdown-toggle">
+				<span class="tooltip">Пожаловаться на объявление</span>
+			</span>
+			<span class="ico_bell-count">5</span>
+			<div class="tooltip form-complaint dropdown-modal">
+				<div class="close-tooltip sprite"></div>
+				<ul>
+					<li>
+						<input type="radio" name="compl-r" id="compl-1">
+						<label class="sprite dotted-line" for="compl-1">Ложное объявление <span class="dotted"></span> <span class="compl-count">200</span></label>
+					</li>
+					<li>
+						<input type="radio" name="compl-r" id="compl-2">
+						<label class="sprite dotted-line" for="compl-2">Объект сдан/продан <span class="dotted"></span> <span class="compl-count">2</span></label>
+					</li>
+					<li class="wrong">
+						<input type="radio" name="compl-r" id="compl-3">
+						<label class="sprite dotted-line" for="compl-3">Неверные данные <span class="dotted"></span> <span class="compl-count">1</span></label>
+						<ul>
+							<li><input type="checkbox" id="compl-4"><label class="sprite" for="compl-4">Цена объекта</label></li>
+							<li><input type="checkbox" id="compl-5"><label class="sprite" for="compl-5">Комиссия</label></li>
+							<li><input type="checkbox" id="compl-6"><label class="sprite" for="compl-6">Параметры объекта</label></li>
+							<li><input type="checkbox" id="compl-7"><label class="sprite" for="compl-7">Адрес</label></li>
+							<li><input type="checkbox" id="compl-8"><label class="sprite" for="compl-8">Фото</label></li>
+							<li><input type="checkbox" id="compl-9"><label class="sprite" for="compl-9">Контакты</label></li>
+						</ul>
+					</li>
+				</ul>
+				<span class="subm_btn">Пожаловаться</span>
+			</div>
+		</li>
+		<li class="button-dropdown">
+			<span class="sprite print dropdown-toggle"><span class="tooltip">Печать</span></span>
+			<div class="tooltip form-print dropdown-modal">
+				<div class="close-tooltip sprite"></div>
+				<p>Указывать данные</p>
+				<ul>
+					<li>
+						<input type="checkbox" id="print-1">
+						<label class="sprite" for="print-1">Цена объекта</label>
+					</li>
+					<li>
+						<input type="checkbox" id="print-2">
+						<label class="sprite" for="print-2">Комиссия</label>
+					</li>
+					<li>
+						<input type="checkbox" id="print-3">
+						<label class="sprite" for="print-3">Параметры объекта</label>
+					</li>
+					<li>
+						<input type="checkbox" id="print-4">
+						<label class="sprite" for="print-4">Адрес</label>
+					</li>
+					<li>
+						<input type="checkbox" id="print-5">
+						<label class="sprite" for="print-5">Фото</label>
+					</li>
+					<li>
+						<input type="checkbox" id="print-6">
+						<label class="sprite" for="print-6">Контакты</label>
+					</li>
+				</ul>
+				<span class="subm_btn">Применить</span>
+			</div>
+		</li>
+		//= share.html
+	</ul>
+</div>

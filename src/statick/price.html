@@ -1,0 +1,290 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content price-page">
+		//= template/header.html
+		<div class="container">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Главная</a></li> /
+					<li><span>Карта цен</span></li>
+				</ul>
+			</div>
+			<h1 class="center-title">
+				Цены на недвижимость
+				<span>московская область</span>
+			</h1>
+			<form action="" class="register-form">
+				<div class="row">
+					<div class="col">
+						<div class="register-form_field">
+							<input type="text" placeholder="Уточнить (Город, населенный пункт, район) /В регионе Тамбовской области" name="">
+							<div class="tooltip">Уточнить (Город, населенный пункт, район) /В регионе Тамбовской области</div>
+							<div class="error"></div>
+						</div>
+					</div>
+					<div class="col">
+						<input class="no-border_btn btn_red" value="Показать цены" type="button">
+					</div>
+				</div>
+			</form>
+			<div role="tabpanel" class="tabpanel link-tabs">
+				<div class="tabpanel-nav">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#sale" aria-controls="sale" role="tab" data-toggle="tab">ПРОДАЖА (м<sup>2</sup>)</a></li>
+						<li role="presentation"><a href="#rent" aria-controls="rent" role="tab" data-toggle="tab">АРЕНДА (м<sup>2</sup> в месяц)</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="price-title">Средняя цена за м<sup>2</sup>:</div>
+			<div class="light-table row">
+				<div class="col col-4">
+					<p>Квартиры, комнаты:</p>
+					<b>246 070 р</b>
+				</div>
+				<div class="col col-4">
+					<p>Дома:</p>
+					<b>118 943 р</b>
+				</div>
+				<div class="col col-4">
+					<p>Участки:</p>
+					<b>17 543 р</b>
+				</div>
+				<div class="col col-4">
+					<p>Коммерческая:</p>
+					<b>263 583 р</b>
+				</div>
+			</div>
+			<div class="center">
+				<a href="" class="no-border_btn btn_red sprite ico-price">Оценить свою недвижимость</a>
+			</div>
+			<div class="profile-block">
+				<div role="tabpanel" class="tabpanel big-tabs">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#room" aria-controls="room" role="tab" data-toggle="tab">Квартиры, комнаты</a></li>
+							<li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Дома</a></li>
+							<li role="presentation"><a href="#land" aria-controls="land" role="tab" data-toggle="tab">Участки</a></li>
+							<li role="presentation"><a href="#commercial" aria-controls="commercial" role="tab" data-toggle="tab">Коммерческая</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="price-title">
+				Средняя стоимость квадратного метра (Москва)
+			</div>
+			<div class="chart-block">
+				<table>
+					<tr>
+						<th>Объект</th>
+						<th>Стоимость (м2)</th>
+					</tr>
+					<tr>
+						<td>Помещения свободного назначения</td>
+						<td>2 343</td>
+					</tr>
+					<tr>
+						<td>Офисные</td>
+						<td>1 397</td>
+					</tr>
+					<tr>
+						<td>Торговые</td>
+						<td>3 050</td>
+					</tr>
+					<tr>
+						<td>Производства / склады</td>
+						<td>803</td>
+					</tr>
+					<tr>
+						<td>Здания / сооружения</td>
+						<td>1 408</td>
+					</tr>
+					<tr>
+						<td>Земельные участки</td>
+						<td>н/д</td>
+					</tr>
+					<tr>
+						<td>Услуги</td>
+						<td>2 197</td>
+					</tr>
+					<tr>
+						<td>Автопрофиль</td>
+						<td>н/д</td>
+					</tr>
+					<tr>
+						<td>Досуг</td>
+						<td>1 411</td>
+					</tr>
+				</table>
+			</div>
+			<div class="price-title">
+				Динамика цен (Москва)
+			</div>
+			<div class="chart-block">
+				<script type="text/javascript">
+				      google.load("visualization", "1", {packages:["annotationchart"]});
+				      google.setOnLoadCallback(drawChart);
+			            function drawChart() {
+			              var data = new google.visualization.DataTable();
+			              data.addColumn('date', 'Date');
+			              data.addColumn('number', 'Kepler-22b mission');
+			              data.addColumn('string', 'Kepler title');
+			              data.addColumn('string', 'Kepler text');
+			              data.addColumn('number', 'Gliese 163 mission');
+			              data.addColumn('string', 'Gliese title');
+			              data.addColumn('string', 'Gliese text');
+			              data.addRows([
+			                [new Date(2314, 2, 15), 12400, undefined, undefined,
+			                                        10645, undefined, undefined],
+			                [new Date(2314, 2, 16), 24045, 'Lalibertines', 'First encounter',
+			                                        12374, undefined, undefined],
+			                [new Date(2314, 2, 17), 35022, 'Lalibertines', 'They are very tall',
+			                                        15766, 'Gallantors', 'First Encounter'],
+			                [new Date(2314, 2, 18), 12284, 'Lalibertines', 'Attack on our crew!',
+			                                        34334, 'Gallantors', 'Statement of shared principles'],
+			                [new Date(2314, 2, 19), 8476, 'Lalibertines', 'Heavy casualties',
+			                                        66467, 'Gallantors', 'Mysteries revealed'],
+			                [new Date(2314, 2, 20), 0, 'Lalibertines', 'All crew lost',
+			                                        79463, 'Gallantors', 'Omniscience achieved']
+			              ]);
+
+			              var chart = new google.visualization.AnnotationChart(document.getElementById('chart_div'));
+
+			              var options = {
+			                displayAnnotations: true
+			              };
+
+			              chart.draw(data, options);
+			            }
+				    </script>
+
+				<div id='chart_div' style='width: 900px; height: 500px;'></div>
+			</div>
+			<div class="price-title">
+				Индекс цен (Москва)
+			</div>
+			<div class="chart-block">
+				<script type="text/javascript">
+		            google.load("visualization", "1", {packages:["corechart", "line"]});
+		            google.setOnLoadCallback(drawBasic);
+		            function drawBasic() {
+
+		              var data = new google.visualization.DataTable();
+					      data.addColumn('number', 'X');
+					      data.addColumn('number', 'Dogs');
+
+					      data.addRows([
+					        [0, 0],   [1, 10],  [2, 23],  [3, 17],  [4, 18],  [5, -9],
+					        [6, 11],  [7, 27],  [8, 33],  [9, 40],  [10, 32], [11, 35],
+					        [12, 30], [13, 40], [14, 42], [15, 47], [16, 44], [17, 48],
+					        [18, 52], [19, 54], [20, 42], [21, 55], [22, 56], [23, 57],
+					        [24, 60], [25, 50], [26, 52], [27, 51], [28, 49], [29, 53],
+					        [30, 55], [31, 60], [32, 61], [33, 59], [34, 62], [35, 65],
+					        [36, 62], [37, 58], [38, 55], [39, 61], [40, 64], [41, 65],
+					        [42, 63], [43, 66], [44, 67], [45, 69], [46, 69], [47, 70],
+					        [48, 72], [49, 68], [50, 66], [51, 65], [52, 67], [53, 70],
+					        [54, 71], [55, 72], [56, 73], [57, 75], [58, 70], [59, 68],
+					        [60, 64], [61, 60], [62, 65], [63, 67], [64, 68], [65, 69],
+					        [66, 70], [67, 72], [68, 75], [69, 80]
+					      ]);
+
+					      var options = {
+					        hAxis: {
+					          title: 'Time'
+					        },
+					        vAxis: {
+					          title: 'Popularity'
+					        }
+					      };
+
+					      var chart = new google.visualization.LineChart(document.getElementById('line_div'));
+
+					      chart.draw(data, options);
+					    }
+				</script>
+				<div id="line_div"></div>
+			</div>
+			<div class="price-title">
+				Средняя стоимость недвижимости (Москва)
+			</div>
+			<div class="chart-block">
+				<script type="text/javascript">
+		            google.load("visualization", "1", {packages:["corechart"]});
+		            google.setOnLoadCallback(drawChart);
+		            function drawChart() {
+				      var data = google.visualization.arrayToDataTable([
+				        ["Element", "Density", { role: "style" }, { role: "annotation" } ],
+				        ["Copper", 8.94, "hsl(29, 57%, 46%)", "Cu"],
+				        ["Silver", 10.49, "silver", "Ag"],
+				        ["Gold", 19.30, "gold", "Au"],
+				        ["Platinum", 21.45, "color: hsl(40, 5%, 89%)", "Pt"],
+				        ["Copper", 8.94, "hsl(29, 57%, 46%)", "Cu"],
+				        ["Silver", 10.49, "silver", "Ag"],
+				        ["Gold", 19.30, "gold", "Au"],
+				        ["Platinum", 21.45, "color: hsl(40, 5%, 89%)", "Pt"],
+				        ["Copper", 8.94, "hsl(29, 57%, 46%)", "Cu"],
+				        ["Silver", 10.49, "silver", "Ag"],
+				      ]);
+
+				      var options = {
+				        title: "Density of Precious Metals, in g/cm^3",
+				        width: 900,
+				        height: 320,
+				        bar: {groupWidth: "95%"},
+				        legend: { position: "none" },
+				        chartArea:{left:30,top:30,width:'100%',height:'100%'},
+				      };
+				      var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+				      chart.draw(data, options);
+				  }
+				</script>
+				<div id="columnchart_values" style="width: 900px; height: 320px;"></div>
+			</div>
+			<div class="price-title">
+				Разделение рынка по типам недвижимости
+			</div>
+			<div class="chart-block">
+				<div class="chart-block_title">My Daily Activities</div>
+				<script type="text/javascript">
+		            google.load("visualization", "1", {packages:["corechart"]});
+		            google.setOnLoadCallback(drawChart);
+		            function drawChart() {
+
+		              var data = google.visualization.arrayToDataTable([
+		                ['Task', 'Hours per Day'],
+		                ['Work',     11],
+		                ['Eat',      2],
+		                ['Commute',  2],
+		                ['Watch TV', 2],
+		                ['Sleep',    7]
+		              ]);
+		              var options = {
+		                pieHole: 0.4,
+		                tooltip: {trigger: 'selection'},
+		                chartArea:{left:85,top:30,width:'100%',height:'90%'},
+		                legend: {alignment: 'center'}
+		              };
+		              var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+		              chart.draw(data, options);
+		            }
+				</script>
+				<div id="piechart" style="width: 600px; height: 320px; "></div>
+			</div>
+			<div class="center">
+				<a href="" class="no-border_btn btn_red sprite ico-price">Оценить свою недвижимость</a>
+			</div>
+		</div>
+		<div class="search-result object">
+			//= template/object-bottom.html
+			<div class="container">
+				<div class="center">
+					<div class="no-border_btn btn_blue">показать еще</div>
+					<a href="#" class="dashed">Искать объекты через форму поиска</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+//= template/footer.html

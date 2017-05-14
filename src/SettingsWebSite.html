@@ -1,0 +1,392 @@
+//= template/head.html
+
+<body>
+    <div class="wrap">
+        <div class="content">
+            //= template/header_reg.html
+            <div class="container profile">
+                <div class='breadcrumbs' xmlns:v='http://rdf.data-vocabulary.org/#'>
+                    <ul>
+                        <li typeof='v:Breadcrumb'>
+                            <a href='/Lk' rel='v:url' property='v:title'>Офис</a></li> /
+                        <li><span>Настройки сайта агентства (оформление)</span></li>
+                    </ul>
+                </div>
+                <form action="/User/SettingsWebSite" enctype="multipart/form-data" method="post">
+                    <input name="__RequestVerificationToken" type="hidden" value="jreHotqO8ahSgMFf4hWU2f_dAYJjTYrB7D9B2rZtuGkEK-0wXozOIzdpA6JqXPhL4ezsyFXRYs9ScRy_w7NpGT4A47rLVCc37GB_g9JiQJgdDFyGLtH1Kfz5z-cXHmC2onpkaqGVHobFRXHlKfI6gAtPfo5iho-TxqVazKebdf_DTc0gvlDGgk5bBjWuGxHx0" />
+                    <h2>
+			            Настройки сайта агентства
+			            <a class="instruction sprite tooltip-toggle">О разделе</a>
+			            <div class="tooltip tooltip-click">
+			                <div class="close-tooltip sprite"></div>
+			                Раздел "Настройки сайта агентства" предназначен для настройки основных параметров отображения Вашего персонального сайта, который создается автоматически в сервисе ИМЛС"
+			            </div>
+			        </h2>
+                    <div role="tabpanel" class="tabpanel">
+                        <div class="tabpanel-nav">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="/User/SettingsWebSite">Оформление</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="/User/SettingsContentWebSite">Контент</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step-field full_width mtop">
+                        <h5>
+		                    Цветовая гамма сайта
+		                    <div class="q_info">
+		                        <div class="tooltip">
+		                            <p>
+		                                Выберите цветовую гамму Вашего сайта.
+		                            </p>
+		                        </div>
+		                    </div>
+			            </h5>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-field width_11 custom-input-block">
+                            <div class="select-control">
+                                <select class="selectpicker form-control" data-size="10" data-val="true" data-val-required="The Цвет field is required." id="SettingsWebSiteTheme" name="SettingsWebSiteTheme">
+                                    <option selected="selected" value="Blue">Синий</option>
+                                    <option value="Green">Зеленый</option>
+                                    <option value="Grey">Серый</option>
+                                </select>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="SettingsWebSiteTheme" data-valmsg-replace="true"></span>
+                        </div>
+                        <a href="" class="dashed colorpicker-toggle" data-toggle="modal" data-target="#colorModal">Выбрать другой цвет</a>
+                        <div class="modal fade color-modal" id="colorModal" tabindex="-1" role="dialog" aria-labelledby="colorModalLabel" aria-hidden="true"> 
+                            <div class="modal-dialog"> 
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></div>
+                                        Выбор цвета
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="cp" class="input-group colorpicker-component"> 
+                                            <input type="text" value="" class="form-control" /> 
+                                        </div>
+                                        <div class="btn_grey no-border_btn">Отмена</div>
+                                        <div class="btn_blue no-border_btn">Применить</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="step-field full_width mtop">
+                        <h5>
+		                    Заставка на сайт (сквозная)
+		                    <div class="q_info">
+		                        <div class="tooltip">
+		                            <p>
+		                                Добавьте фото которое будет использоваться как заставка на Вашем сайте.
+		                            </p>
+		                        </div>
+		                    </div>
+			            </h5>
+                    </div>
+                    <div class="step-field full_width custom-input-block">
+                        <div id="result" class="crop-result"></div>
+                        <button type="button" class="no-border_btn btn_blue" data-target="#modalFile" data-toggle="modal">Выбрать фото </button>
+                          <!-- Modal -->
+                          <div class="modal fade styled-modal" id="modalFile" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <div class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="image_container">
+                                                <img id="blah" src="images/ui/pic.jpg" alt="Заставка на сайт (сквозная)" />
+                                            </div>
+                                        </div>
+                                        <div class="col file-action">
+                                            <div class="btn file-btn custom-input-block sprite ico_add-photo"><input type="file" name="image" id="image" onchange="readURL(this);" />Добавить</div>
+                                            <button type="button" id="crop_button" class="no-border_btn btn_blue" data-dismiss="modal" aria-label="Close">Сохранить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        <!-- <div class="demo-wrap upload-demo">
+                            <div class="upload-msg">
+                                Загрузите фото для заставки
+                            </div>
+                            <div class="upload-demo-wrap">
+                                <div id="upload-demo"></div>
+                            </div>
+                            <div class="actions">
+                                <a class="btn file-btn custom-input-block sprite ico_add-photo">
+                                    <span>Добавить</span>
+                                    <input type="file" id="upload" value="Choose a file" accept="image/*" />
+                                </a>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="img-wrap" style=" width: 939px;">
+                            <div class="ava_img-wrap" style="background: url('/Files/User/LogoHeader/55df68b8-8c26-4192-be8b-b4beee0c6e28.jpeg') center top no-repeat #fff; background-size: contain; width: 939px;height: 180px">
+                            </div>
+                            <div class="custom-input-block sprite ico_add-photo">
+                                Добавить
+                                <input accept=".jpg,.jpeg,.gif,.png,.bmp" data-val="true" data-val-fileextensions="Расширение: jpg|jpeg|gif|png|bmp" data-val-fileextensions-extensions="jpg,jpeg,gif,png,bmp" data-val-rangefilesize="Размер: от 1 килобайт до 5 мегабайт" data-val-rangefilesize-maxsize="5120" data-val-rangefilesize-minsize="1" id="LogoHeader" name="LogoHeader" type="file" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="LogoHeader" data-valmsg-replace="true"></span>
+                            </div>
+                            <a href="#" role="delete-logo" class="sprite ico_del-photo">Удалить</a>
+                        </div>
+                        <input id="LogoHeaderPath" name="LogoHeaderPath" type="hidden" value="/Files/User/LogoHeader/55df68b8-8c26-4192-be8b-b4beee0c6e28.jpeg" /> -->
+                    </div>
+                    <script>
+
+                        function readURL(input) {
+                                if (input.files && input.files[0]) {
+                                    var reader = new FileReader();
+                                    reader.onload = function (e) {
+                                        $('#blah').attr('src', e.target.result)
+                                    };
+                                    reader.readAsDataURL(input.files[0]);
+                                    setTimeout(initCropper, 1000);
+                                }
+                            }
+                            function initCropper(){
+                                console.log("Came here")
+                                var image = document.getElementById('blah');
+                                var cropper = new Cropper(image, {
+                                  aspectRatio: 5 / 1,
+                                  crop: function(e) {
+                                    console.log(e.detail.x);
+                                    console.log(e.detail.y);
+                                  }
+                                });
+
+                                // On crop button clicked
+                                document.getElementById('crop_button').addEventListener('click', function(){
+                                    var imgurl =  cropper.getCroppedCanvas().toDataURL();
+                                    var img = document.createElement("img");
+                                    img.src = imgurl;
+                                    document.getElementById("result").appendChild(img);
+
+                                    /* ---------------- SEND IMAGE TO THE SERVER-------------------------
+
+                                        cropper.getCroppedCanvas().toBlob(function (blob) {
+                                              var formData = new FormData();
+                                              formData.append('croppedImage', blob);
+                                              // Use `jQuery.ajax` method
+                                              $.ajax('/path/to/upload', {
+                                                method: "POST",
+                                                data: formData,
+                                                processData: false,
+                                                contentType: false,
+                                                success: function () {
+                                                  console.log('Upload success');
+                                                },
+                                                error: function () {
+                                                  console.log('Upload error');
+                                                }
+                                              });
+                                        });
+                                    ----------------------------------------------------*/
+                                })
+                            }
+
+                        
+                    </script>
+                    <div class="step-field full_width mtop">
+                        <h5>
+		                    Фото на главной (ротация)
+		                    <div class="q_info">
+		                        <div class="tooltip">
+		                            <p>
+		                                Добавьте фото и описания которые будут использоваться как заставки на главной странице Вашего сайта.
+		                            </p>
+		                        </div>
+		                    </div>
+			            </h5>
+                    </div>
+                    <div class="step-row">
+                        <div id="filesCert">
+                            <div class="step-photo_item " data-file-name="HomePhotos[0].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('images/temp/home.jpg')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_0__Description" maxlength="300" name="HomePhotos[0].Description" placeholder="Добавить описание" role="description" rows="2">
+                                        Лучшие городские квартиры</textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[0].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_0__Id" name="HomePhotos[0].Id" role="id" type="hidden" value="31a23081-99e1-483d-84ac-acc1ca11f0e0" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item " data-file-name="HomePhotos[1].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('/Files/Photo/Current/56788a07-3195-4426-a8c9-56c8c9d75f4b.jpeg')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_1__Description" maxlength="300" name="HomePhotos[1].Description" placeholder="Добавить описание" role="description" rows="2">
+                                        Престижные загородные дома</textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[1].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_1__Id" name="HomePhotos[1].Id" role="id" type="hidden" value="56788a07-3195-4426-a8c9-56c8c9d75f4b" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item " data-file-name="HomePhotos[2].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('/Files/Photo/Current/4e2511cf-3f39-40e4-b79b-1aa2be9113e7.jpeg')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_2__Description" maxlength="300" name="HomePhotos[2].Description" placeholder="Добавить описание" role="description" rows="2">
+                                        Комфортные офисы</textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[2].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_2__Id" name="HomePhotos[2].Id" role="id" type="hidden" value="4e2511cf-3f39-40e4-b79b-1aa2be9113e7" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item custom-hidden" data-file-name="HomePhotos[3].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_3__Description" maxlength="300" name="HomePhotos[3].Description" placeholder="Добавить описание" role="description" rows="2">
+                                    </textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[3].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_3__Id" name="HomePhotos[3].Id" role="id" type="hidden" value="" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item custom-hidden" data-file-name="HomePhotos[4].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_4__Description" maxlength="300" name="HomePhotos[4].Description" placeholder="Добавить описание" role="description" rows="2">
+                                    </textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[4].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_4__Id" name="HomePhotos[4].Id" role="id" type="hidden" value="" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item custom-hidden" data-file-name="HomePhotos[5].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_5__Description" maxlength="300" name="HomePhotos[5].Description" placeholder="Добавить описание" role="description" rows="2">
+                                    </textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[5].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_5__Id" name="HomePhotos[5].Id" role="id" type="hidden" value="" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item custom-hidden" data-file-name="HomePhotos[6].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_6__Description" maxlength="300" name="HomePhotos[6].Description" placeholder="Добавить описание" role="description" rows="2">
+                                    </textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[6].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_6__Id" name="HomePhotos[6].Id" role="id" type="hidden" value="" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item custom-hidden" data-file-name="HomePhotos[7].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_7__Description" maxlength="300" name="HomePhotos[7].Description" placeholder="Добавить описание" role="description" rows="2">
+                                    </textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[7].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_7__Id" name="HomePhotos[7].Id" role="id" type="hidden" value="" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item custom-hidden" data-file-name="HomePhotos[8].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_8__Description" maxlength="300" name="HomePhotos[8].Description" placeholder="Добавить описание" role="description" rows="2">
+                                    </textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[8].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_8__Id" name="HomePhotos[8].Id" role="id" type="hidden" value="" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                            <div class="step-photo_item custom-hidden" data-file-name="HomePhotos[9].File">
+                                <div class="photo_item">
+                                    <div role="img" style="width: 85px; height: 85px; background-size: contain; 
+                                  background-repeat: no-repeat;  background-position-x: center;
+                                  background-position-y: center; background-image: url('')"></div>
+                                </div>
+                                <div class="custom-input-block">
+                                    <textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="HomePhotos_9__Description" maxlength="300" name="HomePhotos[9].Description" placeholder="Добавить описание" role="description" rows="2">
+                                    </textarea>
+                                    <span class="field-validation-valid" data-valmsg-for="HomePhotos[9].Description" data-valmsg-replace="true"></span>
+                                </div>
+                                <input id="HomePhotos_9__Id" name="HomePhotos[9].Id" role="id" type="hidden" value="" />
+                                <div class="delete" role="delete-file"></div>
+                            </div>
+                        </div>
+                        <div class="photo-error " id="addPhotoCertBtn">
+                            <div class="photo-upload" id="photoUploadCert">
+                                <input type="file" accept=".jpg,.jpeg,.gif,.png,.bmp" id="addFileCert">
+                                <img src="images/ui/photo.png" alt=""> добавить
+                            </div>
+                            <div class="error" id="errorCert"></div>
+                            <span class="hint" id="errorMessageCert"></span>
+                        </div>
+                    </div>
+                    <div class="step-field full_width mtop">
+                        <h5>
+		                    Реклама ИМЛС на сайте
+		                    <div class="q_info">
+		                        <div class="tooltip">
+		                            <p>
+		                            </p>
+		                        </div>
+		                    </div>
+			            </h5>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-field width_11 custom-input-block">
+                            <div class="select-control">
+                                <select class="selectpicker form-control" data-size="10" data-val="true" data-val-required="The Реклама ИМЛС на сайтеЫ field is required." id="AdvertisingSiteType" name="AdvertisingSiteType">
+                                    <option selected="selected" value="Show">Показывать</option>
+                                    <option value="NotShow">Не показывать</option>
+                                </select>
+                            </div>
+                            <span class="field-validation-valid" data-valmsg-for="AdvertisingSiteType" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="next-step">
+                        <button type="submit" class="no-border_btn btn_blue">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+</div>
+//= template/footer.html

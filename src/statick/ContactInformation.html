@@ -1,0 +1,112 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+			<div class="contacts">
+				<div class="container">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="index.html">Главная</a></li> /
+							<li><span>Контактная информация</span></li>
+						</ul>
+					</div>
+				</div>
+				<h1>Контактная информация</h1>
+				<div class="contacts-map" id="map"></div>
+				<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+				<script type="text/javascript">
+                    ymaps.ready(init);
+
+                    var myMap;
+
+                    function init () {
+                        myMap = new ymaps.Map('map', {
+                            center: [56.136, 40.390],
+                            zoom: 15
+                        });
+
+                        myMap.controls.add('zoomControl');
+
+                        var myGeocoder = ymaps.geocode('Москва, ул. Лестева д. 18');
+                        myGeocoder.then(
+                            function (res) {
+                                var coords = res.geoObjects.get(0).geometry.getCoordinates();
+                                myPlacemark = new ymaps.Placemark(coords);
+                                myMap.geoObjects.add(myPlacemark);
+                                myMap.setCenter(coords);
+                            },
+                            function (err) {
+                                alert('Ошибка');
+                            }
+                        );
+
+                    }
+                </script>
+				<div class="container contacts-container">
+					<div class="row">
+						<div class="col col-3">
+							<b class="sprite">Адрес</b> 115162 Москва, ул. Лестева д. 18
+						</div>
+						<div class="col col-3">
+							<b class="sprite">E-mail</b> info@imls.ru support@imls.ru
+						</div>
+						<div class="col col-3">
+							<b class="sprite">Телефон</b> 8 (499) 703-43-22
+						</div>
+					</div>
+					<h2>Форма обратной связи</h2>
+					<form>
+						<div class="row">
+							<div class="col col-2">
+								<div><input type="text" placeholder="Имя *" name="names"><div class="error"></div></div>
+								<div><input type="tel" placeholder="Телефон (не обязательно)" class="phone_mask"></div>
+							</div>
+							<div class="col col-2">
+								<div><input type="text" placeholder="E-mail *" name="mail"><div class="error"></div></div>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option>Тема сообщения</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<textarea placeholder="Текст сообщения" name="comment"></textarea>
+						<div class="capcha">
+							<img src="images/temp/capcha.png" alt="" />
+							<input class="no-border_btn btn_blue" type="button" class="btn_submit" onclick="valid(this.form)" value="Отправить">
+						</div>
+					</form>
+					<script>
+						function showEr(container, errorMessage) {
+						  container.className = 'error-field';
+						  var msgElem = document.createElement('span');
+						  msgElem.className = "hint";
+						  msgElem.innerHTML = errorMessage;
+						  container.appendChild(msgElem);
+						}
+
+						function resetEr(container) {
+						  container.className = '';
+						  if (container.lastChild.className == "hint") {
+						    container.removeChild(container.lastChild);
+						  }
+						}
+						function valid(form) {
+						  var elems = form.elements;
+
+						  resetEr(elems.names.parentNode);
+						  if (!elems.names.value) {
+						    showEr(elems.names.parentNode, 'Это поле заполненно неверно. Оно должно содержать Ваше имя.');
+						  }
+						  resetEr(elems.mail.parentNode);
+						  if (!elems.mail.value) {
+						    showEr(elems.mail.parentNode, 'Это поле заполненно неверно. Оно должно содержать действительный адрес Вашей электронной почты.');
+						  }
+
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+//= template/footer.html

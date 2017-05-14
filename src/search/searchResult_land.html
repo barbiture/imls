@@ -1,0 +1,265 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content search-home">
+			//= template/header_reg.html
+
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li> /
+						<li><span>Поиск объектов</span></li>
+					</ul>
+				</div>
+				<h2 class="blue">Поиск объектов <span class="cloud">Дома, участки</span></h2>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab"><span>Квартиры и комнаты</span></a></li>
+							<li role="presentation" class="active"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab"><span>Дома, участки</span></a></li>
+							<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab"><span>Коммерческая недвижимость</span></a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="rooms">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="homes">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="commerce">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-result table">
+				<div class="container">
+					<div class="no-border_btn btn_grey" style="width: 260px">Уточнить параметры</div>
+					<div class="no-border_btn btn_red">Новый поиск</div>
+					<div class="search-result-title">
+						<div class="search-result-preferences">
+							Выводить по: 
+							<div class="select-control">
+								<select name="search" id="search-result" class="selectpicker form-control">
+									<option>20</option>
+									<option>30</option>
+									<option>40</option>
+								</select>
+							</div>
+							<span class="tabl active"></span>
+							<span class="list"></span>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-item premium">
+					<div class="container">
+						<div class="search-result-item_aside">
+							<span class="sprite stat-ico ico_premium-red">
+								<span class="tooltip">Премиум объявление</span>
+							</span>
+							<span class="sprite stat-ico ico_vip">
+								<span class="tooltip">VIP объявление</span>
+							</span>
+							<span class="sprite stat-ico pub_ico3">
+								<span class="tooltip">Выделенное объявление</span>
+							</span>
+							<span class="sprite stat-ico pub_ico4">
+								<span class="tooltip">Поднятое объявление</span>
+							</span>
+							<div class="colorGrey">10 января 2015, 02:02</div>
+							<div class="img-wrap"><img src="images/temp/img3.jpg" alt=""></div>
+							<div class="prel">
+								//= template/edit-panel.html
+							</div>
+						</div>
+						<div class="search-result-item_main">
+							<div class="general">
+								<div class="price-block">
+									<div class="sprite cash_ico">
+										<span>400 000 000</span>
+										<span class="total_cost nobr tooltip-toggle">
+										<span class="dashed"><span class="currency">₽</span> общ. ст.</span></span>
+										<div class="tooltip tooltip-click">
+											<div class="close-tooltip sprite"></div>
+											<table>
+												<tr>
+													<th>Ед. измерения</th>
+													<th><div class="sprite rub-ico"></div></th>
+													<th><div class="sprite usd-ico"></div></th>
+													<th><div class="sprite euro-ico"></div></th>
+												</tr>
+												<tr>
+													<td>Общ. ст :</td>
+													<td>400 000 000 000</td>
+													<td>8 000 <sup class="green">*</sup></td>
+													<td>7 500 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст.мес. :</td>
+													<td>400 500</td>
+													<td>8 000 <sup class="green">*</sup></td>
+													<td>7 500 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст. год :</td>
+													<td>400 500</td>
+													<td>6 451 612 <sup class="green">*</sup></td>
+													<td>6 151 612 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст день:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> :</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в месяц:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в год:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в день:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+											</table>
+											<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+										</div>
+									</div>
+								</div>
+								<div class="general-title">
+									<div class="local_ico">
+										<span class="hidden_txt"><a href="#" class="sprite dashed">Продаю Дом </a></span>
+										<div class="tooltip align_right">
+											<p><a href="#">Продаю Дом </a></p>
+										</div>
+									</div>
+									<span class="sprite area_ico"> 
+										<b>350</b> м<sup>2</sup>
+										<span class="colorGrey"> / 18 сот.</span>
+									</span>
+								</div>
+								<div class="general-adress">
+									<ul>
+										<li>Москва рег., Москва г.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="main_comment">
+								<div class="info_ico">
+									<div class="sprite tooltip-toggle"></div>
+									<div class="tooltip align_right tooltip-click">
+										<div class="close-tooltip sprite"></div>
+										<p class="sprite icon icon8">Участок:
+											<span>30,00 соток</span>
+										</p>
+										<p class="sprite icon icon3">Особенности:
+											<span>Дачный поселок</span>
+										</p>
+										<p class="sprite icon icon10">Особенности участка:
+											<span>Гостевой дом, Ландшафтный дизайн, Деревья, Освещение, Беседка, Ровный</span>
+										</p>
+										<p class="sprite icon icon4">
+											Состояние:
+											<span>Евроремонт</span>
+										</p>
+										<p class="sprite icon icon2">Материал стен: 
+											<span>Кирпич</span>
+										</p>
+										<p class="sprite icon icon11">Кровля:
+											<span>Металлочерепица</span>
+										</p>
+										<p class="sprite icon icon12">Отопление:
+											<span>Газ магистральный</span>
+										</p>
+										<p class="sprite icon icon13">Освещение:
+											<span>Центральное</span>
+										</p>
+										<p class="sprite icon icon14">Канализация:
+											<span>Септик</span>
+										</p>
+										<p class="sprite icon icon3">Особенности дома:
+											<span>Веранда, Терасса, Камин, Спортзал, Большой подвал</span>
+										</p>
+										<p class="sprite icon icon5">
+											Дополнительно:
+											<span>Мебель, Телефон, Интернет, Сигнализация.</span>
+										</p>
+									</div>
+								</div>
+								<div>Этажность: <b>2</b> 
+									Участок (вид разр. исп.): <span>Индивидуальное жилищное строительство</span>
+								</div>
+								<p>
+									Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+									Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+									Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, <a href="#" class="sprite expand_ico"></a>
+								</p>
+							</div>
+							//= template/user_info.html
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<div class="container">
+						<div class="search-result-preferences">
+							Выводить по: 
+							<div class="select-control">
+								<select name="search" id="search-result" class="selectpicker form-control">
+									<option>20</option>
+									<option>30</option>
+									<option>40</option>
+								</select>
+							</div>
+						</div>
+						<div class="pagination_list">
+							<ul>
+								<li><a href="#" class="prew"></a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#" class="next"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+//= template/footer.html

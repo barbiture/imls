@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ymaps:ymaps xmlns:ymaps="http://maps.yandex.ru/ymaps/1.x"
+             xmlns:repr="http://maps.yandex.ru/representation/1.x"
+             xmlns:gml="http://www.opengis.net/gml"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maps.yandex.ru/schemas/ymaps/1.x/ymaps.xsd">
+    <repr:Representation>
+        <repr:Style gml:id="2">
+            <repr:iconStyle>
+                <repr:href>http://pagecreate.ru/rcevo/images/2.png</repr:href>
+                <repr:size x="42" y="52"/>
+                <repr:offset x="-19" y="-15"/>
+            </repr:iconStyle>
+
+            <repr:balloonContentStyle>
+                <repr:template>#balloonTemplate</repr:template>
+            </repr:balloonContentStyle>
+        </repr:Style>
+        <repr:Style gml:id="4">
+            <repr:iconStyle>
+                <repr:href>http://pagecreate.ru/rcevo/images/4.png</repr:href>
+                <repr:size x="42" y="52"/>
+                <repr:offset x="-19" y="-15"/>
+            </repr:iconStyle>
+
+            <repr:balloonContentStyle>
+                <repr:template>#balloonTemplate</repr:template>
+            </repr:balloonContentStyle>
+        </repr:Style>
+        <repr:Style gml:id="42">
+            <repr:iconStyle>
+                <repr:href>http://pagecreate.ru/rcevo/images/42.png</repr:href>
+                <repr:size x="42" y="73"/>
+                <repr:offset x="-19" y="-15"/>
+            </repr:iconStyle>
+
+            <repr:balloonContentStyle>
+                <repr:template>#balloonTemplate</repr:template>
+            </repr:balloonContentStyle>
+        </repr:Style>
+
+        <repr:Template gml:id="balloonTemplate">
+            <repr:text><![CDATA[
+                    <div style="float: left; width:135px; margin: 10px 0 10px 10px;">
+                        <img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 100%" />
+                        <span class="icon $[metaDataProperty.AnyMetaData.item| ]"></span>
+                        <span class="icon $[metaDataProperty.AnyMetaData.item2| ]"></span>
+                    </div>
+                    <div style="font-size:12px; font-family: Open Sans; line-height: 22px; color: #fff; margin: 10px 0 10px 155px;">
+                        <div style="font-size:14px; font-weight:800; margin: 5px 0">$[name]</div>
+                        <div>$[metaDataProperty.AnyMetaData.address]</div>
+                        <div>Категория: $[metaDataProperty.AnyMetaData.category|не задан]</div>
+                    </div>]]></repr:text>
+        </repr:Template>
+    </repr:Representation>
+
+    <ymaps:GeoObjectCollection>
+        <gml:name>Объекты карте</gml:name>
+        <gml:featureMembers>
+            <ymaps:GeoObject>
+                <gml:name>Off-road трасса клуба RC2 в Крылатском</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/rcevo/images/picture_map3.png</pic>
+                        <item>trofi</item>
+                        <item2>drift</item2>
+                        <address>Трасса для триала в Крылатском</address>
+                        <category>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Товарищи! рамки и место обучения кадров требуют определения и уточнения модели</category>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>37.587937 55.733771</gml:pos>
+                </gml:Point>
+                <ymaps:style>#42</ymaps:style>
+            </ymaps:GeoObject>
+
+            <ymaps:GeoObject>
+                <gml:name>Участок № 4592</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/zem/img/item-img.png</pic>
+                        <item>trofi</item>
+                        <address>Одинцово</address>
+                        <category>земли сельскохозяйственного назначения</category>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>37.28875299999995 55.67814096829517</gml:pos>
+                </gml:Point>
+                <ymaps:style>#2</ymaps:style>
+            </ymaps:GeoObject>
+
+            <ymaps:GeoObject>
+                <gml:name>трасса клуба RC2 в Крылатском</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/rcevo/images/picture_map3.png</pic>
+                        <item>trofi</item>
+                        <address>Трасса для триала в Крылатском</address>
+                        <category>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Товарищи! рамки и место обучения кадров требуют определения и уточнения модели</category>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>37.644555 55.8</gml:pos>
+                </gml:Point>
+                <ymaps:style>#4</ymaps:style>
+            </ymaps:GeoObject>
+
+            <ymaps:GeoObject>
+                <gml:name>Офис Яндекса в Одессе</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/zem/img/item-img.png</pic>
+                        <address>Адрес: Одесса, пр. Шевченко, дом 4-Д, офис 61</address>
+                        <category>+38 0482 33-8848 (3 линии), +38 044 232-6003</category>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>30.748434 46.457741</gml:pos>
+                </gml:Point>
+                <ymaps:style>#42</ymaps:style>
+            </ymaps:GeoObject>
+
+            <ymaps:GeoObject>
+                <gml:name>Офис Яндекса в Киеве</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/zem/img/item-img.png</pic>
+                        <address>Адрес: Киев, ул. Луначарского, 4</address>
+                        <category>+38 044 5864368</category>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>30.598379 50.45332</gml:pos>
+                </gml:Point>
+                <ymaps:style>#42</ymaps:style>
+            </ymaps:GeoObject>
+        </gml:featureMembers>
+    </ymaps:GeoObjectCollection>
+</ymaps:ymaps>

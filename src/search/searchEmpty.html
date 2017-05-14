@@ -1,0 +1,49 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content search-org">
+			//= template/header.html
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li> /
+						<li><span>Поиск организаций</span></li>
+					</ul>
+				</div>
+				<h2 class="blue">Поиск организаций <span class="cloud">Компании или ИП</span></h2>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs half-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#ip" aria-controls="ip" role="tab" data-toggle="tab"><span>Компания или ИП</span></a></li>
+							<li role="presentation"><a href="#bank" aria-controls="bank" role="tab" data-toggle="tab"><span>Банк</span></a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="ip">
+							<div class="search">
+								<div class="search-min">
+									<div class="search-field full-width">
+										<p>Я ищу:</p>
+										<input type="text" placeholder="Название, ИНН или адрес">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="bank">
+							<div class="search">
+								<div class="search-min">
+									<div class="search-field full-width">
+										<p>Я ищу:</p>
+										<input type="text" placeholder="Введите название банка, БИК или SWIFT">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+//= template/footer.html

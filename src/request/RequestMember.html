@@ -1,0 +1,111 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+		<div class="container my_obj">
+			<div class='breadcrumbs' xmlns:v='http://rdf.data-vocabulary.org/#'>
+				<ul>
+					<li typeof='v:Breadcrumb'>
+						<a href='/Lk' rel='v:url' property='v:title'>Офис</a></li> /
+					<li><span>Мои приглашения</span></li>
+				</ul>
+			</div>
+			<h2>Мои приглашения</h2>
+			<div role="tabpanel" class="tabpanel">
+				<div class="tabpanel-nav">
+					<ul class="nav nav-tabs">
+						<li role="presentation">
+							<a href="/RequestMember/Sending">Отправка приглашений</a>
+						</li>
+						<li role="presentation" class="active">
+							<a href="/RequestMember?folder=Active">Актуальные  <span class="circle">3</span></a>
+						</li>
+						<li role="presentation" class="">
+							<a href="/RequestMember?folder=Archive">Архив  <span class="circle">0</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<div class="search-result table notif">
+			<div class="search-result-item unread">
+				<div class="container">
+					<table class="member-table">
+						<tr>
+							<td class="colorGrey">
+								<div class="date">сегодня, 17:44</div>
+							</td>
+							<td class="icon">
+								<div class="notif_icon icon4 sprite"></div>
+							</td>
+							<td class="text-cell">
+								k.lebedenko@imls.ru, Тест приглашений
+							</td>
+							<td>
+								<a href class="tdec" data-resend-url='/RequestMember/Resend/3'>Отправить еще</a>
+							</td>
+							<td>
+								<a href="/RequestMember/MyReject/3" class="tdec">Отменить</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="search-result-item unread">
+				<div class="container">
+					<table class="member-table">
+						<tr>
+							<td class="colorGrey">
+								<div class="date">10 02 2017, 17:23</div>
+							</td>
+							<td class="icon">
+								<div class="notif_icon icon4 sprite"></div>
+							</td>
+							<td class="text-cell">
+								sale@apelsin-marketing.ru, Апельсин
+							</td>
+							<td>
+								<a href class="tdec" data-resend-url='/RequestMember/Resend/2'>Отправить еще</a>
+							</td>
+							<td>
+								<a href="/RequestMember/MyReject/2" class="tdec">Отменить</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="search-result-item unread">
+				<div class="container">
+					<table class="member-table">
+						<tr>
+							<td class="colorGrey">
+								<div class="date">08 02 2017, 12:44</div>
+							</td>
+							<td class="icon">
+								<div class="notif_icon icon4 sprite"></div>
+							</td>
+							<td class="text-cell">
+								klebedenko@yandex.ru, Константин
+							</td>
+							<td>
+								<a href class="tdec" data-resend-url='/RequestMember/Resend/1'>Отправить еще</a>
+							</td>
+							<td>
+								<a href="/RequestMember/MyReject/1" class="tdec">Отменить</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="pagination">
+				<div class="container">
+				</div>
+			</div>
+		</div>
+
+</div>
+
+//= template/footer.html
+

@@ -1,0 +1,102 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+
+	<div class="container">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Избранные объекты</span></li>
+			</ul>
+		</div>
+		<h2 class="blue">Избранные объекты <span class="cloud">квартиры, комнаты</h2>
+		<div class="clearfix"></div>
+		<div role="tabpanel" class="tabpanel">
+			<div class="tabpanel-nav">
+					<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Квартиры и комнаты <span class="circle">23</span></a></li>
+					<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab">Дома, участки <span class="circle">980000</span></a></li>
+					<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab">Коммерческая <span class="circle">11</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="search-result-title fav-result-title">
+			<div class="search-result-preferences">
+				Выводить по: 
+				<div class="select-control">
+					<select name="search" id="search-result" class="selectpicker form-control">
+						<option>20</option>
+						<option>30</option>
+						<option>40</option>
+					</select>
+				</div>
+				<span class="tabl active"></span>
+				<span class="list"></span>
+			</div>
+			<div class="notif-select">
+				<div class="select-control checkbox-select">
+					<select name="search" id="search-result" class="selectpicker form-control">
+						<option class="hidden" data-content="<span class='checkbox sprite'></span>"></option>
+						<option data-content="<span class='incheckbox sprite'>Все</span>">Все</option>
+						<option data-content="<span class='checkbox sprite'>Ни одного</span>">Ни одного</option>
+						<option data-content="<span class='incheckbox sprite'>Прочитанные</span>">Прочитанные</option>
+						<option data-content="<span class='incheckbox sprite'>Непрочитанные</span>">Непрочитанные</option>
+					</select>
+				</div>
+				<div class="select-control">
+					<select name="search" id="search-result" class="selectpicker form-control">
+						<option class="hidden">Выбрать действия</option>
+						<option>Отметить прочитанным</option>
+						<option>Отметить непрочитанным</option>
+						<option>Удалить</option>
+					</select>
+				</div>
+			</div>
+			<h2>Отмечено: <span class="count">4</span></h2>
+		</div>
+	</div>
+
+	<div class="search-result table fav-result">
+		<div class="search-result-item premium">
+			<div class="container">
+				<div class="item-check">
+					<input id="fav2" checked="checked" type="checkbox">
+					<label for="fav2" class="sprite"></label>
+				</div>
+				//= template/object-item.html
+			</div>
+		</div>
+		<div class="pagination">
+			<div class="container">
+				<div class="search-result-preferences">
+					Выводить по: 
+					<div class="select-control">
+						<select name="search" id="search-result" class="selectpicker form-control">
+							<option>20</option>
+							<option>30</option>
+							<option>40</option>
+						</select>
+					</div>
+				</div>
+				<div class="pagination_list">
+					<ul>
+						<li><a href="#" class="prew"></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#" class="next"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+//= template/footer.html

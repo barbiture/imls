@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--[if (gte IE 6)&(lte IE 8)]>
+		<html class="ie8_all" lang="en">
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]>
+	<html lang="en">
+<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024" />
+	<title>imls.ru</title>
+	<link rel="icon" href="images/ui/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/ui/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/ui/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="ui/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="ui/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="ui/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="ui/touch-icon-ipad-retina.png">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/plugin.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel='stylesheet' href='css/jquery.fancybox.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="css/bootstro.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script src="js/selectivizr.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<![endif]-->
+	<script src="js/search.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/device.js"></script>
+	<script src="js/bootstro.js"></script>
+	<script src="js/jquery-sortable.js"></script>
+	<script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+	<script src="js/cropper.js"></script>
+	<!-- bootstrap datepicker -->
+	<script src="js/moment-with-locales.js"></script>
+	<script src="js/bootstrap-datetimepicker.js"></script>
+	<script src="js/bootstrap-colorpicker.js"></script>
+	<script type="text/javascript" src="js/emojionearea.js"></script>
+	<script type="text/javascript" src="js/nouislider.js"></script>
+	<script type="text/javascript" src="js/wNumb.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?load=package.standard,geoXml.load&lang=ru-RU" type="text/javascript"></script>
+	<script src="ymapsml_ballooncontentstyle.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="content search-room">
+			//= template/header_reg.html
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li> /
+						<li><span>Поиск объектов</span></li>
+					</ul>
+				</div>
+				<h2 class="blue">Поиск объектов <span class="cloud">квартиры, комнаты</span></h2>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab"><span>Квартиры и комнаты</span></a></li>
+							<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab"><span>Дома, участки</span></a></li>
+							<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab"><span>Коммерческая недвижимость</span></a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="rooms">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+									<div class="search-banners">
+										<a href="#" target="_blank" class="search-banners_action sprite act3">
+											Хочу привлечь к поиску риелтора
+											<span class="q_info">
+												<span class="tooltip left">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+												</span>
+											</span>
+										</a>
+										<a href="#" target="_blank" class="search-banners_action sprite act1">
+											Хочу автоматизировать поиск
+											<span class="q_info">
+												<span class="tooltip left">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="homes">
+							<div class="search">
+								<div class="search-min">
+									<h2>Найдено объектов: <span class="count">160</span></h2>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="commerce">
+							<div class="search">
+								<div class="search-min">
+									<h2>Найдено объектов: <span class="count">160</span></h2>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="search-result table">
+				<div class="container">
+					<div class="no-border_btn btn_grey" style="width: 260px">Уточнить параметры</div>
+					<div class="no-border_btn btn_red">поиск</div>
+					<div class="no-border_btn btn_green sprite show-map">Показать на карте</div>
+					<div class="search-result-title">
+						<div class="search-result-preferences">
+							Выводить по: 
+							<div class="select-control">
+								<select name="search" id="search-result" class="selectpicker form-control">
+									<option>20</option>
+									<option>30</option>
+									<option>40</option>
+								</select>
+							</div>
+							<span class="map-sign active"></span>
+							<span class="tabl"></span>
+							<span class="list"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-map">
+					<div id="map"></div>
+					<div class="no-border_btn btn_green sprite btn-area">выделить зону</div>
+					<!-- <div class="no-border_btn btn_red sprite btn-clear">очистить</div> -->
+					<div class="map-modal map-info map-js">
+						<p class="sprite no-viewed">Не просмотренные</p>
+						<p class="sprite viewed">Просмотренные</p>
+						<span class="map-modal_close"></span>
+					</div>
+					<!-- <div class="map-modal apply-wrap map-js">
+						<p class="map-modal_title">Показана только часть объявлений</p>
+						<p>Пожалуйста, <a id="toggler">приблизьте карту</a>, либо задайте<br />
+						 более узкие условия поиска</p>
+						<span class="map-modal_close"></span>
+					</div> -->
+				</div>
+
+				<div class="map-js">
+					<div class="container">
+						<span class="map-modal_close big-close"></span>
+						<div class="search-result-title">
+							<div class="search-result-preferences sort-result m-title">
+								Сортировать по: 
+								<div class="select-control">
+									<select name="search" id="search-result" class="selectpicker form-control">
+										<option>По дате (сначала новые)</option>
+										<option>По дате (сначала старые)</option>
+										<option>По публикации (сначала опубликованные)</option>
+										<option>По публикации (сначала не опубликованные)</option>
+										<option>По услугам (сначала с рекламными услугами)</option>
+										<option>По услугам (сначала без рекламных услуг)</option>
+									</select>
+								</div>
+								<span class="tabl active"></span>
+								<span class="list"></span>
+							</div>
+							<h2 id="map-result">Адрес: г.Москва, ул. Лестева д. 18</h2>
+						</div>
+					</div>
+
+					<div class="search-result-item premium">
+						<div class="container">
+							//= template/object-item.html
+						</div>
+					</div>
+					<div class="container">
+						<div class="search-banners">
+							<a href="#" target="_blank" class="search-banners_action sprite act3">
+								Хочу привлечь риелтора
+								<span class="q_info">
+									<span class="tooltip left">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+									</span>
+								</span>
+							</a>
+							<a href="#" target="_blank" class="search-banners_action sprite act1">
+								Хочу автоматизировать поиск
+								<span class="q_info">
+									<span class="tooltip left">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="pagination">
+						<div class="container">
+							<div class="search-result-preferences">
+								Выводить по: 
+								<div class="select-control">
+									<select name="search" id="search-result" class="selectpicker form-control">
+										<option>20</option>
+										<option>30</option>
+										<option>40</option>
+									</select>
+								</div>
+							</div>
+							<div class="pagination_list">
+								<ul>
+									<li><a href="#" class="prew"></a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">6</a></li>
+									<li><a href="#">7</a></li>
+									<li><a href="#" class="next"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+//= template/footer.html

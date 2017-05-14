@@ -1,0 +1,113 @@
+.rent-form-select.autofilter .contain:after,
+.rent-form-select.autofilter .contain > .search:after,
+.rent-form-select.autofilter .contain > .selected:after,
+.rent-form-select.autofilter .contain > .search > .control:after,
+.rent-form-select.autofilter .contain > .selected > .control:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.rent-form-select.autofilter .contain > .search,
+.rent-form-select.autofilter .contain > .selected {
+  float: left;
+}
+.rent-form-select.autofilter .contain > .selected {
+  border-left: 1px dashed #C3C3C3;
+}
+.rent-form-select.autofilter .contain > .search > .control,
+.rent-form-select.autofilter .contain > .selected > .control {
+  padding: 8px;
+  height: 37px;
+  position: relative;
+}
+.rent-form-select.autofilter .contain > .search > .control input[type="text"] {
+  float: left;
+  border: 1px solid #C6CCD2;
+  margin: 0;
+  padding: 0 6px;
+  width: 329px;
+  height: 28px;
+}
+.rent-form-select.autofilter .contain > .search > .control:before {
+  content: '';
+  background: #FFF url("../images/icons/sprite.png") no-repeat scroll -572px 0px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.rent-form-select.autofilter .contain > .selected > .control span {
+  float: left;
+  color: #838383;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+.rent-form-select.autofilter .contain > .selected > .control a.apply,
+.rent-form-select.autofilter .contain > .selected > .control a.clear {
+  float: right;
+  display: block;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: none;
+}
+.rent-form-select.autofilter .contain > .selected > .control a.apply:hover {
+  background-position: -530px -30px;
+  text-decoration: none;
+}
+.rent-form-select.autofilter .contain > .selected > .control a.clear {
+  margin: 0 8px 0 0;
+}
+.rent-form-select.autofilter .contain > .search > .list,
+.rent-form-select.autofilter .contain > .selected > .list {
+  float: left;
+  margin: 0;
+  padding: 0 8px 8px;
+  height: 271px;
+}
+.rent-form-select.autofilter .contain > .search > .list {
+  width: 343px;
+}
+.rent-form-select.autofilter .contain > .selected > .list {
+  width: 287px;
+}
+.rent-form-select.autofilter .contain ul {
+  border: 0 none;
+}
+.rent-form-select.autofilter .contain > .search > .list > ul,
+.rent-form-select.autofilter .contain > .selected > .list > ul {
+  height: 271px;
+  overflow-y: scroll;
+}
+.rent-form-select.autofilter .contain > .selected > .list li > div.switch {
+  left: -14px;
+}
+.rent-form-select.autofilter .contain > .selected li > .element label {
+  background-color: #F5F5F5;
+  padding-left: 6px;
+  cursor: default;
+}
+.rent-form-select.autofilter .contain > .selected li > .element a.remove {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  width: 20px;
+  height: 20px;
+  background: #F5F5F5 url("../images/icons/sprite.png") no-repeat scroll -506px -30px;
+  cursor: pointer;
+}
+.rent-form-select.autofilter .contain > .selected li > .element a.remove:hover {
+  background-position: -530px -30px;
+}

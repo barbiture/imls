@@ -1,0 +1,48 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container register">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Мои данные</span></li>
+			</ul>
+		</div>
+		<h2>Мои данные</h2>
+		<div role="tabpanel" class="tabpanel">
+			<div class="tabpanel-nav">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Мой профиль</a></li>
+					<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab">Моя учетная запись</a></li>
+					<li role="presentation" class="active"><a href="#" role="tab" data-toggle="tab">Мои телефоны</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="conf">
+			<i class="ico-info"></i>
+			<b>Внимание</b>
+			<p>Вы можете добавить подтвердить несколько телефонов. Данные телефоны используются в контактной информации при публикации объявлений и будут предлагаться вам при добавлении объявления автоматически</p>
+		</div>
+		<form class="register-form register-user">
+			<label class="register-form_label">Телефон</label>
+			<div class="register-form_field">
+				<input value="" placeholder="+7(917)-000-00-00" class="phone_mask" type="tel">
+				<a class="delete" href="#"><i></i></a>
+			</div>
+			<div class="register-form_field">
+				<p class="green-check sprite">Телефон подтвержден</p>
+				<!-- <p class="red-check sprite">Телефон не подтвержден</p> -->
+			</div>
+			<div class="register-form_field">
+				<input value="" placeholder="+7" class="phone_mask" type="tel">
+				<a class="delete" href="#"><i></i></a>
+			</div>
+			<div class="register-form_field">
+				<input class="no-border_btn btn_blue" onclick="validate(this.form)" value="Добавить" type="button">
+			</div>
+		</form>
+	</div>
+</div>
+//= template/footer.html

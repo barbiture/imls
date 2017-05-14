@@ -1,0 +1,303 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container profile">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>XML - загрузка объектов в ИМЛС</span></li>
+			</ul>
+		</div>
+		<h2>XML - загрузка объектов в ИМЛС</h2>
+		<div class="step-field full_width">
+			<h5>
+				Параметры загрузки
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Укажите технические параметры загрузки объявлений в формате xml. Обратите внимание на значение указываемых параметров.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<p>Загружать объекты автоматически:</p>
+		<div class="general-title">
+			<div class="flag-switch">
+				<input type="checkbox" id="switch1" name="switch">
+				<label for="switch1"></label>
+				<span></span>
+			</div>
+		</div>
+		<div class="mtop">
+			<div class="search-field">
+				<input id="1.1" type="checkbox" checked="">
+				<label class="sprite stand-alone" for="1.1">Сохранять незагруженные объекты в черновиках</label>
+			</div>
+			<div class="search-field">
+				<input id="1.2" type="checkbox">
+				<label class="sprite stand-alone" for="1.2">Запрещать автозагрузку объектов отредактированных в ручную</label>
+			</div>
+			<div class="search-field">
+				<input id="1.3" type="checkbox">
+				<label class="sprite stand-alone" for="1.3">Перемещать объекты в архив по окончании публикации</label>
+			</div>
+		</div>
+		<div class="step-field full_width mtop">
+			<h5>
+				Настройки раздела «квартиры и комнаты»
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Укажите ссылку на XML файл и его формат, объекты из которого будут загружаться в систему ИМЛС. <br>Обратите внимание на точность указываемых данных.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="step-field width_11">
+				<input type="text" placeholder="Указать ссылку на xml-файл">
+			</div>
+			<div class="step-field width_10">
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>Выбрать формат файла</span>">Выбрать формат файла</option>
+						<option value="1">любой</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="general-title">
+			<div>
+				<span class="middle_text">Реклама в система ИМЛС</span>
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Модуль подключения дополнительных рекламных услуг используемых для  публикации объектов в системе ИМЛС. Подключение рекламных услуг  повышают  рейтинг объявления и значительно увеличивают его привлекательность.</p>
+					</div>
+				</div>
+			</div>
+			<div class="public-action">
+				<ul class="in-b">
+					<li>
+						<input type="checkbox" id="public-action1.1">
+						<label for="public-action1.1" class="sprite pub_ico1">Премиум</label>
+						<div class="tooltip">
+							Подтверждение номера телефона
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action2.2">
+						<label for="public-action2.2" class="sprite pub_ico2">VIP</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action3.3" checked="">
+						<label for="public-action3.3" class="sprite pub_ico3">Выделить</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action4.4">
+						<label for="public-action4.4" class="sprite pub_ico4">Поднять</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+				</ul>
+				<div class="public-total in-b">
+					<span class="colorGrey">Итого:</span> <b>10</b> руб./сутки
+					<div class="info_ico">
+						<div class="sprite tooltip-toggle"></div>
+						<div class="tooltip align_right tooltip-click">
+							<div class="close-tooltip sprite"></div>
+							<p class="dotted-line">
+								<label class="sprite pub_ico1">Премиум</label>
+								<span class="dotted"></span>
+								<span class="colorGrey"><b>2</b> руб./сутки</span>
+							</p>
+							<p class="dotted-line">
+								<label class="sprite pub_ico2">VIP</label>
+								<span class="dotted"></span>
+								<span class="colorGrey"><b>8</b> руб./сутки</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width mtop">
+			<h5>
+				Настройки раздела «дома, участки»
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Укажите ссылку на XML файл и его формат, объекты из которого будут загружаться в систему ИМЛС. <br>Обратите внимание на точность указываемых данных.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="step-field width_11">
+				<input type="text" placeholder="Указать ссылку на xml-файл">
+			</div>
+			<div class="step-field width_10">
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>Выбрать формат файла</span>">Выбрать формат файла</option>
+						<option value="1">любой</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="general-title">
+			<div>
+				<span class="middle_text">Реклама в система ИМЛС</span>
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Модуль подключения дополнительных рекламных услуг используемых для  публикации объектов в системе ИМЛС. Подключение рекламных услуг  повышают  рейтинг объявления и значительно увеличивают его привлекательность.</p>
+					</div>
+				</div>
+			</div>
+			<div class="public-action">
+				<ul class="in-b">
+					<li>
+						<input type="checkbox" id="public-action1">
+						<label for="public-action1" class="sprite pub_ico1">Премиум</label>
+						<div class="tooltip">
+							Подтверждение номера телефона
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action2">
+						<label for="public-action2" class="sprite pub_ico2">VIP</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action3">
+						<label for="public-action3" class="sprite pub_ico3">Выделить</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action4">
+						<label for="public-action4" class="sprite pub_ico4">Поднять</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+				</ul>
+				<div class="public-total in-b">
+					<span class="colorGrey">Итого:</span> <b>10</b> руб./сутки
+					<div class="info_ico">
+						<div class="sprite tooltip-toggle"></div>
+						<div class="tooltip align_right tooltip-click">
+							<div class="close-tooltip sprite"></div>
+							<p class="dotted-line">
+								<label class="sprite pub_ico1">Премиум</label>
+								<span class="dotted"></span>
+								<span class="colorGrey"><b>2</b> руб./сутки</span>
+							</p>
+							<p class="dotted-line">
+								<label class="sprite pub_ico2">VIP</label>
+								<span class="dotted"></span>
+								<span class="colorGrey"><b>8</b> руб./сутки</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width mtop">
+			<h5>
+				Настройки раздела «Коммерческая»
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Укажите ссылку на XML файл и его формат, объекты из которого будут загружаться в систему ИМЛС. <br>Обратите внимание на точность указываемых данных.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="step-row">
+			<div class="step-field width_11">
+				<input type="text" placeholder="Указать ссылку на xml-файл">
+			</div>
+			<div class="step-field width_10">
+				<div class="select-control">
+					<select class="selectpicker form-control">
+						<option value="0" class="hidden" data-content="<span class='colorGrey'>Выбрать формат файла</span>">Выбрать формат файла</option>
+						<option value="1">любой</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="general-title">
+			<div>
+				<span class="middle_text">Реклама в система ИМЛС</span>
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Модуль подключения дополнительных рекламных услуг используемых для  публикации объектов в системе ИМЛС. Подключение рекламных услуг  повышают  рейтинг объявления и значительно увеличивают его привлекательность.</p>
+					</div>
+				</div>
+			</div>
+			<div class="public-action">
+				<ul class="in-b">
+					<li>
+						<input type="checkbox" id="public-action1.2">
+						<label for="public-action1.2" class="sprite pub_ico1">Премиум</label>
+						<div class="tooltip">
+							Подтверждение номера телефона
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action2.1">
+						<label for="public-action2.1" class="sprite pub_ico2">VIP</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action3.1">
+						<label for="public-action3.1" class="sprite pub_ico3">Выделить</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+					<li>
+						<input type="checkbox" id="public-action4.1">
+						<label for="public-action4.1" class="sprite pub_ico4">Поднять</label>
+						<div class="tooltip">
+							Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.
+						</div>
+					</li>
+				</ul>
+				<div class="public-total in-b">
+					<span class="colorGrey">Итого:</span> <b>10</b> руб./сутки
+					<div class="info_ico">
+						<div class="sprite tooltip-toggle"></div>
+						<div class="tooltip align_right tooltip-click">
+							<div class="close-tooltip sprite"></div>
+							<p class="dotted-line">
+								<label class="sprite pub_ico1">Премиум</label>
+								<span class="dotted"></span>
+								<span class="colorGrey"><b>2</b> руб./сутки</span>
+							</p>
+							<p class="dotted-line">
+								<label class="sprite pub_ico2">VIP</label>
+								<span class="dotted"></span>
+								<span class="colorGrey"><b>8</b> руб./сутки</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="next-step">
+			<a href="#" class="no-border_btn btn_blue">сохранить</a>
+		</div>
+	</div>
+</div>
+//= template/footer.html

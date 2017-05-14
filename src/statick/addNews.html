@@ -1,0 +1,54 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container profile">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Добавление новости</span></li>
+			</ul>
+		</div>
+		<h2>Добавление новости</h2>
+		<form action="" class="add-news">
+			<div class="step-row big-input">
+				<div class="step-field width_12">
+					<p>Дата</p>
+					<div class="wrap-daterange">
+						<div class='input-group date custom-input-block datepicker1'>
+		                    <input type='text' class="form-control" placeholder="ДД.ММ.ГГГГ" name="date-calend" />
+		                    <span class="input-group-addon">
+		                        <!-- <img src="images/ui/date.png" alt=""> -->
+		                    </span>
+		                </div>
+						<!-- <div class="custom-input-block">
+							<input type="text" class="valid date_mask" placeholder="ДД.ММ.ГГГГ" name="date-calend" id="date-calend">
+							<span class="field-validation-valid" data-valmsg-for="dateFrom" data-valmsg-replace="true"></span>
+						</div> -->
+					</div>
+				</div>
+				<div class="step-field width_13">
+					<p>Заголовок</p>
+					<div class="custom-input-block">
+						<input name="question" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="step-field full_width">
+				<p>Краткий текст</p>
+				<textarea name="question" class="small-hight"></textarea>
+			</div>
+			<div class="step-field full_width">
+				<p>Полный текст</p>
+				<!-- <textarea cols="20" data-multiline-text="Content" data-val="true" data-val-required="Обязательное поле" id="Content" name="Content" rows="2" style="visibility: hidden; display: none;"></textarea> -->
+				<img src="images/temp/form.png" alt="picture">
+			</div>
+			<div class="next-step">
+				<a href="#" class="no-border_btn btn_blue">Сохранить</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+//= template/footer.html

@@ -1,0 +1,363 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="search-result object">
+		<div class="personal container">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Главная</a></li> /
+					<li><span>Персональная страница</span></li>
+				</ul>
+			</div>
+			<div class="col object-general_right -right-col">
+				<div class="fix_menu affix-top">
+					<ul>
+						<li class="button-dropdown">
+							<span class="sprite note dropdown-toggle"><span class="tooltip">Мое примечание</span></span>
+							<div class="tooltip add_comment dropdown-modal">
+								<div class="close-tooltip sprite"></div>
+								<form novalidate="novalidate" action="/HomeRe/AddNote" class="note-form" method="get">
+									<div>
+						                <textarea cols="20" data-val="true" data-val-length="Максимум 300 символов" data-val-length-max="300" id="Text" name="Text" rows="2"></textarea>
+						                <span class="field-validation-valid" data-valmsg-for="Text" data-valmsg-replace="true"></span>
+						                <input data-val="true" data-val-required="The ReId field is required." id="ReId" name="ReId" value="67" type="hidden">
+						            </div>
+						            <div>
+						                <span data-id="67" class="subm_btn send-note">Сохранить</span>
+						            </div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<span class="sprite follow"><span class="tooltip">Добавить в белый&#160;список</span></span>
+						</li>
+						<li>
+							<span class="sprite black-list"><span class="tooltip">Добавить в черный&#160;список</span></span>
+						</li>
+						<li class="button-dropdown">
+							<span class="sprite share dropdown-toggle"><span class="tooltip">Поделиться</span></span>
+							<div class="tooltip form-share dropdown-modal">
+								<div class="close-tooltip sprite"></div>
+								<p class="blue">Ваш друг получит письмо с ссылкой на это объявление</p>
+								<form novalidate="novalidate" action="/HomeRe/AddNote" class="note-form" method="get">
+									<div>
+										<input placeholder="Ваша почта" type="text">
+									</div>
+									<div>
+										<input placeholder="Имя друга" type="text">
+									</div>
+									<div>
+										<input placeholder="Почта вашего друга" type="text">
+									</div>
+									<div class="enter-code">
+										<input placeholder="Код с картинки" type="text">
+										<img src="images/temp/capcha-small.png" alt="">
+									</div>
+									<div class="btn-divider">
+										<span class="subm_btn send-note">Поделиться</span>
+									</div>
+									<div>
+										Поделиться:
+										<script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+										<script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+										<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus,twitter"></div>
+									</div>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="agent-info">
+				<p class="agent-name">Серебрянский Василий <span class="partner sprite">Партнер проекта</span></p>
+				<p class="agent-subtitle">Агентство недвижимости "Центр московской недвижимости имени Ивана Пупкина"</p>
+			</div>
+			<div class="personal_info">
+				<div class="img-wrap">
+					<img src="images/temp/avatar243.jpg" alt="">
+				</div>
+				<div class="raitng">
+					<div class="sprite ico_raite">25500</div>
+					<a class="like ico sprite">25000</a>
+					<a class="dislike ico sprite">1000</a>
+				</div>
+			</div>
+			<div class="search-result-item_main">
+				<div class="phone">
+					<div class="no-border_btn btn_blue sprite">Показать телефон</div>
+					<div class="show-phone">
+						<span>+7 (926) 212-43-56</span>
+						<span>+7 (926) 234-12-43</span>
+						<p class="sprite">Пожалуйста, скажите что вы нашли это объявление на IMLS.RU</p>
+					</div>
+					<div class="user_info">
+						<div class="links">
+							<ul>
+								<li>Написать:</li>
+								<li class="sprite mail_ico">
+									<a>Письмо</a>
+									<div class="tooltip form-share">
+										<div class="close-tooltip sprite"></div>
+										<p class="blue">Пользователь получит ваше письмо</p>
+										<form class="note-form">
+											<div>
+												<input type="text" placeholder="Ваше имя">
+											</div>
+											<div>
+												<input type="text" placeholder="Ваша почта">
+											</div>
+											<div>
+												<input type="text" placeholder="Ваш телефон">
+											</div>
+											<div class="select-control">
+												<select class="selectpicker form-control">
+													<option value="0" class="hidden" data-content="<span class='colorGrey'>Тема письма</span>">Тема письма</option>
+													<option value="1">Тема письма1</option>
+												</select>
+											</div>
+											<div>
+												<textarea placeholder="Текст сообщения"></textarea>
+											</div>
+											<div class="enter-code">
+												<input type="text" placeholder="Код с картинки">
+												<img src="images/temp/capcha-small.png" alt="">
+											</div>
+											<div class="btn-divider">
+												<!-- <span data-remove="true" class="cancel">Отмена</span> -->
+												<span class="subm_btn send-note">Отправить</span>
+											</div>
+										</form>
+									</div>
+								</li>
+								<li class="sprite chat_ico">
+									<a href="#">В чат</a>
+								</li>
+								<li class="sprite sms_ico">
+									<a href="#">СМС</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="social-links">
+					<p class="sprite fb"><a href="#">https://www.facebook.com/</a></p>
+					<p class="sprite vk"><a href="#">https://vk.com</a></p>
+					<p class="sprite ok"><a href="#">http://ok.ru/profile/</a></p>
+				</div>
+				<div class="object-general_right -main_comment main_comment">
+					<span><a href="#" class="ico_edit sprite"></a>Мое примечание:</span>
+					<p>
+						Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+						Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+						Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="profile-block">
+				<h5>О риелторе</h5>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#prof" aria-controls="prof" role="tab" data-toggle="tab">Профессиональная деятельность</a></li>
+							<li role="presentation"><a href="#services" aria-controls="services" role="tab" data-toggle="tab">Услуги</a></li>
+							<li role="presentation"><a href="#zone" aria-controls="zone" role="tab" data-toggle="tab">Зоны работ</a></li>
+							<li role="presentation"><a href="#diplom" aria-controls="diplom" role="tab" data-toggle="tab">Сертификаты, дипломы, награды</a></li>
+							<li role="presentation"><a href="#photo" aria-controls="photo" role="tab" data-toggle="tab">Фото</a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="prof">
+							<p>
+								Задача организации, в особенности же консультация с широким активом представляет собой интересный эксперимент проверки соответствующий условий активизации. Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа новых предложений. Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям.
+							</p>
+							<p>
+								Равным образом дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации модели развития. Равным образом сложившаяся структура организации требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития. Разнообразный и богатый опыт реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации.
+							</p>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="services">
+							<div class="services-block">
+								<div class="services-title">Основные услуги</div>
+								<div class="row">
+									<div class="col col-3">
+										<p class="services-subtitle">Квартиры и комнаты</p>
+										<p>Покупка</p>
+										<p>Продажа</p>
+										<p>Снятие в аренду</p>
+										<p>Сдача в аренду</p>
+										<p>Юридическое сопровождение</p>
+									</div>
+									<div class="col col-3">
+										<p class="services-subtitle">Дома, участки</p>
+										<p>Снятие в аренду</p>
+										<p>Сдача в аренду</p>
+										<p>Юридическое сопровождение</p>
+									</div>
+									<div class="col col-3">
+										<p class="services-subtitle">Коммерческая недвижимость:</p>
+										<p>Покупка</p>
+										<p>Продажа</p>
+										<p>Юридическое сопровождение</p>
+									</div>
+								</div>
+							</div>
+							<div class="services-block">
+								<div class="services-title">Дополнительные услуги</div>
+								<div class="row">
+									<div class="col col-3">
+										<p class="services-subtitle">Квартиры и комнаты</p>
+										<p>Оценка</p>
+										<p>Срочный выкуп</p>
+										<p>Согласование перепланировок</p>
+										<p>Смена названия объекта</p>
+									</div>
+									<div class="col col-3">
+										<p class="services-subtitle">Дома, участки</p>
+										<p>Оценка</p>
+										<p>Срочный выкуп</p>
+										<p>Согласование перепланировок</p>
+										<p>Обмен</p>
+										<p>Согласование перепланировок</p>
+										<p>Перевод жилой/нежилой фонд</p>
+										<p>Смена названия объекта</p>
+									</div>
+									<div class="col col-3">
+										<p class="services-subtitle">Коммерческая недвижимость:</p>
+										<p>Срочный выкуп</p>
+										<p>Согласование перепланировок</p>
+										<p>Перевод жилой/нежилой фонд</p>
+										<p>Смена названия объекта</p>
+									</div>
+								</div>
+							</div>
+							<div class="services-block">
+								<div class="services-title">Дополнительные услуги</div>
+								<div class="row">
+									<div class="col col-3">
+										<p class="services-subtitle">Квартиры и комнаты</p>
+										<p>Получение ипотеки</p>
+										<p>Получение лизинга</p>
+										<p>Финансовая консультация</p>
+									</div>
+									<div class="col col-3">
+										<p class="services-subtitle">Дома, участки</p>
+										<p>Получение ипотеки</p>
+										<p>Финансовая консультация</p>
+									</div>
+									<div class="col col-3">
+										<p class="services-subtitle">Коммерческая недвижимость:</p>
+										<p>Получение ипотеки</p>
+										<p>Финансовая консультация</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="zone">
+							<div class="tag-field">
+								<div class="tag">аллея Чоботовская 1-я</div>
+								<div class="tag">аллея Чоботовская 2-я</div>
+								<div class="tag">аллея Чоботовская 3-я</div>
+								<div class="tag">аллея Чоботовская 4-я</div>
+								<div class="tag">промзона Восточный промышленный район</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="diplom">
+							<div class="sertif-item"><a href="images/temp/diplom-full.jpg" class="thumbnail"><img src="images/temp/diplom-full.jpg" alt=""></a></div>
+							<div class="sertif-item"><a href="images/temp/diplom-full.jpg" class="thumbnail"><img src="images/temp/diplom-full.jpg" alt=""></a></div>
+							<div class="sertif-item"><a href="images/temp/diplom-full.jpg" class="thumbnail"><img src="images/temp/diplom-full.jpg" alt=""></a></div>
+							<div class="sertif-item"><a href="images/temp/diplom-full.jpg" class="thumbnail"><img src="images/temp/diplom-full.jpg" alt=""></a></div>
+							<div class="sertif-item"><a href="images/temp/diplom-full.jpg" class="thumbnail"><img src="images/temp/diplom-full.jpg" alt=""></a></div>
+							<div class="sertif-item"><a href="images/temp/diplom-full.jpg" class="thumbnail"><img src="images/temp/diplom-full.jpg" alt=""></a></div>
+							<div class="sertif-item"><a href="images/temp/diplom-full.jpg" class="thumbnail"><img src="images/temp/diplom-full.jpg" alt=""></a></div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="photo">
+							<table class="photo-table">
+								<tr>
+									<td><a href="images/temp/img1.jpg" class="thumbnail-photo"><img src="images/temp/img1.jpg" alt=""></a></td>
+									<td><a href="images/temp/img1.jpg" class="thumbnail-photo"><img src="images/temp/img1.jpg" alt=""></a></td>
+									<td><a href="images/temp/img3.jpg" class="thumbnail-photo"><img src="images/temp/img3.jpg" alt=""></a></td>
+									<td><a href="images/temp/img1.jpg" class="thumbnail-photo"><img src="images/temp/img1.jpg" alt=""></a></td>
+								</tr>
+								<tr>
+									<td><a href="images/temp/img1.jpg" class="thumbnail-photo"><img src="images/temp/img1.jpg" alt=""></a></td>
+									<td><a href="images/temp/img2.jpg" class="thumbnail-photo"><img src="images/temp/img2.jpg" alt=""></a></td>
+									<td><a href="images/temp/slide_1.jpg" class="thumbnail-photo"><img src="images/temp/slide_1.jpg" alt=""></a></td>
+									<td><a href="images/temp/img1.jpg" class="thumbnail-photo"><img src="images/temp/img1.jpg" alt=""></a></td>
+								</tr>
+								<tr>
+									<td><a href="images/temp/img1.jpg" class="thumbnail-photo"><img src="images/temp/img1.jpg" alt=""></a></td>
+									<td><a href="images/temp/slide_2.jpg" class="thumbnail-photo"><img src="images/temp/slide_2.jpg" alt=""></a></td>
+									<td><a href="images/temp/img2.jpg" class="thumbnail-photo"><img src="images/temp/img2.jpg" alt=""></a></td>
+									<td>
+										<a href="#" class="more-link">
+											<img src="images/temp/img3.jpg" alt="">
+											<span>Смотреть все</span>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<script>
+					$(document).ready(function() {
+						$(".thumbnail").attr('rel', 'fancybox').fancybox({
+							nextClick: true,
+							mouseWheel: true,
+							loop: false,
+							padding: 0,
+							margin: 0,
+							width: 960,
+							maxWidth: 960,
+							caption: {
+								type: 'inside'
+							},
+							helpers: {
+								thumbs: true,
+				                overlay: {
+				                        locked: true
+				                }
+							}
+						});
+						$(".thumbnail-photo").attr('rel', 'fancybox').fancybox({
+							nextClick: true,
+							mouseWheel: true,
+							loop: false,
+							padding: 0,
+							margin: 0,
+							width: 960,
+							maxWidth: 960,
+							caption: {
+								type: 'inside'
+							},
+							helpers: {
+								thumbs: true,
+				                overlay: {
+				                        locked: true
+				                }
+							}
+						});
+					});
+				</script>
+				<h5>Объекты риелтора</h5>
+			</div>
+		</div>
+	</div>
+	<div role="tabpanel" class="tabpanel tabpanel-full">
+		<div class="tabpanel-nav">
+			<div class="container">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Квартиры и комнаты <span class="circle">98</span></a></li>
+					<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab">Дома, участки <span class="circle">980000</span></a></li>
+					<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab">Коммерческая недвижимость  <span class="circle">8</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+//= template/footer.html

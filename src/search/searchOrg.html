@@ -1,0 +1,100 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content search-org">
+			//= template/header.html
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li> /
+						<li><span>Поиск организаций</span></li>
+					</ul>
+				</div>
+				<h2 class="blue">Поиск организаций <span class="cloud">Компании или ИП</span></h2>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs half-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#ip" aria-controls="ip" role="tab" data-toggle="tab"><span>Компания или ИП</span></a></li>
+							<li role="presentation"><a href="#bank" aria-controls="bank" role="tab" data-toggle="tab"><span>Банк</span></a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="ip">
+							<div class="search">
+								<div class="search-min">
+									<div class="search-field full-width">
+										<p>Я ищу:</p>
+										<input type="text" placeholder="Название, ИНН или адрес">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="bank">
+							<div class="search">
+								<div class="search-min">
+									<div class="search-field full-width">
+										<p>Я ищу:</p>
+										<input type="text" placeholder="Введите название банка, БИК или SWIFT">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-organisation">
+					<table>
+						<tr>
+							<td colspan="2">
+								<p>Наименование</p>
+								<p><b>Публичное Акционерное Общество “Сбербанк России”</b></p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<p>Адрес</p>
+								<p><b>Россия, Москва, ул. Молчановка Б., д 21 А</b></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Дата регистрации</p>
+								<p><b>04.10.1996</b></p>
+								Действующий
+							</td>
+							<td>
+								<p>ИНН / ОГРН</p>
+								<p><b>771543236727 / 309774603500246</b></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Код ОФП</p>
+								<p><b>50102</b></p>
+							</td>
+							<td>
+								<p>Код ОКВЕД</p>
+								<p><b>03.01.9</b></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>КПП</p>
+								<p><b>772101001</b></p>
+							</td>
+							<td>
+								<p>Генеральный директор</p>
+								<p><b>Голощапов Сергей Александрович</b></p>
+							</td>
+						</tr>
+					</table>
+					<div class="search-result_info">
+						Сведения актуальны на 30.06.2016
+						<a href="" class="sprite print pull-right">Распечатать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+//= template/footer.html

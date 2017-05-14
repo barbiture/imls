@@ -1,0 +1,56 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content register-page">
+		//= template/header.html
+
+		<div class="container register">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Главная</a></li> /
+					<li><span>Вход в систему</span></li>
+				</ul>
+			</div>
+			<h1>Вход в систему</h1>
+			<div class="conf">
+				<i class="ico-info"></i>
+				<b>Внимание!</b>
+				<p>Для входа в систему введите логин (e-mail) и пароль указанный вами при регистрации. Если вы не зарегистрированы - можете <a href="#">зарегистрироваться</a></br>Если вы забыли пароль - можете <a href="#">восстановить пароль</a></p>
+			</div>
+			<form novalidate="novalidate" action="/User/SignIn" class="register-form" method="post">
+				<label class="register-form_label" for="Email">Логин (E-mail)</label>
+				<div class="register-form_field custom-input-block">
+					<input data-val="true" data-val-length="Максимум 100 символов" data-val-length-max="100" data-val-regex="Неверно указан E-mail" data-val-regex-pattern="^([0-9a-zA-Z]+[-._+&amp;])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$" data-val-required="Обязательное поле" id="Email" name="Email" placeholder="name@yourmail.com" value="" type="text">
+					<span class="field-validation-valid large" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+					<a href="/Registration" class="tdec">Регистрация</a>
+				</div>
+				<label class="register-form_label" for="Password">Пароль</label>
+				<div class="register-form_field custom-input-block">
+					<div class="password sprite">
+						<input data-val="true" data-val-length="Максимум 30 символов" data-val-length-max="30" data-val-required="Обязательное поле" id="Password" name="Password" placeholder="* * * *" value="" type="password">
+						<div class="error"></div>
+						<span class="field-validation-valid large" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+						<a href="/Registration/RestorePassword" class="tdec">Забыли пароль?</a>
+					</div>
+				</div>
+				<div class="register-form_field">
+					<input class="no-border_btn btn_blue" value="Войти" type="submit">
+				</div>
+			</form>
+		</div>
+
+<script>
+	// for full screen background
+	function mh() {
+		var minh = $(window).height() - $('.footer').outerHeight()
+		$('.register-page').css('min-height', minh);
+	};
+	$(document).ready(function () {
+		mh();
+		$(window).on("resize", function () {
+			mh();
+		});
+	});
+</script>
+</div>
+//= template/footer.html

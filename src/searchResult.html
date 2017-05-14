@@ -1,0 +1,1296 @@
+//= template/head.html
+<body>
+	<div class="wrap top-banner">
+		<div class="content search-room">
+			<div class="top-banner-place banner-place">
+				<a href=""><img src="images/temp/banner2.jpg" alt=""></a>
+				<a href="" class="imls-info sprite">
+					ИМЛС МЕДИА
+					<span class="tooltip">ИМЛС МЕДИА - система автоматизированного размещения рекламы на imls.ru</span>
+				</a>
+			</div> 
+			//= template/header.html
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li> /
+						<li><span>Поиск объектов</span></li>
+					</ul>
+				</div>
+				<h2 class="blue">Поиск объектов <span class="cloud">квартиры, комнаты</span></h2>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab"><span>Квартиры и комнаты</span></a></li>
+							<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab"><span>Дома, участки</span></a></li>
+							<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab"><span>Коммерческая недвижимость</span></a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="rooms">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+									<div class="search-banners">
+										<a href="#" target="_blank" class="search-banners_action sprite act3">
+											Хочу привлечь к поиску риелтора
+											<span class="q_info">
+												<span class="tooltip left">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+												</span>
+											</span>
+										</a>
+										<a href="#" target="_blank" class="search-banners_action sprite act1">
+											Хочу автоматизировать поиск
+											<span class="q_info">
+												<span class="tooltip left">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="homes">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="commerce">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="search-result table">
+				<div class="container">
+					<div class="no-border_btn btn_grey" style="width: 260px">Уточнить параметры</div>
+					<div class="no-border_btn btn_red">Новый поиск</div>
+					<div class="search-result-title">
+						<div class="search-result-preferences">
+							Выводить по: 
+							<div class="select-control">
+								<select name="search" id="search-result" class="selectpicker form-control">
+									<option>20</option>
+									<option>30</option>
+									<option>40</option>
+								</select>
+							</div>
+							<span class="tabl active"></span>
+							<span class="list"></span>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-item noborder">
+					<div class="container">
+						<div class="search-result-item_aside">
+							<div class="colorGrey">10 января 2015, 02:02</div>
+							<div class="img-wrap">
+								<div class="img-temp"><img src="images/ui/pic.png" alt=""></div>
+							</div>
+							<div class="prel">
+								<div class="edit-panel ico_group">
+									<ul>
+										<li class="button-dropdown">
+											<a class="ico_notif dropdown-toggle">
+												<span class="tooltip">Создать напоминание</span>
+												<span class="ico_bell-count">5</span>
+											</a>
+											<div class="tooltip add_notif dropdown-modal">
+												<div class="close-tooltip sprite"></div>
+												<div class="wrap-daterange">
+													<div class='input-group date custom-input-block datetimepicker'>
+									                    <input type='text' class="form-control" placeholder="дд.мм.гггг чч.мм" name="date-calend" />
+									                    <span class="input-group-addon">-->
+									                    </span>
+									                </div>
+												</div>
+												<div class="form-control">
+													Через (мин.):
+													<span class="time-check">5</span>
+													<span class="time-check">10</span>
+													<span class="time-check">15</span>
+													<span class="time-check">20</span>
+													<span class="time-check">30</span>
+												</div>
+												<textarea placeholder="Комментарий"></textarea>
+												<span class="subm_btn pull-right">Создать напоминание</span>
+											</div>
+										</li>
+										<li>
+											<a class="ico_star active">
+												<span class="tooltip">Добавить в избранное</span>
+											</a>
+										</li>
+										<li class="button-dropdown">
+											<div class="ico_edit-wrap dropdown-toggle">
+												<a class="ico_edit">
+													<span class="tooltip">Примечание</span>
+												</a>
+											</div>
+											<div class="tooltip add_comment dropdown-modal">
+												<div class="close-tooltip sprite"></div>
+												<textarea>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет... Сигнализация, Охрана... Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,</textarea>
+												<span class="subm_btn">Отправить</span>
+											</div>
+										</li>
+										<li class="button-dropdown">
+											<a class="ico_del dropdown-toggle">
+												<span class="tooltip">Пожаловаться на объект</span>
+												<span class="ico_bell-count">5</span>
+											</a>
+											<div class="tooltip form-complaint dropdown-modal">
+												<div class="close-tooltip sprite"></div>
+												<ul>
+													<li>
+														<input type="radio" name="compl-r" id="compl-1">
+														<label class="sprite dotted-line" for="compl-1">Ложное объявление <span class="dotted"></span><span class="compl-count">2</span></label>
+													</li>
+													<li>
+														<input type="radio" name="compl-r" id="compl-2">
+														<label class="sprite dotted-line" for="compl-2">Объект сдан/продан <span class="dotted"></span><span class="compl-count">2</span></label>
+													</li>
+													<li class="wrong">
+														<input type="radio" name="compl-r" id="compl-3">
+														<label class="sprite dotted-line" for="compl-3">Неверные данные <span class="dotted"></span><span class="compl-count">10</span></label>
+														<ul>
+															<li><input type="checkbox" id="compl-4"><label class="sprite" for="compl-4">Цена объекта</label></li>
+															<li><input type="checkbox" id="compl-5"><label class="sprite" for="compl-5">Комиссия</label></li>
+															<li><input type="checkbox" id="compl-6"><label class="sprite" for="compl-6">Параметры объекта</label></li>
+															<li><input type="checkbox" id="compl-7"><label class="sprite" for="compl-7">Адрес</label></li>
+															<li><input type="checkbox" id="compl-8"><label class="sprite" for="compl-8">Фото</label></li>
+															<li><input type="checkbox" id="compl-9"><label class="sprite" for="compl-9">Контакты</label></li>
+														</ul>
+													</li>
+												</ul>
+												<span class="subm_btn send-complaint">Пожаловаться</span>
+											</div>
+										</li>
+										//= template/share.html
+									</ul>
+								</div>
+							</div>
+							<a href="" data-toggle="modal" data-target="#mediaModal" class="orange-btn prel">+ 50% просмотров<span class="tooltip">Описание медиаматериалов</span>
+							</a>
+							<a href="#" target="_blank" class="orange-btn sprite fast-ico">Сдать быстрее
+								<span class="tooltip">Подтверждение номера телефона необходимо для вашей защиты от несанкционированного</span>
+							</a>
+						</div>
+						<div class="search-result-item_main">
+							<div class="general">
+								<div class="price-block">
+									<div class="sprite cash_ico">
+										<span>400 000 000</span>
+										<span class="total_cost nobr tooltip-toggle">
+										<span class="dashed"><span class="currency">₽</span> общ. ст.</span></span>
+										<div class="tooltip tooltip-click">
+											<div class="close-tooltip sprite"></div>
+											<table>
+												<tr>
+													<th>Ед. измерения</th>
+													<th><div class="sprite rub-ico"></div></th>
+													<th><div class="sprite usd-ico"></div></th>
+													<th><div class="sprite euro-ico"></div></th>
+												</tr>
+												<tr>
+													<td>Общ. ст :</td>
+													<td>400 000 000 000</td>
+													<td>8 000 <sup class="green">*</sup></td>
+													<td>7 500 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст.мес. :</td>
+													<td>400 500</td>
+													<td>8 000 <sup class="green">*</sup></td>
+													<td>7 500 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст. год :</td>
+													<td>400 500</td>
+													<td>6 451 612 <sup class="green">*</sup></td>
+													<td>6 151 612 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст день:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> :</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в месяц:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в год:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в день:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+											</table>
+											<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+										</div>
+									</div>
+									<ul class="colorGrey">
+										<li class="partner_ico sprite">
+											&nbsp;
+											<div class="tooltip">Работаю с посредниками</div>
+										</li>
+										<li class="rate_ico sprite">
+											<p>1% <span class="nobr">(4 000 $)</span></p>
+											<div class="tooltip">Беру комиссию себе</div>
+										</li>
+										<li class="info_ico">
+											<div class="sprite tooltip-toggle"><i>Условия сделки</i></div>
+											<div class="tooltip tooltip-click">
+												<div class="close-tooltip sprite"></div>
+												<p class="sprite icon icon34">Форма сделки:
+													<span>Прямая продажа</span>
+												</p>
+												<p class="sprite icon icon35">Срок: 
+													<span>Длительный</span>
+												</p>
+												<p class="sprite icon icon36">Залог:
+													<span>100% (4 000 000 руб.)</span>
+												</p>
+												<p class="sprite icon icon37">
+													Предоплата:
+													<span>1 месяц</span>
+												</p>
+												<p class="sprite icon icon5">
+													Дополнительно:
+													<span>Можно с детьми, домашними животными</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+									//= template/price-toggle.html
+								</div>
+								<div class="general-title">
+									<div class="local_ico">
+										<span class="hidden_txt"><a href="#" class="sprite dashed">Продаю магазин</a></span>
+									</div>
+									<span class="sprite area_ico"> <b>120</b> м<sup>2</sup></span>
+								</div>
+								<div class="general-adress">
+									<ul>
+										<li>Москва рег., Москва г., Мичуринский пр-кт, д.34
+											Москва рег., Москва г., Мичуринский пр-кт, д.34
+										</li>
+										<li><span class="colorSky">м. Университет,</span>
+											<span class="colorOrange">м. Академическая</span></li>
+										<li class="colorGrey">10 минут транспортом от метро 10 минут транспортом от метро</li>
+									</ul>
+								</div>
+							</div>
+							<div class="main_comment">
+								<div class="info_ico">
+									<div class="sprite tooltip-toggle"><i>Об объекте</i></div>
+									<div class="tooltip align_right tooltip-click">
+										<div class="close-tooltip sprite"></div>
+										<p class="sprite icon icon1">Вид дома:
+											<span>Новостройка</span>
+										</p>
+										<p class="sprite icon icon2">Материал стен: 
+											<span>Монолит</span>
+										</p>
+										<p class="sprite icon icon3">Особенности объекта:
+											<span>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод.</span>
+										</p>
+										<p class="sprite icon icon4">
+											Состояние:
+											<span>Евроремонт</span>
+										</p>
+										<p class="sprite icon icon5">
+											Дополнительно:
+											<span>Мебель, Телефон, Интернет, Сигнализация.</span>
+										</p>
+									</div>
+								</div>
+								<div>Этаж: <b>10/24</b> 
+									Вид дома: <span>новостройка / монолит</span>
+								</div>
+								<div class="box">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate aliquam sequi doloremque! U Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate aliquam sequi doloremque! U <!-- 200 символов -->
+										<span class="hidden">
+											Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+											Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, 
+											Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+										</span>
+										<span class="dot">...</span>
+										<a class="sprite expand_ico open">больше</a>
+									</p>
+								</div>
+							</div>
+							<div class="user_info">
+								<div class="agent-block sprite">
+									<div class="img-wrap">
+										<img src="images/temp/img1.jpg" alt="">
+										<p>ID: <b>6734</b></p>
+									</div>
+									<div class="agent-info">
+										<p class="agent-name">Алексей Сидельников <span class="pro-label">PRO<span class="tooltip">Профессиональный участник</span></span> <span class="partner sprite"><span class="tooltip">Участник системы партнерских продаж</span></span></p>
+										<p class="agent-subtitle">Агентство недвижимости "Центр московской недвижимости имени Ивана Пупкина"</p>
+										<div class="phone">
+											<div class="no-border_btn btn_blue sprite">Показать телефон</div>
+											<div class="show-phone">
+												<span>+7 (926) 212-43-56</span>
+												<span>+7 (926) 234-12-43</span>
+												<p class="sprite">Пожалуйста, скажите что вы нашли это объявление на IMLS.RU</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="right-links">
+									<div class="links collapse-block">
+										<div class="sprite collapse-toggle"></div>
+										<ul>
+											<li class="mail_ico">
+												//= template/mailto.html
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать в чат</a>
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать смс</a>
+											</li>
+										</ul>
+									</div>
+									<div class="agent-links">
+										<div><a href="#" class="sprite al-site">Веб-сайт</a></div>
+										<div><a href="#" class="sprite al-rev">Отзывы</a></div>
+										<div><a href="#" class="sprite al-rait">Оценки</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="more-result-item">Похожие обьявления (2 шт.) <span class="triangle"></span></div>
+					</div>
+				</div>
+				<div class="search-result_hidden">
+					<div class="search-result-item">
+						<div class="container">
+							<div class="search-result-item_aside">
+								<div class="colorGrey">10 января 2015, 02:02</div>
+								<div class="img-wrap">
+									<img src="images/temp/avatar.jpg" alt="">
+									<div class="media-ico">
+										<a href="#" class="sprite s-tour"></a>
+										<a href="#" class="sprite s-video"></a>
+										<a href="#" class="sprite s-photo"><span>10</span></a>
+									</div>
+								</div>
+								<div class="prel">
+									//= template/edit-panel.html
+								</div>
+							</div>
+							<div class="search-result-item_main">
+								<div class="general">
+									<div class="price-block">
+										<div class="sprite cash_ico">
+											<span>400 000 000</span>
+											<span class="total_cost nobr tooltip-toggle">
+											<span class="dashed"><span class="currency">₽</span> общ. ст.</span></span>
+											<div class="tooltip tooltip-click">
+												<div class="close-tooltip sprite"></div>
+												<table>
+													<tr>
+														<th>Ед. измерения</th>
+														<th><div class="sprite rub-ico"></div></th>
+														<th><div class="sprite usd-ico"></div></th>
+														<th><div class="sprite euro-ico"></div></th>
+													</tr>
+													<tr>
+														<td>Общ. ст :</td>
+														<td>400 000 000 000</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст.мес. :</td>
+														<td>400 500</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст. год :</td>
+														<td>400 500</td>
+														<td>6 451 612 <sup class="green">*</sup></td>
+														<td>6 151 612 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> :</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в месяц:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в год:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+												</table>
+												<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+											</div>
+										</div>
+										<ul class="colorGrey">
+											<li class="rate_ico sprite">
+												<p>1% <span class="nobr">(4 000 $)</span></p>
+												<div class="tooltip">Беру комиссию себе</div>
+											</li>
+											<li class="info_ico">
+												<div class="sprite tooltip-toggle"><i>Условия сделки</i></div>
+												<div class="tooltip tooltip-click">
+													<div class="close-tooltip sprite"></div>
+													<p class="sprite icon icon34">Форма сделки:
+														<span>Прямая продажа</span>
+													</p>
+													<p class="sprite icon icon35">Срок: 
+														<span>Длительный</span>
+													</p>
+													<p class="sprite icon icon36">Залог:
+														<span>100% (4 000 000 руб.)</span>
+													</p>
+													<p class="sprite icon icon37">
+														Предоплата:
+														<span>1 месяц</span>
+													</p>
+													<p class="sprite icon icon5">
+														Дополнительно:
+														<span>Можно с детьми, домашними животными</span>
+													</p>
+												</div>
+											</li>
+										</ul>
+										//= template/price-toggle.html
+									</div>
+									<div class="general-title">
+										<div class="local_ico">
+											<span class="hidden_txt"><a href="#" class="sprite dashed">Продаю магазин</a></span>
+										</div>
+										<span class="sprite area_ico"> <b>120</b> м<sup>2</sup></span>
+									</div>
+									<div class="general-adress">
+										<ul>
+											<li>Москва рег., Москва г., Мичуринский пр-кт, д.34</li>
+											<li><span class="colorSky">м. Университет,</span>
+												<span class="colorOrange">м. Академическая</span></li>
+											<li class="colorGrey">10 минут транспортом от метро</li>
+										</ul>
+									</div>
+								</div>
+								<div class="main_comment">
+									<div class="info_ico">
+										<div class="sprite tooltip-toggle"><i>Об объекте</i></div>
+										<div class="tooltip align_right tooltip-click">
+											<div class="close-tooltip sprite"></div>
+											<p class="sprite icon icon1">Вид дома:
+												<span>Новостройка</span>
+											</p>
+											<p class="sprite icon icon2">Материал стен: 
+												<span>Монолит</span>
+											</p>
+											<p class="sprite icon icon3">Особенности объекта:
+												<span>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод.</span>
+											</p>
+											<p class="sprite icon icon4">
+												Состояние:
+												<span>Евроремонт</span>
+											</p>
+											<p class="sprite icon icon5">
+												Дополнительно:
+												<span>Мебель, Телефон, Интернет, Сигнализация.</span>
+											</p>
+										</div>
+									</div>
+									<div>Этаж: <b>10/24</b> 
+										Вид дома: <span>новостройка / монолит</span>
+									</div>
+									<p>
+										Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+										Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+										Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+									</p>
+								</div>
+								<div class="user_info">
+									<div class="agent-block sprite">
+										<div class="img-wrap">
+											<img src="images/ui/ava_m.png" alt="">
+											<p>ID: <b>6734</b></p>
+										</div>
+										<div class="agent-info">
+											<p class="agent-name">Алексей Сидельников</p>
+											<p class="agent-subtitle">Агентство недвижимости</p>
+											<div class="phone">
+												<div class="no-border_btn btn_blue sprite">Показать телефон</div>
+												<div class="show-phone">
+													<span>+7 (926) 212-43-56</span>
+													<span>+7 (926) 234-12-43</span>
+													<p class="sprite">Пожалуйста, скажите что вы нашли это объявление на IMLS.RU</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="right-links">
+									<div class="links collapse-block">
+										<div class="sprite collapse-toggle"></div>
+										<ul>
+											<li class="mail_ico">
+												//= template/mailto.html
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать в чат</a>
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать смс</a>
+											</li>
+										</ul>
+									</div>
+									<div class="agent-links">
+										<div><a href="#" class="sprite al-site">Веб-сайт</a></div>
+										<div><a href="#" class="sprite al-rev">Отзывы</a></div>
+										<div><a href="#" class="sprite al-rait">Оценки</a></div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search-result-item">
+						<div class="container">
+							<div class="search-result-item_aside">
+								<div class="colorGrey">10 января 2015, 02:02</div>
+								<div class="img-wrap">
+									<img src="images/temp/home.jpg" alt="">
+									<div class="media-ico">
+										<a href="#" class="sprite s-tour"></a>
+										<a href="#" class="sprite s-video"></a>
+										<a href="#" class="sprite s-photo"><span>10</span></a>
+									</div>
+								</div>
+								<div class="prel">
+									//= template/edit-panel.html
+								</div>
+							</div>
+							<div class="search-result-item_main">
+								<div class="general">
+									<div class="price-block">
+										<div class="sprite cash_ico">
+											<span>400 000 000</span>
+											<span class="total_cost nobr tooltip-toggle">
+											<span class="dashed"><span class="currency">₽</span> общ. ст.</span></span>
+											<div class="tooltip tooltip-click">
+												<div class="close-tooltip sprite"></div>
+												<table>
+													<tr>
+														<th>Ед. измерения</th>
+														<th><div class="sprite rub-ico"></div></th>
+														<th><div class="sprite usd-ico"></div></th>
+														<th><div class="sprite euro-ico"></div></th>
+													</tr>
+													<tr>
+														<td>Общ. ст :</td>
+														<td>400 000 000 000</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст.мес. :</td>
+														<td>400 500</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст. год :</td>
+														<td>400 500</td>
+														<td>6 451 612 <sup class="green">*</sup></td>
+														<td>6 151 612 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> :</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в месяц:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в год:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+												</table>
+												<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+											</div>
+										</div>
+										<ul class="colorGrey">
+											<li class="rate_ico sprite">
+												<p>1% <span class="nobr">(4 000 $)</span></p>
+												<div class="tooltip">Беру комиссию себе</div>
+											</li>
+											<li class="info_ico">
+												<div class="sprite tooltip-toggle"><i>Условия сделки</i></div>
+												<div class="tooltip tooltip-click">
+													<div class="close-tooltip sprite"></div>
+													<p class="sprite icon icon34">Форма сделки:
+														<span>Прямая продажа</span>
+													</p>
+													<p class="sprite icon icon35">Срок: 
+														<span>Длительный</span>
+													</p>
+													<p class="sprite icon icon36">Залог:
+														<span>100% (4 000 000 руб.)</span>
+													</p>
+													<p class="sprite icon icon37">
+														Предоплата:
+														<span>1 месяц</span>
+													</p>
+													<p class="sprite icon icon5">
+														Дополнительно:
+														<span>Можно с детьми, домашними животными</span>
+													</p>
+												</div>
+											</li>
+										</ul>
+										//= template/price-toggle.html
+									</div>
+									<div class="general-title">
+										<div class="local_ico">
+											<span class="hidden_txt"><a href="#" class="sprite dashed">Продаю магазин</a></span>
+										</div>
+										<span class="sprite area_ico"> <b>120</b> м<sup>2</sup></span>
+									</div>
+									<div class="general-adress">
+										<ul>
+											<li>Москва рег., Москва г., Мичуринский пр-кт, д.34</li>
+											<li><span class="colorSky">м. Университет,</span>
+												<span class="colorOrange">м. Академическая</span></li>
+											<li class="colorGrey">10 минут транспортом от метро</li>
+										</ul>
+									</div>
+								</div>
+								<div class="main_comment">
+									<div class="info_ico">
+										<div class="sprite tooltip-toggle"><i>Об объекте</i></div>
+										<div class="tooltip align_right tooltip-click">
+											<div class="close-tooltip sprite"></div>
+											<p class="sprite icon icon1">Вид дома:
+												<span>Новостройка</span>
+											</p>
+											<p class="sprite icon icon2">Материал стен: 
+												<span>Монолит</span>
+											</p>
+											<p class="sprite icon icon3">Особенности объекта:
+												<span>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод.</span>
+											</p>
+											<p class="sprite icon icon4">
+												Состояние:
+												<span>Евроремонт</span>
+											</p>
+											<p class="sprite icon icon5">
+												Дополнительно:
+												<span>Мебель, Телефон, Интернет, Сигнализация.</span>
+											</p>
+										</div>
+									</div>
+									<div>Этаж: <b>10/24</b> 
+										Вид дома: <span>новостройка / монолит</span>
+									</div>
+									<p>
+										Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+										Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+										Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+									</p>
+								</div>
+								<div class="user_info">
+									<div class="agent-block sprite">
+										<div class="img-wrap">
+											<img src="images/ui/ava_m.png" alt="">
+											<p>ID: <b>6734</b></p>
+										</div>
+										<div class="agent-info">
+											<p class="agent-name">Алексей Сидельников</p>
+											<p class="agent-subtitle">Агентство недвижимости</p>
+											<div class="phone">
+												<div class="no-border_btn btn_blue sprite">Показать телефон</div>
+												<div class="show-phone">
+													<span>+7 (926) 212-43-56</span>
+													<span>+7 (926) 234-12-43</span>
+													<p class="sprite">Пожалуйста, скажите что вы нашли это объявление на IMLS.RU</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="right-links">
+									<div class="links collapse-block">
+										<div class="sprite collapse-toggle"></div>
+										<ul>
+											<li class="mail_ico">
+												//= template/mailto.html
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать в чат</a>
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать смс</a>
+											</li>
+										</ul>
+									</div>
+									<div class="agent-links">
+										<div><a href="#" class="sprite al-site">Веб-сайт</a></div>
+										<div><a href="#" class="sprite al-rev">Отзывы</a></div>
+										<div><a href="#" class="sprite al-rait">Оценки</a></div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-item">
+					<div class="container">
+						<div class="search-result-item_aside">
+							<div class="colorGrey">10 января 2015, 02:02</div>
+							<div class="img-wrap">
+								<img src="images/temp/home.jpg" alt="">
+								<div class="media-ico">
+									<a href="#" class="sprite s-tour"></a>
+									<a href="#" class="sprite s-video"></a>
+									<a href="#" class="sprite s-photo"><span>10</span></a>
+								</div>
+							</div>
+							<div class="prel">
+								//= template/edit-panel.html
+							</div>
+						</div>
+						<div class="search-result-item_main">
+							<div class="general">
+								<div class="price-block">
+									<div class="sprite cash_ico">
+										<span>400 000 000</span>
+										<span class="total_cost nobr tooltip-toggle">
+										<span class="dashed"><span class="currency">₽</span> общ. ст.</span></span>
+										<div class="tooltip tooltip-click">
+											<div class="close-tooltip sprite"></div>
+											<table>
+												<tr>
+													<th>Ед. измерения</th>
+													<th><div class="sprite rub-ico"></div></th>
+													<th><div class="sprite usd-ico"></div></th>
+													<th><div class="sprite euro-ico"></div></th>
+												</tr>
+												<tr>
+													<td>Общ. ст :</td>
+													<td>400 000 000 000</td>
+													<td>8 000 <sup class="green">*</sup></td>
+													<td>7 500 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст.мес. :</td>
+													<td>400 500</td>
+													<td>8 000 <sup class="green">*</sup></td>
+													<td>7 500 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст. год :</td>
+													<td>400 500</td>
+													<td>6 451 612 <sup class="green">*</sup></td>
+													<td>6 151 612 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>Общ. ст день:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> :</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в месяц:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в год:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+												<tr>
+													<td>М<sup>2</sup> в день:</td>
+													<td>6 500</td>
+													<td>100 <sup class="green">*</sup></td>
+													<td>95 <sup class="green">*</sup></td>
+												</tr>
+											</table>
+											<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+										</div>
+									</div>
+									<ul class="colorGrey">
+										<li class="bonus_ico sprite">
+											<p>2% <span class="nobr">(8 000 $)</span></p>
+											<div class="tooltip">Плачу комиссию посреднику</div>
+										</li>
+										<li class="info_ico">
+											<div class="sprite tooltip-toggle"><i>Условия сделки</i></div>
+											<div class="tooltip tooltip-click">
+												<div class="close-tooltip sprite"></div>
+												<p class="sprite icon icon34">Форма сделки:
+													<span>Прямая продажа</span>
+												</p>
+												<p class="sprite icon icon35">Срок: 
+													<span>Длительный</span>
+												</p>
+												<p class="sprite icon icon36">Залог:
+													<span>100% (4 000 000 руб.)</span>
+												</p>
+												<p class="sprite icon icon37">
+													Предоплата:
+													<span>1 месяц</span>
+												</p>
+												<p class="sprite icon icon5">
+													Дополнительно:
+													<span>Можно с детьми, домашними животными</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+									//= template/price-toggle.html
+								</div>
+								<div class="general-title">
+									<div class="local_ico">
+										<span class="hidden_txt"><a href="#" class="sprite dashed">Продаю магазин</a></span>
+									</div>
+									<span class="sprite area_ico"> <b>120</b> м<sup>2</sup></span>
+								</div>
+								<div class="general-adress">
+									<ul>
+										<li>Москва рег., Москва г., Мичуринский пр-кт, д.34</li>
+										<li><span class="colorSky">м. Университет,</span>
+											<span class="colorOrange">м. Академическая</span></li>
+										<li class="colorGrey">10 минут транспортом от метро</li>
+									</ul>
+								</div>
+							</div>
+							<div class="main_comment">
+								<div class="info_ico">
+									<div class="sprite tooltip-toggle"><i>Об объекте</i></div>
+									<div class="tooltip align_right tooltip-click">
+										<div class="close-tooltip sprite"></div>
+										<p class="sprite icon icon1">Вид дома:
+											<span>Новостройка</span>
+										</p>
+										<p class="sprite icon icon2">Материал стен: 
+											<span>Монолит</span>
+										</p>
+										<p class="sprite icon icon3">Особенности объекта:
+											<span>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод.</span>
+										</p>
+										<p class="sprite icon icon4">
+											Состояние:
+											<span>Евроремонт</span>
+										</p>
+										<p class="sprite icon icon5">
+											Дополнительно:
+											<span>Мебель, Телефон, Интернет, Сигнализация.</span>
+										</p>
+									</div>
+								</div>
+								<div>Этаж: <b>10/24</b> 
+									Вид дома: <span>новостройка / монолит</span>
+								</div>
+								<p>
+									Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+									Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+									Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+								</p>
+							</div>
+							<div class="user_info">
+								<div class="agent-block sprite">
+									<div class="agent-info">
+										<p class="agent-name">Алексей Сидельников</p>
+										<p class="agent-subtitle">Агентство недвижимости</p>
+										<div class="phone">
+											<div class="no-border_btn btn_blue sprite">Показать телефон</div>
+											<div class="show-phone">
+												<span>+7 (926) 212-43-56</span>
+												<span>+7 (926) 234-12-43</span>
+												<p class="sprite">Пожалуйста, скажите что вы нашли это объявление на IMLS.RU</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="right-links">
+									<div class="links collapse-block">
+										<div class="sprite collapse-toggle"></div>
+										<ul>
+											<li class="mail_ico">
+												//= template/mailto.html
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать в чат</a>
+											</li>
+											<li class="collapse-hidden">
+												<a href="#">Написать смс</a>
+											</li>
+										</ul>
+									</div>
+									<div class="agent-links">
+										<div><a href="#" class="sprite al-site">Веб-сайт</a></div>
+										<div><a href="#" class="sprite al-rev">Отзывы</a></div>
+										<div><a href="#" class="sprite al-rait">Оценки</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-result-item premium">
+					<div class="container">
+						//= template/object-item.html
+					</div>
+				</div>
+				<div class="container">
+					<div class="search-banners">
+						<a href="#" target="_blank" class="search-banners_action sprite act3">
+							Хочу привлечь риелтора
+							<span class="q_info">
+								<span class="tooltip left">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+								</span>
+							</span>
+						</a>
+						<a href="#" target="_blank" class="search-banners_action sprite act1">
+							Хочу автоматизировать поиск
+							<span class="q_info">
+								<span class="tooltip left">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="pagination">
+					<div class="container">
+						<div class="search-result-preferences">
+							Выводить по: 
+							<div class="select-control">
+								<select name="search" id="search-result" class="selectpicker form-control">
+									<option>20</option>
+									<option>30</option>
+									<option>40</option>
+								</select>
+							</div>
+						</div>
+						<div class="pagination_list">
+							<ul>
+								<li><a href="#" class="prew"></a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#" class="next"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mediaModal" class="modal fade styled-modal" tabindex="-1" role="dialog" aria-labelledby="mediaModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: #fff">
+					<div class="modal-header">
+						<div class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></div>
+					</div>
+					<div class="modal-body">
+						<div class="modal-title">Описание медиаматериалов</div>
+						<div role="tabpanel" class="tabpanel pref-tabs">
+							<div class="tabpanel-nav">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active"><a href="#photo" aria-controls="photo" role="tab" data-toggle="tab"><span class="sprite tab-photo"></span> Фотосъемка</a></li>
+									<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab"><span class="sprite tab-video"></span> Видеоролик</a></li>
+									<li role="presentation"><a href="#tour" aria-controls="tour" role="tab" data-toggle="tab"><span class="sprite tab-tour"></span> 3D-тур</a></li>
+									<li role="presentation"><a href="#aero" aria-controls="aero" role="tab" data-toggle="tab"><span class="sprite tab-aero"></span> Аэросъемка</a></li>
+								</ul>
+							</div>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="photo">
+									<div class="tab-title">Заказав фотосъемку Вы получите:</div>
+									<div class="tab-block sprite ico-lightning">
+										<div class="tab-subtitle">
+											Уникальное преимущество перед конкурентами
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip align-right">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/vip4.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-block sprite ico-photo">
+										<div class="tab-subtitle">Профессиональную фотосъемку Вашего объекта недвижимости 
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/presentation.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-block sprite ico-checked">
+										<div class="tab-subtitle">
+											Отметку объявления специальным знаком (фото проверено <span class="sprite photo-small"></span> )
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/vip8.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-block sprite ico-bonus">
+										<div class="tab-subtitle">Бонус! Бесплатное подключение рекламных услуг сроком на 7 суток!</div>
+										<div>
+											–   «VIP»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/promo.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div>
+											–   «Премиум»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/web.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div>
+											–   «Поднять»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/presentation.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div>
+											–   «Выделить»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/presentation.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="total">
+										Стоимость (без лого ИМЛС): <b>3000</b> руб.
+										<a href="" class="no-border_btn orange-btn">Заказать фотосъемку</a>
+									</div>
+									<div class="total">
+										Стоимость (с лого ИМЛС): <b>2500</b> руб.
+										<a href="" class="no-border_btn orange-btn">Заказать фотосъемку</a>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="video">
+									<div class="tab-title">Заказав ролик Вы получите: </div>
+									<div class="tab-block sprite ico-lightningR">
+										<div class="tab-subtitle">
+											Уникальное преимущество перед конкурентами
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip align-right">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/vip4.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-block sprite ico-video">
+										<div class="tab-subtitle">Видеоролик с музыкальным сопровождением из Ваших фото, и дополненой графикой 
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/presentation.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-block sprite ico-checkedR">
+										<div class="tab-subtitle">
+											Отметку объявления специальным знаком (видео проверено  <span class="sprite video-small"></span> )
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/vip8.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-block sprite ico-youtube">
+										<div class="tab-subtitle">Размещения ролика на своем канале в Youtube.com
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/vip8.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-block sprite ico-bonusR">
+										<div class="tab-subtitle">Бонус! Бесплатное подключение рекламных услуг сроком на 3 суток!</div>
+										<div>
+											–   «VIP»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/promo.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div>
+											–   «Премиум»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/web.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div>
+											–   «Поднять»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/presentation.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div>
+											–   «Выделить»
+											<div class="q_info">
+												<div class="tooltip-toggle"></div>
+												<div class="screen-tooltip tooltip-click tooltip">
+													<div class="close-tooltip sprite"></div>
+													<div class="screen-tooltip-content"><img src="images/screen/presentation.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="total">
+										<span class="colorGrey">Статус заказа:</span> <span class="colorGreen">Выполнена (29.05.2016, 13:00)</span>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="tour">
+									<div class="not-available">
+										<div class="not-available_title">В Вашем регионе данная услуга недоступна</div>
+										<div class="sprite ico-contractorBig"></div>
+										<a href="">Хочу стать подрядчиком по изготовлению медиаматериалов</a>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="aero">
+									<div class="not-available">
+										<div class="not-available_title">В Вашем регионе данная услуга недоступна</div>
+										<div class="sprite ico-contractorBig"></div>
+										<a href="">Хочу стать подрядчиком по изготовлению медиаматериалов</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+//= template/footer.html

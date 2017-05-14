@@ -1,0 +1,335 @@
+//= template/head.html
+<style>
+	.map_site{
+		margin: 50px 0;
+		float: left;
+		border-right: dashed 2px #ccc;
+		padding: 0 30px;
+		width: 50%;
+	}
+	.map_site:last-child{
+		border-right-color: transparent;
+	}
+	.map_site a,
+	.map_site span{
+		display: block;
+		margin-bottom: 5px;
+	}
+	.map_site .dir_1{
+		margin-left: 15px;
+	}
+	.map_site .dir_2{
+		margin-left: 30px;
+	}
+	.map_site .dir_3{
+		margin-left: 40px;
+	}
+	.map_site .dir_4{
+		margin-left: 50px;
+	}
+	.map_site .dir_5{
+		margin-left: 60px;
+	}
+	.map_site .no{
+		color: darkred;
+		display: inline-block;
+	}
+	.no_psd {
+		color: #00B05A;
+	}
+</style>
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+<div class="container">
+	<div class="map_site">
+		<h1>Public</h1>
+		<a class="dir_1 root" href="main.html">Главная</a>
+		<span class="dir_1">КУПИТЬ / СНЯТЬ</span>
+			<span class="dir_2" >Поиск недвижимости (поиск объектов)</span>
+				<span class="dir_3" >Квартиры</span>
+					<a class="dir_4" href="search.html">Форма поиска</a>
+					<span class="dir_4">Выдача</span>
+						<a class="dir_5" href="resultShort.html">Сокращенная</a>
+						<a class="dir_5" href="searchResult.html">Полная</a>
+						<a class="dir_5" href="searchMap.html">Полная с картой</a>
+					<a class="dir_4" href="home_details.html">Карточка объекта</a>
+				<span class="dir_3" >Дома/участки</span>
+					<a class="dir_4" href="search.html">Форма поиска</a>
+					<span class="dir_4">Выдача</span>
+						<a class="dir_5" href="resultShort.html
+						">Сокращенная</a>
+						<a class="dir_5 no_psd" href="searchResult_land.html">Полная</a>
+					<a class="dir_4" href="residential_details_house.html">Карточка объекта(дом)</a>
+					<a class="dir_4" href="residential_details_land.html">Карточка объекта(участок)</a>
+				<span class="dir_3" >Коммерческая</span>
+					<a class="dir_4" href="search.html">Форма поиска</a>
+					<span class="dir_4">Выдача</span>
+						<a class="dir_5" href="resultShort.html">Сокращенная</a>
+						<a class="dir_5" href="search.html">Полная</a>
+					<a class="dir_4" href="commercial_details.html">Карточка объекта (+ окна "Написать письмо" и "Поделиться")</a>
+				<span class="dir_3">ЖК</span>
+					<a class="dir_4 no_psd" href="searchJK.html">Форма поиска</a>
+					<span class="dir_4">Выдача</span>
+						<a class="dir_5 no_psd" href="searchResultJk.html">Полная</a>
+			<a class="dir_2" href="placeRequest.html">Разместить запрос</a>
+			<a class="dir_2" href="buyApplicationAgent.html">Заявка агенту </a>
+
+		<span class="dir_1">ПРОДАТЬ / СДАТЬ (Поиск клиента)</span>
+			<span class="dir_2" href="">Квартиры</span>
+				<a class="dir_3" href="search.html">Форма поиска</a>
+				<a class="dir_3 no_psd" href="searchClient.html">Выдача</a>
+				<a class="dir_3" href="request.html">Карточка запроса</a>
+				
+			<span class="dir_2" href="">Дома/участки</span>
+				<a class="dir_3" href="searchResult.html">Форма поиска</a>
+				<a class="dir_3 no_psd" href="searchClient.html">Выдача</a>
+				<a class="dir_3" href="request.html">Карточка запроса</a>
+
+			<span class="dir_2" href="">Коммерческая</span>
+				<a class="dir_3" href="search.html">Форма поиска</a>
+				<a class="dir_3 no_psd" href="searchClient.html">Выдача</a>
+				<a class="dir_3" href="request.html">Карточка запроса</a>
+
+		<span class="dir_1">Поиск запросов.</span>
+			<a class="dir_2 no_psd" href="RequestHomeRe.html">Форма поиска. Выдача.</a>
+		<span class="dir_1">Поиск агенства недвижимости</span>
+			<a class="dir_2" href="searchAgentForm.html">Поиск агенства недвижимости (Форма поиска)</a>
+			<a class="dir_2" href="searchAgent.html">Поиск агенства недвижимости (Выдача)</a>
+		<span class="dir_1">Поиск организаций.</span>
+			<a class="dir_2" href="searchOrg.html">Компания или ИП</a>
+			<a class="dir_2" href="searchBank.html">Банк</a>
+			<a class="dir_2" href="searchEmpty.html">Пустой поиск (до результатов)</a>
+		<span class="dir_1">Поиск займов</span>
+			<a class="dir_2 no_psd" href="searchLoan.html">Поиск займов</a>
+		<a class="dir_1" href="placeObject.html">Добавить объект</a>
+		<a class="dir_1" href="AdvertiseObject.html">Рекламировать объект</a>
+		<a class="dir_1" href="SaleApplicationAgent.html">Заявка агенту</a>
+		<span class="dir_1">ПОЧЕМУ ВЫГОДНО С ИМЛС?</span>
+			<a class="dir_2" href="landingRealEstateAgencies.html">Агентствам недвижимости (лендинг)</a>
+			<a class="dir_2" href="RealEstateAgencies.html">Агентствам недвижимости</a>
+			<a class="dir_2" href="landingRealEstateOwners.html">Собственникам недвижимости (лендинг)</a>
+			<a class="dir_2" href="RealEstateOwners.html">Собственникам недвижимости</a>
+			<a class="dir_2" href="landingSeekerRealEstate.html">Ищущим недвижимость (лендинг)</a>
+			<a class="dir_2" href="SeekerRealEstate.html">Ищущим недвижимость</a>
+		<span class="dir_1">АГЕНТАМ И АГЕНТСТВАМ</span>
+			<a class="dir_2" href="RealEstateDatabaseImls.html">База недвижимости ИМЛС</a>
+			<a class="dir_2" href="RealEstateAgencies.html">Реклама объектов</a>
+			<a class="dir_2" href="receiptApplications.html">Получение заявок</a>
+		<a class="dir_1" href="XmlDownloads.html">XML - загрузка</a>
+		<a class="dir_1" href="News.html">Новости</a>
+			<a class="dir_2" href="News-item.html">Страница новости</a>
+		<a class="dir_1" href="faq.html">Вопросы и ответы</a>
+		<span class="dir_1">Тарифы</span>
+			<a class="dir_2" href="tarif.html">Стоимость размещения</a>
+			<a class="dir_2" href="tarif-media.html">Медиауслуги</a>
+			<a class="dir_2" href="plan.html">Тарифные планы (Застройщики)</a>
+			<a class="dir_2" href="planR.html">Тарифные планы (риелторы)</a>
+		<a class="dir_1" href="price.html">Карта цен</a>
+		<span class="dir_1">Рекламные услуги</span>
+			<a class="dir_2" href="servis.html">Рекламные услуги (Размещение объявления)</a>
+			<a class="dir_2" href="servisRequest.html">Рекламные услуги (Запросы)</a>
+		<a class="dir_1" href="ContactInformation.html">Контакты</a>
+		<span class="dir_1">Регистрация</span>
+			<a class="dir_2" href="Registration0.html">Регистрация (статус)</a>
+			<a class="dir_2" href="Registration.html">Регистрация (форма)</a>
+			<a class="dir_2" href="Registration_step2.html">Регистрация (подтверждение)</a>
+		<a class="dir_1 no_psd" href="SignIn.html">Авторизация (форма)</a>
+			<a class="dir_2 no_psd" href="RestorePassword.html">Восстановление пароля</a>
+			<a class="dir_2 no_psd" href="RestorePassword_step2.html">Восстановление пароля (письмо отправлено)</a>
+		<a class="dir_1" href="404.html">404</a>
+		<a class="dir_1" href="500.html">500</a>
+		<a class="dir_1" href="http://html.rozart.ru/imls/imls_landing/">лендинг</a>
+
+		<span class="dir_1">Промо страницы</span>
+			<a class="dir_2" href="promo.html">Сделаем промо-сайты</a>
+			<a class="dir_2" href="promoImls.html">Опубликуем объявление</a>
+			<a class="dir_2" href="promoList.html">Сделаем листовки</a>
+			<a class="dir_2" href="promoPlace.html">Разместим в сети интернет</a>
+			<a class="dir_2" href="promoPr.html">Подготовим презентации</a>
+			<a class="dir_2" href="promoVideo.html">Изготовим видеоролик</a>
+			<a class="dir_2" href="promoPersonal.html">Создание персонального сайта</a>
+
+		<span class="dir_1">Каталог</span>
+			<a class="dir_2" href="catalog.html">Каталог - Города</a>
+			<a class="dir_2" href="catalog2.html">Каталог - тип операции</a>
+			<a class="dir_2" href="catalog3.html">Каталог - Уточнение поиска</a>
+			<a class="dir_2" href="catalog4.html">Каталог - Новостройки</a>
+			<a class="dir_2" href="catalog5.html">Каталог - Новостройки</a>
+			<a class="dir_2" href="catalog6.html">Каталог - Результаты поиска</a>
+	</div>
+	<div class="map_site">
+		<h1>Personal</h1>
+		<a class="dir_1 root" href="main-reg.html">Центральная страница</a>
+		<span class="dir_1">Мои объекты</span>
+			<span class="dir_2">Жилая</span>
+				<a class="dir_3 no_psd" href="myObject.html">Список объектов</a>
+					<a class="dir_4 no_psd" href="myObject.html">Опубликовано</a>
+					<a class="dir_4" href="myObjectArhive.html">Снято с публикации (архив)</a>
+					<a class="dir_4" href="myObjectDraft.html">Снято с публикации (черновик)</a>
+				<span class="dir_3">Форма добавления/редактирования</span>
+					<a class="dir_4" href="objCreateOrEdit0.html">Шаг 0 статус</a>
+					<a class="dir_4" href="chooseType.html">Шаг 0 Тип недвижимости</a>
+					<a class="dir_4" href="objCreateOrEdit.html">Шаг 1</a>
+					<a class="dir_4" href="objCreateOrEdit_step2.html">Шаг 2</a>
+					<a class="dir_4" href="objCreateOrEdit_step3.html">Шаг 3</a>
+					<a class="dir_4" href="objCreateOrEdit_step4.html">Шаг 4</a>
+
+			<span class="dir_2">Загородная</span>
+				<a class="dir_3 no_psd" href="myObject.html">Список объектов</a>
+					<a class="dir_4 no_psd" href="myObject.html">Опубликовано</a>
+					<a class="dir_4" href="myObject.html">Снято с публикации</a>
+				<span class="dir_3">Форма добавления/редактирования</span>
+					<a class="dir_4" href="objCreateOrEdit0.html">Шаг 0 статус</a>
+					<a class="dir_4" href="chooseType.html">Шаг 0 Тип недвижимости</a>
+					<a class="dir_4" href="objCreateOrEdit_land.html">Шаг 1</a>
+					<a class="dir_4" href="objCreateOrEdit_step2.html">Шаг 2</a>
+					<a class="dir_4" href="objCreateOrEdit_step3.html">Шаг 3</a>
+					<a class="dir_4" href="objCreateOrEdit_step4.html">Шаг 4</a>
+
+			<span class="dir_2">Коммерческая</span>
+				<a class="dir_3 no_psd" href="myObject.html">Список объектов</a>
+					<a class="dir_4 no_psd" href="myObject.html">Опубликовано</a>
+					<a class="dir_4" href="myObject.html">Снято с публикации</a>
+				<span class="dir_3">Форма добавления/редактирования</span>
+					<a class="dir_4" href="objCreateOrEdit0.html">Шаг 0 статус</a>
+					<a class="dir_4" href="chooseType.html">Шаг 0 Тип недвижимости</a>
+					<a class="dir_4" href="objCreateOrEdit_commercial.html">Шаг 1</a>
+					<a class="dir_4" href="objCreateOrEdit_step2.html">Шаг 2</a>
+					<a class="dir_4" href="objCreateOrEdit_step3.html">Шаг 3</a>
+					<a class="dir_4" href="objCreateOrEdit_step4.html">Шаг 4</a>
+
+		<span class="dir_1">Мои запросы</span>
+
+			<span class="dir_2">Жилая</span>
+				<span class="dir_3">Список запросов</span>
+					<a class="dir_4 no_psd" href="myRequestList.html">Опубликовано</a>
+					<a class="dir_4" href="myRequestListArhive.html">Снято с публикации (архив)</a>
+					<a class="dir_4" href="myRequestListDraft.html">Снято с публикации (черновики)</a>
+				<span class="dir_3">Форма добавления/редактирования</span>
+					<a class="dir_4" href="RequestCreateOrEdit0.html">Шаг 0 статус</a>
+					<a class="dir_4" href="chooseType.html">Шаг 0 Тип недвижимости</a>
+					<a class="dir_4" href="RequestCreateOrEdit.html">Шаг 1 «Запрос» (аренда)</a>
+					<a class="dir_4" href="RequestCreateOrEdit_sale.html">Шаг 1 «Запрос» (покупка)</a>
+					<a class="dir_4" href="RequestCreateOrEdit_step2.html">Шаг 2 «Контакты»</a>
+					<a class="dir_4" href="RequestCreateOrEdit_step3.html">Шаг 3 «Реклама»</a>
+					<a class="dir_4 no_psd" href="RequestCreateOrEdit_step3-unpub.html">Шаг 3 «Реклама» (Если объявление не опубликовано)</a>
+
+			<span class="dir_2">Загородная</span>
+				<span class="dir_3">Список запросов</span>
+					<a class="dir_4 no_psd" href="myRequestList.html">Опубликовано</a>
+					<a class="dir_4" href="myRequestListArhive.html">Снято с публикации (архив)</a>
+					<a class="dir_4" href="myRequestListDraft.html">Снято с публикации (черновики)</a>
+				<span class="dir_3">Форма добавления/редактирования</span>
+					<a class="dir_4" href="RequestCreateOrEdit0.html">Шаг 0 статус</a>
+					<a class="dir_4" href="chooseType.html">Шаг 0 Тип недвижимости</a>
+					<a class="dir_4" href="RequestCreateOrEdit_land.html">Шаг 1 «Запрос» (покупка)</a>
+					<a class="dir_4" href="RequestCreateOrEdit_land2.html">Шаг 1 «Запрос» (аренда - Участок)</a>
+					<a class="dir_4" href="RequestCreateOrEdit_house.html">Шаг 1 «Запрос» (аренда - дом)</a>
+					<a class="dir_4" href="RequestCreateOrEdit_step2.html">Шаг 2 «Контакты»</a>
+					<a class="dir_4" href="RequestCreateOrEdit_step3.html">Шаг 3 «Реклама»</a>
+
+			<span class="dir_2">Коммерческая</span>
+				<span class="dir_3">Список запросов</span>
+					<a class="dir_4 no_psd" href="myRequestList.html">Опубликовано</a>
+					<a class="dir_4" href="myRequestListArhive.html">Снято с публикации (архив)</a>
+					<a class="dir_4" href="myRequestListDraft.html">Снято с публикации (черновики)</a>
+				<span class="dir_3">Форма добавления/редактирования</span>
+					<a class="dir_4" href="RequestCreateOrEdit0.html">Шаг 0 статус</a>
+					<a class="dir_4" href="chooseType.html">Шаг 0 Тип недвижимости</a>
+					<a class="dir_4" href="RequestCreateOrEdit_commercial.html">Шаг 1 «Запрос»</a>
+					<a class="dir_4" href="RequestCreateOrEdit_step2.html">Шаг 2 «Контакты»</a>
+					<a class="dir_4" href="RequestCreateOrEdit_step3.html">Шаг 3 «Реклама»</a>
+
+		<span class="dir_1">Совпадения</span>
+			<a href="requestObject.html" class="dir_2">Все</a>
+			<a href="requestObjectWork.html" class="dir_2">В работе</a>
+			<a href="requestObjectSelect.html" class="dir_2">Отобрано</a>
+			<a href="requestObjectClient.html" class="dir_2">Запросы клиента с совпадением объектов</a>
+			<a href="requestClient.html" class="dir_2">Объекты клиента с совпадением запросов</a>
+			<a href="objectForRequest.html" class="dir_2">Объекты для запроса</a>
+
+		<span class="dir_1">Мои клиенты</span>
+			<a class="dir_2" href="clientObject.html">Объекты клиента</a>
+			<a class="dir_2 no_psd" href="clientRequest.html">Запросы клиента</a>
+			<a class="dir_2 no_psd" href="client.html">Карточка клиента</a>
+			<a class="dir_2 no_psd" href="myClient.html">Список клиентов</a>
+			<a class="dir_2" href="myClientDraft.html">Список клиентов(черновики)</a>
+			<a class="dir_2" href="myClientArhive.html">Список клиентов(архив)</a>
+			<a class="dir_2" href="myClientCreateOrEdit(v.2).html">Форма добавления/редактирования</a>
+		<a href="myAgent.html" class="dir_1 no_psd">Мои агенты</a>
+		<a href="RequestMember.html" class="dir_1 no_psd">Мои приглашения</a>
+		<span class="dir_1">мое избранное</span>
+			<a class="dir_2" href="favObject.html">Избранные объекты</a>
+			<a class="dir_2" href="favRequest.html">Избранные Запросы</a>
+
+		<span class="dir_1">Финансы</span>
+			<a class="dir_2" href="finances.html">Финансы</a>
+			<a class="dir_2" href="balances.html">Баланс</a>
+			<a class="dir_2" href="balances_step2.html">Пополнение баланса</a>
+			<a class="dir_2" href="pay.html">Оплата</a>
+
+		<span class="dir_1">XML - загрузка объектов в ИМЛС</span>
+			<a class="dir_2" href="XML.html">XML - загрузка объектов в ИМЛС</a>
+			<a class="dir_2" href="XMLauto.html">XML - загрузка объектов в ИМЛС (автоматическая)</a>
+			<a class="dir_2" href="XMLsettings.html">XML - загрузка объектов в ИМЛС (Настройка загрузки)</a>
+			<a class="dir_2" href="XMLstatistic.html">XML - загрузка объектов в ИМЛС (Статистика загрузок)</a>
+
+		<a class="dir_1" href="notification.html">Уведомления</a>
+		<a class="dir_1" href="notificationSettings.html">Насторойка уведомлений</a>
+		<a class="dir_1" href="complaint.html">Жалобы на объект</a>
+		<a class="dir_1" href="complaintRequest.html">Жалобы на запрос</a>
+
+		<span class="dir_1">Профиль</span>
+			<a class="dir_2 no_psd" href="myProfile(agent_yr).html">Агентство недвижимости (юр)</a>
+			<a class="dir_2 no_psd" href="myProfile.html">Агент по недвижимости (физ)</a>
+			<a class="dir_2" href="myProfile(agent).html">Собственник объектов (юр)</a>
+			<a class="dir_2" href="myProfile(owner).html">Собственник объектов (физ)</a>
+			<a class="dir_2" href="lk.html">Мой офис (личный кабинет)</a>
+			<a class="dir_2" href="myAccount.html">Моя учетная запись</a>
+			<a class="dir_2" href="myPhone.html">Мои телефоны</a>
+			<a class="dir_2" href="myPhone_step2.html">Мои телефоны (добавление, шаг 2)</a>
+			<a class="dir_2" href="myPhone_step3.html">Мои телефоны (добавление, шаг 3)</a>
+			<a class="dir_2" href="personalPage.html">Персональная страница</a>
+				<a class="dir_3" href="personalPage_fis.html">Персональная страница (физ лица)</a>
+				<a class="dir_3" href="personalPage_yr.html">Персональная страница (юр)</a>
+			<a class="dir_2" href="power.html">Настройка мощности работы сервиса</a>
+			
+		<a class="dir_1" href="partner.html">Партнерская программа</a>
+
+		<span class="dir_1">Админка</span>
+			<a class="dir_2" href="myQuestions.html">Вопросы ответы (раздел)</a>
+			<a class="dir_2" href="questions.html">Вопросы ответы</a>
+			<a class="dir_2" href="addQuestion.html">Добавление вопросов-ответов</a>
+			<a class="dir_2" href="addNews.html">Добавление новости</a>
+			<a class="dir_2" href="addSection.html">Добавление раздела</a>
+			<a class="dir_2" href="myNews.html">Мои новости</a>
+			<a class="dir_2 no_psd" href="myNotif.html">Мои напоминания</a>
+
+			<a class="dir_2" href="chat.html">Диалоги</a>
+			<a class="dir_2" href="chat_add.html">Диалоги (добавить шаблон)</a>
+
+		<span class="dir_1">Письма</span>
+			<a class="dir_2" href="letter/index.html">Подтверждение</a>
+			<a class="dir_2" href="letter/registration.html">Регистрация</a>
+			<a class="dir_2" href="letter/password.html">Пароль</a>
+			<a class="dir_2" href="letter/message.html">Сообщение</a>
+			<a class="dir_2" href="letter/recommendate.html">Рекомендация</a>
+			<a class="dir_2" href="letter/xml.html">XML</a>
+			<a class="dir_2" href="letter/builder.html"><span class="no_psd">шаблон</span></a>
+			<a class="dir_2" href="letter/icons.html"><span class="no_psd">Иконки</span></a>
+
+		<span class="dir_1">Промо сайт</span>
+			<a class="dir_2" href="http://html.rozart.ru/promo/main3.html">Квартиры</a>
+			<a class="dir_2" href="http://html.rozart.ru/promo/main2.html">Коммерческая</a>
+			<a class="dir_2" href="http://html.rozart.ru/promo/main.html">Дом</a>
+			<a class="dir_2" href="http://html.rozart.ru/promo/main4.html">Участок</a>
+
+		<a class="dir_1" href="http://html.rozart.ru/imls/main.html">сайт участника</a>
+
+		<a class="dir_1" href="http://html.rozart.ru/imls.ru/presentation/presentation.html">Презентация</a>
+	</div>
+</div>
+
+//= template/footer.html

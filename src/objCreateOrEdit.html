@@ -1,0 +1,713 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container profile">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Мой офис</a></li> /
+				<li><a href="index.html">Мои объекты (квартиры, комнаты)</a></li> /
+				<li><span>Редактирование объекта (квартиры, комнаты)</span></li>
+			</ul>
+		</div>
+		<h2>Регистрирование объекта</h2>
+		<div class="steps">
+			<div class="step active"><span>Шаг 1 «Объект»</span></div>
+			<div class="step"><span>Шаг 2 «Реклама»</span></div>
+			<div class="step"><span>Шаг 3 «Доп. услуги»</span></div>
+			<div class="step"><span>Шаг 4 «Итог»</span></div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Операция, объект, цена
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите основные параметры объекта. Обратите внимание на точность указываемых данных.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-row">
+				<div class="step-field width_2">
+					<p>Я</p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<div class="select-control sel-input-validation-error">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="1">продаю</option>
+								<option value="2">ППА</option>
+								<option value="3">арендую</option>
+							</select>
+							<span class="sel field-validation-error" data-valmsg-for="OperationType" data-valmsg-replace="true"><span style="display: inline;" class="" id="OperationType-error">Обязательное поле</span></span>
+						</div>
+					</div>
+				</div>
+				<div class="step-field width_2">
+					<p>Объект</p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="4">любой</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="step-field input-group width_2">
+					<p>Площадью, м<sup>2</sup></p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<input type="text" placeholder="общая">
+					</div>
+				</div>
+				<div class="step-field input-group width_2">
+					<p>&nbsp;</p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<input type="text" placeholder="жилая">
+					</div>
+				</div>
+				<div class="step-field input-group width_2">
+					<p>&nbsp;</p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<input type="text" placeholder="кухня">
+					</div>
+				</div>
+				<div class="step-field input-group width_2">
+					<p>По цене:</p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<input placeholder="- указать -" class="input-validation-error" aria-describedby="PriceFrom-error" type="text">
+						<span class="field-validation-error" data-valmsg-for="PriceFrom" data-valmsg-replace="true"><span id="PriceFrom-error" class="">Обязательное поле</span></span>
+					</div>
+				</div>
+				<div class="step-field width_2">
+					<p>Валюта:</p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<div class="select-control">
+							<select class="selectpicker form-control" multiple title='- выбрать -'>
+								<option value="7">EUR</option>
+								<option value="8">USD</option>
+								<option value="9">RUB</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="step-field width_2">
+					<p>Ед. измерения:</p>
+					<div class="custom-input-block">
+						<span class="req"></span>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="10">общ. ст.</option>
+								<option value="11">м2</option>
+								<option value="12">общ. ст. в месяц</option>
+								<option value="13">общ. ст. в сутки</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+			Адрес объекта
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите местоположение объекта. Обратите внимание на точность указываемых данных.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-field full_width input-group">
+				<div class="custom-input-block">
+					<span class="req"></span>
+					<input placeholder="Полный адрес в свободной форме" class="" type="text">
+				</div>
+			</div>
+			<div class="step-row">
+				<div class="map">
+					<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=unuD4gaSqp5ke_W2Stz5tCleYPY002Hk&width=540&height=276"></script>
+				</div>
+				<div class="step-field width_3">
+					<input type="text" placeholder="Улица">
+					<div class="step-row">
+						<div class="step-field width_2">
+							<input type="text" placeholder="Дом">
+						</div>
+						<div class="step-field width_2">
+							<div class="select-control">
+								<select class="selectpicker form-control">
+									<option value="0" class="hidden" data-content="<span class='colorGrey'>Мин. транспортом от метро</span>">Мин. транспортом от метро</option>
+									<option value="1">10</option>
+									<option value="2">20</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Дополнительная информация об объекте
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите дополнительные параметры объекта. Полное и подробное указание всех параметров повышает рейтинг и количество просмотров объявления.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-row">
+				<div class="col col-2">
+					<div class="step-field width_4">
+						<p>Вид дома</p>
+						<div class="custom-input-block">
+							<span class="req"></span>
+							<div class="select-control">
+								<select class="selectpicker form-control">
+									<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+									<option value="1">не важно</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="step-field width_4">
+						<p>Материал стен</p>
+						<div class="custom-input-block">
+							<span class="req"></span>
+							<div class="select-control">
+								<select class="selectpicker form-control">
+									<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+									<option value="1">не важно</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="step-field width_5">
+						<p>Название ЖК</p>
+						<div class="custom-input-block">
+							<input placeholder="Полный адрес в свободной форме" class="" type="text">
+						</div>
+					</div>
+					<div class="step-field width_1">
+						<p>Год постройки</p>
+						<input type="text" placeholder="- указать -">
+					</div>
+					<div class="step-field width_1">
+						<p>Стадия</p>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="1">не важно</option>
+								<option value="2">особенности дома</option>
+							</select>
+						</div>
+					</div>
+					<div class="step-field width_1">
+						<p>Квартал сдачи</p>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="1">не важно</option>
+								<option value="2">особенности дома</option>
+							</select>
+						</div>
+					</div>
+					<div class="step-field width_5">
+						<p>Особенности объекта</p>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="1">не важно</option>
+								<option value="2">особенности дома</option>
+							</select>
+						</div>
+					</div>
+					<div class="step-field width_1">
+						<p>Этаж</p>
+						<input type="text" placeholder="- указать -">
+					</div>
+					<div class="step-field width_1">
+						<p>Этажность</p>
+						<input type="text" placeholder="- указать -">
+					</div>
+					<div class="step-field width_1">
+						<p>Высота потолка, м</p>
+						<input type="text" placeholder="- указать -">
+					</div>
+				</div>
+
+				<div class="col col-2">
+					<div class="step-field width_1">
+						<p>Сан. узел</p>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="1">не важно</option>
+							</select>
+						</div>
+					</div>
+					<div class="step-field width_1">
+						<p>Окна</p>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="1">не важно</option>
+							</select>
+						</div>
+					</div>
+					<div class="step-field width_1">
+						<p>Пол</p>
+						<div class="select-control">
+							<select class="selectpicker form-control">
+								<option value="0" class="hidden" data-content="<span class='colorGrey'>- выбрать -</span>">- выбрать -</option>
+								<option value="1">не важно</option>
+							</select>
+						</div>
+					</div>
+					<div class="step-field width_1">
+						<p>Балкон</p>
+						<input type="text" placeholder="- указать -">
+					</div>
+					<div class="step-field width_1">
+						<p>Лоджия</p>
+						<input type="text" placeholder="- указать -">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Описание объекта:
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите дополнительные параметры объекта. Полное и подробное указание всех параметров повышает рейтинг и количество просмотров объявления.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-field full_width">
+				<textarea placeholder="Описание"></textarea>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Фото объекта
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите дополнительные параметры объекта. Полное и подробное указание всех параметров повышает рейтинг и количество просмотров объявления.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+			<ol class="sortable files">
+				<li class="step-photo_item" data-file-name="">
+					<i class="icon-move"></i>
+					<div class="photo_item">
+						<div role="img" style="width: 85px; height: 85px; background-size: contain; background-repeat: no-repeat;  background-position-x: center; background-position-y: center; background-image: url('images/temp/home.jpg')"></div>
+					</div>
+					<label class="rotate sprite">
+						Повернуть фото
+					</label>
+					<label class="magic sprite">
+						Улучшить фото
+					</label>
+					<div>
+						<textarea cols="20" data-val="true" data-val-length="Максимальная длина 300 символов" data-val-length-max="300" id="Photos_Description" maxlength="300" name="Photos.Description" placeholder="Добавить описание" role="description" rows="2"></textarea>
+						<div>
+							<span class="field-validation-valid" data-valmsg-for="Photos.Description" data-valmsg-replace="true"></span>
+						</div>
+					</div>
+					<input id="Photos_Id" name="Photos.Id" role="id" value="" type="hidden">
+					<div class="delete" role="delete-file"></div>
+				</li>
+			</ol>
+			<div class="fileupload-buttonbar">
+				<div class="fileupload-buttons">
+					<div class="photo-upload fileinput-button">
+						<input name="files[]" multiple="" type="file">
+						<img src="images/ui/photo.png" alt=""> 
+						<p>Переместите сюда файл<br>(или нажмите)</p>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="step-field full_width">
+			<h5>
+				Видео объекта
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите дополнительные параметры объекта. Полное и подробное указание всех параметров повышает рейтинг и количество просмотров объявления.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-field full_width">
+				<input type="text" placeholder="-указать при наличии-">
+				<p class="input-subtitle">Допускаются ссылки на видео, размещенные на Youtube</p>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Условия вашей работы с посредниками
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите условия проведения сделки по данному объекту. Обратите внимание на точность указываемых данных.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-row">
+				<div class="step-field width_5">
+					<p>Основания собственности</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="1">-выбрать-</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="step-row">
+				<div class="step-field width_5">
+					<p>Форма сделки</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="1">-выбрать-</option>
+						</select>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>Залог:</p>
+					<div class="custom-input-block">
+						<input class="valid" placeholder="-выбрать-">
+						<span class="field-validation-valid" data-valmsg-for="PriceFrom" data-valmsg-replace="true"></span>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>&nbsp;</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="1">% от стоимости</option>
+						</select>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>Предоплата (мес.):</p>
+					<div class="custom-input-block">
+						<input class="valid" placeholder="-выбрать-">
+						<span class="field-validation-valid" data-valmsg-for="PriceFrom" data-valmsg-replace="true"></span>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="step-row">
+				<div class="step-field width_5">
+					<input type="checkbox" class="check" id="animals" checked=""> <label class="colorGrey" for="animals">можно с животными</label>
+					<input type="checkbox" class="check" id="children" checked=""> <label class="colorGrey" for="children">можно с детьми</label>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Контактная информация в объявлении
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box contact_info">
+			<div class="step-row">
+				<div class="col col-2">
+					<div class="contact_info-left">
+						<div class="step-field width_5">
+							<p>Фамилия</p>
+							<div class="custom-input-block">
+								<span class="req"></span>
+								<input class="valid" placeholder="">
+							</div>
+							<p>Имя</p>
+							<div class="custom-input-block">
+								<span class="req"></span>
+								<input class="valid" placeholder="">
+							</div>
+							<p>Телефон</p>
+							<div class="custom-input-block">
+								<span class="req"></span>
+								<input class="valid" placeholder="" value="+7 (499) 703-43-22">
+							</div>
+							<p class="green-check sprite">Телефон подтвержден</p>
+							<a href="" class="add_ph sprite">Добавить телефон</a>
+							<div class="num_tel">+7 (499) 703-43-22</div>
+							<div class="num_tel">+7 (499) 701-65-67</div>
+							<hr>
+							<p>Показывать телефон в объявлении:</p>
+							<div>
+								<input name="visible" id="visible1" type="radio">
+								<label for="visible1">Всем
+									<div class="q_info">
+										<div class="tooltip">
+											<p>Укажите клиента, к которому относится данный объект. По умолчанию он будет отнесен к вашей учетной записи.</p>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div>
+								<input name="visible" id="visible2" type="radio">
+								<label for="visible2">Только зарегестрированным участникам ИМЛС
+									<div class="q_info">
+										<div class="tooltip">
+											<p>Укажите клиента, к которому относится данный объект. По умолчанию он будет отнесен к вашей учетной записи.</p>
+										</div>
+									</div>
+								</label>
+							</div>
+							<div>
+								<input name="visible" id="visible3" checked="" type="radio">
+								<label for="visible3">Только зарегестрированным участникам ИМЛС с наличием совпадений для этого объекта
+									<div class="q_info">
+										<div class="tooltip">
+											<p>Укажите клиента, к которому относится данный объект. По умолчанию он будет отнесен к вашей учетной записи.</p>
+										</div>
+									</div>
+								</label>
+							</div>
+							<hr>
+							<p>E-mail</p>
+							<div class="custom-input-block">
+								<input class="valid" placeholder="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-2 search-result-item">
+					<div class="search-result-item_main">
+						<div class="search-result object">
+							<div class="contact_info_title">Ваши контакты в объявлении будут отображаться так</div>
+							<div class="object-general_left -user_info user_info">
+								<div class="row">
+									<div class="img-wrap">
+										<img src="images/temp/home.jpg" alt="">
+										<p>ID: <b>6734</b></p>
+									</div>
+									<div class="agent-info">
+										<p class="agent-name">Алексей Сидельников</p>
+										<p class="agent-subtitle">Агентство недвижимости "Центр московской недвижимости имени Ивана Пупкина"</p>
+										<div class="links">
+											<ul>
+												<li class="sprite mail_ico">
+													//= template/mailto.html
+												</li>
+												<li class="sprite chat_ico">
+													<a href="#" class="open-chat">Написать в чат</a>
+												</li>
+												<li class="sprite sms_ico">
+													<a href="#">Написать смс</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="raitng">
+										<div class="sprite ico_raite redColor">-2</div>
+										<a class="like ico sprite">99999</a>
+										<a class="dislike ico sprite">10001</a>
+									</div>
+									<div class="phone">
+										<div class="no-border_btn btn_blue sprite">Показать телефон</div>
+										<div class="show-phone">
+											<span>+7 (926) 212-43-56</span>
+											<span>+7 (926) 234-12-43</span>
+											<p class="sprite">Пожалуйста, скажите что вы нашли это объявление на IMLS.RU</p>
+										</div>
+									</div>
+									<div class="agent-links">
+										<a href="#" class="sprite al-site">Веб-сайт</a>
+										<a href="#" class="sprite al-rev">Отзывы</a>
+										<a href="#" class="sprite al-rait">Оценки</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Работа с посредниками
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-row">
+				<div class="step-field width_8">
+					<p>Готовность работать с посредниками:</p>
+					<div class="flag-switch">
+						<input id="switch1" name="switch" type="checkbox">
+						<label for="switch1"></label>
+						<span></span>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>Размер комиссии:</p>
+					<div class="custom-input-block">
+						<input class="valid" placeholder="0.00">
+						<span class="field-validation-valid" data-valmsg-for="PriceFrom" data-valmsg-replace="true"></span>
+						<div class="commission-hint">0 ₽</div>
+					</div>
+				</div>
+				<div class="step-field width_1">
+					<p>&nbsp;</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="1">% от стоимости</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<hr class="mtop">
+			<div class="step-row mtop">
+				<div class="step-field width_8">
+					<p>Комиссия:</p>
+					<div class="custom-input-block">
+						<div class="sprite bonus_ico fee">
+							<input type="radio" name="komis" id="agent">
+							<label for="agent">Посреднику
+								<div class="q_info">
+									<div class="tooltip">
+										<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="sprite bonus_not fee">
+							<input type="radio" name="komis" id="no">
+							<label for="no">Нет
+								<div class="q_info">
+									<div class="tooltip">
+										<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="sprite rate_ico fee">
+							<input type="radio" name="komis" id="me" checked="">
+							<label for="me">Мне
+								<div class="q_info">
+									<div class="tooltip">
+										<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="step-field width_8">
+					<p>Показывать размер комисси в объявлениях</p>
+					<div class="custom-input-block">
+						<div class="">
+							<input type="radio" name="show" id="all">
+							<label for="all">Всем
+								<div class="q_info">
+									<div class="tooltip">
+										<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="">
+							<input type="radio" name="show" id="rielt">
+							<label for="rielt">Только посредникам (Риелторам)
+								<div class="q_info">
+									<div class="tooltip">
+										<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="mtop">
+			<div class="step-field full_width">
+				<input type="checkbox" class="check" id="acept"> <label for="acept" class="colorGrey">Согласен с разделом комиссионного вознаграждения и посредниками</label>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Уведомления о совпадении запросов
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-row">
+				<div class="step-field width_5">
+					<p>По E-mail</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="1">нет</option>
+							<option value="2">да</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="step-field full_width">
+			<h5>
+				Объект относится к клиенту
+				<div class="q_info">
+					<div class="tooltip">
+						<p>Введите условия работы с посредниками. Работа с посредниками и оплата им комиссионного вознаграждения позволяет привлечь к реализации вашего объекта большое количество агентов и значительно увеличивает привлекательность объекта.</p>
+					</div>
+				</div>
+			</h5>
+		</div>
+		<div class="gray-box">
+			<div class="step-row">
+				<div class="step-field width_5">
+					<p>Клиент</p>
+					<input type="text" placeholder="Иванов Иван Иваныч">
+					<a href="" class="dashed">Новый клиент</a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="next-step">
+			<a href="#" class="tdec">Сохранить как черновик</a>
+			<a href="#" class="tdec">Сохранить без публикации</a>
+			<a href="#" class="no-border_btn btn_blue">опубликовать</a>
+		</div>
+	</div>
+	<div class="search-result table">
+		<div class="search-result-item">
+			<div class="container">
+				//= template/object-item.html
+			</div>
+		</div>
+	</div>
+</div>
+//= template/footer.html

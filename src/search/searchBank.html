@@ -1,0 +1,86 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content search-org">
+			//= template/header.html
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li> /
+						<li><span>Поиск организаций</span></li>
+					</ul>
+				</div>
+				<h2 class="blue">Поиск организаций <span class="cloud">Компании или ИП</span></h2>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs half-tabs" role="tablist">
+							<li role="presentation"><a href="#ip" aria-controls="ip" role="tab" data-toggle="tab"><span>Компания или ИП</span></a></li>
+							<li role="presentation" class="active"><a href="#bank" aria-controls="bank" role="tab" data-toggle="tab"><span>Банк</span></a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane" id="ip">
+							<div class="search">
+								<div class="search-min">
+									<div class="search-field full-width">
+										<p>Я ищу:</p>
+										<input type="text" placeholder="Название, ИНН или адрес">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane active" id="bank">
+							<div class="search">
+								<div class="search-min">
+									<div class="search-field full-width">
+										<p>Я ищу:</p>
+										<input type="text" placeholder="Введите название банка, БИК или SWIFT">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-organisation">
+					<table>
+						<tr>
+							<td colspan="2">
+								<p>Наименование</p>
+								<p><b>Публичное Акционерное Общество “Сбербанк России”</b></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>БИК / SWIFT</p>
+								<p><b>044525225 / SUBRRUMMIXXX </b></p>
+							</td>
+							<td>
+								<p>Корсчет</p>
+								<p><b>30101810400000000225</b></p>
+								в ГУ/О ГУ Банка РФ по ЦФО
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Дата регистрации</p>
+								<p><b>04.10.1996</b></p>
+								Действующий
+							</td>
+							<td>
+								<p>Регистрационный номер</p>
+								<p><b>1481</b></p>
+								<a href="">на сайте ЦБ РФ</a>
+							</td>
+						</tr>
+					</table>
+					<div class="search-result_info">
+						Сведения актуальны на 30.06.2016
+						<a href="" class="sprite print pull-right">Распечатать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+//= template/footer.html

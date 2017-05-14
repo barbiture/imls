@@ -1,0 +1,1084 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+
+	<div class="container my_obj">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Мои запросы</span></li>
+			</ul>
+		</div>
+		<h2>Мои запросы <span class="cloud">квартиры, комнаты</span></h2>
+		<div role="tabpanel" class="tabpanel">
+			<div class="tabpanel-nav">
+					<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Актуальные <span class="circle">23</span></a></li>
+					<li role="presentation" class="active"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab">Архив <span class="circle">980000</span></a></li>
+					<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab">Черновики <span class="circle">11</span></a></li>
+				</ul>
+			</div>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane" id="rooms">
+					<div class="search">
+						<div class="search-min">
+							<div class="search-field width_2">
+								<p>операция:</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="1">
+											сдаю
+										</option>
+										<option value="2">
+											продажа
+										</option>
+										<option value="3">
+											аренда
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_2">
+								<p>Объект</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="4">
+											любой
+										</option>
+										<option value="5">
+											любой
+										</option>
+										<option value="6">
+											любой
+										</option>
+										<option value="4">
+											любой
+										</option>
+										<option value="5">
+											любой
+										</option>
+										<option value="6">
+											любой
+										</option>
+										<option value="4">
+											любой
+										</option>
+										<option value="5">
+											любой
+										</option>
+										<option value="6">
+											любой
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field input-group width_2">
+								<p>площадью, м<sup>2</sup></p>
+								<input type="text" placeholder="от">
+								<input type="text" placeholder="до">
+							</div>
+							<div class="search-field input-group width_3">
+								<p>по цене:</p>
+								<input type="text" placeholder="от">
+								<input type="text" placeholder="до">
+							</div>
+							<div class="search-field width_1">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="7">
+											EUR
+										</option>
+										<option value="8">
+											USD
+										</option>
+										<option value="9">
+											RUB
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_1">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="10">
+											общ. ст.
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_6">
+								<p>где именно?</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="11">
+											Город (населенный пункт и т.п.) 
+										</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search-full">
+							<div class="search-colored">
+								<div class="search-field width_6">
+									<p>Улица:</p>
+									<input type="text" placeholder="Не важно" class="stylish">
+								</div>
+								<div class="search-field input-group width_2">
+									<p>Удаленность</p>
+									<input type="text" placeholder="от">
+									<input type="text" placeholder="до">
+								</div>
+								<div class="search-field width_5">
+									<p>&nbsp;</p>
+									<div class="select-control">
+										<select class="selectpicker form-control">
+											<option value="13">
+												ед. измерения
+											</option>
+											<option value="14">
+												любой
+											</option>
+											<option value="15">
+												любой
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="search-colored">
+								<div class="col col-2">
+									<div class="search-field input-group width_2">
+										<p>общая,м<sup>2</sup></p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field input-group width_2">
+										<p>жилая,м<sup>2</sup></p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field input-group width_2">
+										<p>кухня,м<sup>2</sup></p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field input-group width_2">
+										<p>балкон</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field input-group width_2">
+										<p>лоджия</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="clearfix"></div>
+									<div class="search-field input-group width_2">
+										<p>сан. узел</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field width_2">
+										<input type="checkbox" id="check1">
+										<label class="sprite" for="check1">Новостройка</label>
+										<input type="checkbox" id="check2">
+										<label class="sprite" for="check2">Сталинский</label>
+									</div>
+									<div class="search-field width_2">
+										<input type="checkbox" id="check3">
+										<label class="sprite" for="check3">Хрущевский</label>
+										<input type="checkbox" id="check4">
+										<label class="sprite" for="check4">Брежневский</label>
+									</div>
+								</div>
+								<div class="col col-2">
+									<div class="search-field width_6">
+										<p>Особенности объекта</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="16">
+													Не важно
+												</option>
+												<option value="17">
+													Не важно
+												</option>
+												<option value="18">
+													Не важно
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-field input-group width_2">
+										<p>Этаж</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field input-group width_2">
+										<p>Этажность</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field input-group width_2">
+										<p>высота потолка, м</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+								</div>
+							</div>
+							<div class="search-colored">
+								<div class="search-field width_6">
+									<p>условия сделки</p>
+									<div class="select-control">
+										<select class="selectpicker form-control">
+											<option value="19">
+												Не важно
+											</option>
+											<option value="20">
+												Не важно
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="search-field width_4">
+									<p>&nbsp;</p>
+									<input type="text" placeholder="форма сделки / срок аренды" class="stylish">
+								</div>
+							</div>
+						</div>
+						<div class="search-more sprite"></div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane active" id="homes">
+					<div class="search">
+						<div class="search-min">
+							<div class="search-field width_2">
+								<p>Я хочу:</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="1">
+											продажа
+										</option>
+										<option value="2">
+											ППА
+										</option>
+										<option value="3">
+											аренда
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_2">
+								<p>Объект</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="4">
+											любой
+										</option>
+										<option value="5">
+											любой
+										</option>
+										<option value="6">
+											любой
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field input-group width_2">
+								<p>площадью, м<sup>2</sup></p>
+								<input type="text" placeholder="от">
+								<input type="text" placeholder="до">
+							</div>
+							<div class="search-field input-group width_3">
+								<p>по цене:</p>
+								<input type="text" placeholder="от">
+								<input type="text" placeholder="до">
+							</div>
+							<div class="search-field width_1">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="7">
+											EUR
+										</option>
+										<option value="8">
+											USD
+										</option>
+										<option value="9">
+											RUB
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_1">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="10">
+											м<sup>2</sup>
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_6">
+								<p>где именно?</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="11">
+											Город (населенный пункт и т.п.) 
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_6">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="12">
+											Станция метро
+										</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search-full">
+							<div class="search-colored">
+								<div class="search-field width_6">
+									<p>Улица:</p>
+									<input type="text" placeholder="Не важно" class="stylish">
+								</div>
+								<div class="search-field input-group width_2">
+									<p>Удаленность</p>
+									<input type="text" placeholder="от">
+									<input type="text" placeholder="до">
+								</div>
+								<div class="search-field width_5">
+									<p>&nbsp;</p>
+									<div class="select-control">
+										<select class="selectpicker form-control">
+											<option value="13">
+												ед. измерения
+											</option>
+											<option value="14">
+												любой
+											</option>
+											<option value="15">
+												любой
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="search-colored">
+								<div class="col col-2">
+									<div class="search-field input-group width_3">
+										<p>площадь участка</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field width_3">
+										<p>&nbsp;</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="4">
+													Не важно
+												</option>
+												<option value="5">
+													любой
+												</option>
+												<option value="6">
+													любой
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-field width_3">
+										<p>назначение участка</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="4">
+													Не важно
+												</option>
+												<option value="5">
+													любой
+												</option>
+												<option value="6">
+													любой
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-field width_3">
+										<p>Особенности участка</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="4">
+													Не важно
+												</option>
+												<option value="5">
+													любой
+												</option>
+												<option value="6">
+													любой
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-field width_3">
+										<p>Особенности поселка</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="19">
+													Не важно
+												</option>
+												<option value="20">
+													Не важно
+												</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col col-2">
+									<div class="search-field width_3">
+										<p>Характеристики дома</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="4">
+													Не важно
+												</option>
+												<option value="5">
+													любой
+												</option>
+												<option value="6">
+													любой
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-field width_3">
+										<p>Особенности дома</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="4">
+													Не важно
+												</option>
+												<option value="5">
+													любой
+												</option>
+												<option value="6">
+													любой
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col col-2">
+											<div class="search-field input-group width_2">
+												<p>Этаж</p>
+												<input type="text" placeholder="от">
+												<input type="text" placeholder="до">
+											</div>
+											<div class="search-field input-group width_2">
+												<p>Этажность</p>
+												<input type="text" placeholder="от">
+												<input type="text" placeholder="до">
+											</div>
+										</div>
+										<div class="search-field input-group width_2">
+											<p>Сан. узел</p>
+											<input type="text" placeholder="от">
+											<input type="text" placeholder="до">
+										</div>
+										<div class="search-field input-group width_2">
+											<p>балкон</p>
+											<input type="text" placeholder="от">
+											<input type="text" placeholder="до">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search-colored">
+								<div class="search-field width_6">
+									<p>Условия сделки</p>
+									<div class="select-control">
+										<select class="selectpicker form-control">
+											<option value="19">
+												Не важно
+											</option>
+											<option value="20">
+												Не важно
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="search-field width_4">
+									<p>назначение участка</p>
+									<input type="text" placeholder="форма сделки / срок аренды" class="stylish">
+								</div>
+							</div>
+						</div>
+						<div class="search-more sprite"></div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="commerce">
+					<div class="search">
+						<div class="search-min">
+							<div class="search-field width_2">
+								<p>Я хочу:</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="1">
+											продажа
+										</option>
+										<option value="2">
+											ППА
+										</option>
+										<option value="3">
+											аренда
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_2">
+								<p>Объект</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="4">
+											любой
+										</option>
+										<option value="5">
+											любой
+										</option>
+										<option value="6">
+											любой
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field input-group width_2">
+								<p>площадью, м<sup>2</sup></p>
+								<input type="text" placeholder="от">
+								<input type="text" placeholder="до">
+							</div>
+							<div class="search-field input-group width_3">
+								<p>по цене:</p>
+								<input type="text" placeholder="от">
+								<input type="text" placeholder="до">
+							</div>
+							<div class="search-field width_1">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="7">
+											EUR
+										</option>
+										<option value="8">
+											USD
+										</option>
+										<option value="9">
+											RUB
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_1">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="10">
+											м<sup>2</sup>
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_6">
+								<p>где именно?</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="11">
+											Город (населенный пункт и т.п.) 
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_6">
+								<p>&nbsp;</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="12">
+											Станция метро
+										</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search-full">
+							<div class="search-colored">
+								<div class="search-field width_6">
+									<p>Улица:</p>
+									<input type="text" placeholder="Не важно" class="stylish">
+								</div>
+								<div class="search-field input-group width_2">
+									<p>Удаленность</p>
+									<input type="text" placeholder="от">
+									<input type="text" placeholder="до">
+								</div>
+								<div class="search-field width_5">
+									<p>&nbsp;</p>
+									<div class="select-control">
+										<select class="selectpicker form-control">
+											<option value="13">
+												ед. измерения
+											</option>
+											<option value="14">
+												любой
+											</option>
+											<option value="15">
+												любой
+											</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="search-colored">
+								<div class="col col-2">
+									<div class="search-field width_3">
+										<p>тип строения</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="4">
+													Не важно
+												</option>
+												<option value="5">
+													любой
+												</option>
+												<option value="6">
+													любой
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="search-field width_3">
+										<p>Особенности объекта</p>
+										<div class="select-control">
+											<select class="selectpicker form-control">
+												<option value="4">
+													Не важно
+												</option>
+												<option value="5">
+													любой
+												</option>
+												<option value="6">
+													любой
+												</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col col-2">
+									<div class="search-field input-group width_2">
+										<p>Этаж</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field input-group width_2">
+										<p>Этажность</p>
+										<input type="text" placeholder="от">
+										<input type="text" placeholder="до">
+									</div>
+									<div class="search-field width_2">
+										<input type="checkbox" id="1.1">
+										<label class="sprite" for="1.1">Мансарда</label>
+										<input type="checkbox" id="2.2">
+										<label class="sprite" for="2.2">Цоколь</label>
+										<input type="checkbox" id="3.2">
+										<label class="sprite" for="3.2">Подвал</label>
+									</div>
+								</div>
+							</div>
+							<div class="search-colored">
+								<div class="search-field width_6">
+									<p>условия сделки</p>
+									<div class="select-control">
+										<select class="selectpicker form-control">
+											<option value="19">
+												Не важно
+											</option>
+											<option value="20">
+												Не важно
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="search-field width_4">
+									<p>назначение участка</p>
+									<input type="text" placeholder="форма сделки / срок аренды" class="stylish">
+								</div>
+							</div>
+						</div>
+						<div class="search-more sprite"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#" target="_blank" class="main-info_action sprite act13">
+			Добавить объект
+		</a>
+		<div class="no-border_btn btn_blue">Поиск</div>
+		<div class="no-border_btn btn_red">Поиск</div>
+		<div class="no-border_btn btn_grey">Очистить</div>
+
+		<div class="search-result-title">
+			<div class="search-result-preferences">
+				Выводить по: 
+				<div class="select-control">
+					<select name="search" id="search-result" class="selectpicker form-control">
+						<option>20</option>
+						<option>30</option>
+						<option>40</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="search-result table my_obj">
+		<div class="search-result-item">
+			<div class="container">
+				<div class="search-result-item_aside">
+					<div class="colorGrey">10 января 2015, 02:02</div>
+					<div class="prel">
+						<div class="edit-panel ico_group">
+							<ul>
+								<li class="button-dropdown">
+									<div class="ico_edit-wrap dropdown-toggle">
+										<a class="ico_edit">
+											<span class="tooltip">Мое примечание</span>
+										</a>
+									</div>
+									<div class="tooltip add_comment dropdown-modal">
+										<div class="close-tooltip sprite"></div>
+										<textarea>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет... Сигнализация, Охрана... Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,</textarea>
+										<span class="subm_btn">Отправить</span>
+									</div>
+								</li>
+								<li>
+									<a class="ico_object">
+										<span class="tooltip">Карточка запроса</span>
+									</a>
+								</li>
+								<li>
+									<a class="ico_2">
+										<span class="tooltip">Редактировать</span>
+									</a>
+								</li>
+								<li>
+									<a class="ico_4">
+										<span class="tooltip">Восстановить в актуальные</span>
+									</a>
+								</li>
+								<li>
+									<a class="ico_delete">
+										<span class="tooltip">Удалить</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-item_main obj_descr">
+					<div class="general">
+						<div class="general-title">
+							<div class="local_ico">
+								<span class="hidden_txt"><a href="#" class="dashed sprite">Куплю 4-комн. кв.</a></span>
+							</div>
+							<div class="info_ico2">
+								<div class="sprite tooltip-toggle"></div>
+								<div class="tooltip align_right tooltip-click">
+									<div class="close-tooltip sprite"></div>
+									<p class="sprite icon icon3">Объект:
+										<span>2-комн. кв., 3-комн. кв., 4-комн. кв., 5-комн. кв., 6-комн. кв., 7-комн. кв., 8-комн.</span>
+									</p>
+									<p class="sprite icon icon16">Муниципальное образование: 
+										<span>г. Москва, г. Щербинка, г. Ватуткин, г. Москва, г. Щербинка, г. Ватуткин.</span>
+									</p>
+									<p class="sprite icon icon17">Метро:
+										<span>Академическая, Университет.</span>
+									</p>
+									<p class="sprite icon icon18">Шоссе:
+										<span>Можайское, Киевское, Калужское.</span>
+									</p>
+									<p class="sprite icon icon19">Удаленность:
+										<span>5-40 мин. 4-9км от МКАД</span>
+									</p>
+									<p class="sprite icon icon20">Район:
+										<span>Ременки, Очаково.</span>
+									</p>
+									<p class="sprite icon icon21">Улица:
+										<span>Мичуринский проспект, Ленинский проспект.</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="general-adress">
+							<ul>
+								<li>Московская обл., Красногорский р-н, г. Красногорск, ул. Авангардная, д. 1
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="general">
+						<div class="general-title">
+							<div class="info_ico">
+								<div class="sprite tooltip-toggle"></div>
+								<div class="tooltip align_right tooltip-click">
+									<div class="close-tooltip sprite"></div>
+									<p class="sprite icon icon1">Вид дома:
+										<span>Новостройка</span>
+									</p>
+									<p class="sprite icon icon2">Материал стен: 
+										<span>Монолит</span>
+									</p>
+									<p class="sprite icon icon3">Особенности объекта:
+										<span>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод.</span>
+									</p>
+									<p class="sprite icon icon4">
+										Состояние:
+										<span>Евроремонт</span>
+									</p>
+									<p class="sprite icon icon5">
+										Дополнительно:
+										<span>Мебель, Телефон, Интернет, Сигнализация.</span>
+									</p>
+								</div>
+							</div>
+							<span class="sprite area_ico"> <b>120</b> м<sup>2</sup> - <b>120</b> м<sup>2</sup></span>
+							<span class="colorGrey"> / 80-200 / 20-60</span>
+						</div>
+						<div class="price-block">
+							<div class="n-price">
+								<div class="sprite cash_ico">
+									<div class="in-b">
+										<span>от 1 000 000 000</span>
+										<span class="total_cost nobr tooltip-toggle">
+											<span class="dashed"><span class="currency">$</span> общ. ст.</span>
+										</span>
+										<div class="tooltip tooltip-click">
+											<div class="close-tooltip sprite"></div>
+											<table>
+												<tbody>
+													<tr>
+														<th>Ед. измерения</th>
+														<th><div class="sprite rub-ico"></div></th>
+														<th><div class="sprite usd-ico"></div></th>
+														<th><div class="sprite euro-ico"></div></th>
+													</tr>
+													<tr>
+														<td>Общ. ст :</td>
+														<td>1 000 000 000</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст.мес. :</td>
+														<td>400 500</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст. год :</td>
+														<td>400 500</td>
+														<td>6 451 612 <sup class="green">*</sup></td>
+														<td>6 151 612 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> :</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в месяц:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в год:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+										</div>
+									</div>
+									<div class="in-b">
+										<span>до 9 000 000 000 000 000 000</span>
+										<span class="total_cost nobr tooltip-toggle">
+										<span class="dashed"><span class="currency">$</span> общ. ст.</span></span>
+										<div class="tooltip tooltip-click">
+											<div class="close-tooltip sprite"></div>
+											<table>
+												<tbody>
+													<tr>
+														<th>Ед. измерения</th>
+														<th><div class="sprite rub-ico"></div></th>
+														<th><div class="sprite usd-ico"></div></th>
+														<th><div class="sprite euro-ico"></div></th>
+													</tr>
+													<tr>
+														<td>Общ. ст :</td>
+														<td>9 000 000 000</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст.мес. :</td>
+														<td>400 500</td>
+														<td>8 000 <sup class="green">*</sup></td>
+														<td>7 500 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст. год :</td>
+														<td>400 500</td>
+														<td>6 451 612 <sup class="green">*</sup></td>
+														<td>6 151 612 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>Общ. ст день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> :</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в месяц:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в год:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+													<tr>
+														<td>М<sup>2</sup> в день:</td>
+														<td>6 500</td>
+														<td>100 <sup class="green">*</sup></td>
+														<td>95 <sup class="green">*</sup></td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+										</div>
+									</div>
+								</div>
+								<ul class="colorGrey">
+									<li class="bonus_ico sprite">
+										<p>1% <span class="nobr">(70 000 ₽)</span></p>
+										<div class="tooltip">Плачу комиссию посреднику</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="public">
+						<div class="obj-block">
+							//= template/interactiv.html
+						</div>
+						<div class="general-title">
+							<div class="sprite public_ico">
+								<b>Реклама</b>
+								<div class="q_info">
+									<div class="tooltip left">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi neque nemo est odio, eaque adipisci vitae non unde. Ad, dolores.</p>
+									</div>
+								</div>
+							</div>
+							<div class="public_ico">
+								<div class="flag-switch">
+									<input type="checkbox" id="switch3" name="switch" checked>
+									<label for="switch3"></label>
+								</div>
+								<div class="sprite ico_alert">
+									<div class="tooltip align_right">
+										<p>Объявление не публикуется в системе ИМЛС и недоступно для просмотра. Комплексная реклама объявления возможна после его опубликования.
+										</p>
+									</div>
+								</div>
+								<div class="line-group">
+									<p>Снято с публикации: <b>19.05.2015, 21:00</b></p>
+									<p>Причина: <b>Снято пользователем</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pagination">
+			<div class="container">
+				<div class="search-result-preferences">
+					Выводить по: 
+					<div class="select-control">
+						<select name="search" id="search-result" class="selectpicker form-control">
+							<option>20</option>
+							<option>30</option>
+							<option>40</option>
+						</select>
+					</div>
+				</div>
+				<div class="pagination_list">
+					<ul>
+						<li><a href="#" class="prew"></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#" class="next"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('.my_obj .no-border_btn.btn_blue').click(function(){
+		$(this).hide();
+		$('.my_obj .btn_red').show();
+		$('.my_obj .btn_grey').show();
+		$('.my_obj .tab-content').show();
+	})
+</script>
+//= template/footer.html

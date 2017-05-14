@@ -1,0 +1,235 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container profile my_obj">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>XML - загрузка объектов в ИМЛ</span></li>
+			</ul>
+		</div>
+		<h2>XML - загрузка объектов в ИМЛС</h2>
+		<div role="tabpanel" class="tabpanel set-tabs">
+			<div class="tabpanel-nav">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Настройка загрузки</a></li>
+					<li role="presentation" class="active"><a href="#statistic" aria-controls="statistic" role="tab" data-toggle="tab">Статистика загрузок</a></li>
+				</ul>
+			</div>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="close sprite"></div>
+				<div role="tabpanel" class="tab-pane active" id="settings">
+					<div class="search">
+						<div class="search-min">
+							<div class="search-field width_3">
+								<p>Раздел:</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="0" class="hidden">не важно</option>
+										<option value="1">
+											продажа
+										</option>
+										<option value="2">
+											ППА
+										</option>
+										<option value="3">
+											аренда
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_3">
+								<p>Операция:</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="0" class="hidden">не важно</option>
+										<option value="1">
+											продажа
+										</option>
+										<option value="2">
+											ППА
+										</option>
+										<option value="3">
+											аренда
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_3">
+								<p>Статус:</p>
+								<div class="select-control">
+									<select class="selectpicker form-control">
+										<option value="0" class="hidden">не важно</option>
+										<option value="1">
+											продажа
+										</option>
+										<option value="2">
+											ППА
+										</option>
+										<option value="3">
+											аренда
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="search-field width_3">
+								<p>ID в XML:</p>
+								<input type="text" placeholder="Не важно">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="no-border_btn btn_blue">Поиск</div>
+		<div class="no-border_btn btn_red">Поиск</div>
+		<div class="no-border_btn btn_grey pull-left">Очистить</div>
+
+		<div class="clearfix xml-table">
+			<div class="user_content table-content">
+				<table class="user-int">
+					<tr>
+						<th class="big-cell">Объявления</th>
+						<th><span>Количество</span></th>
+					</tr>
+					<tr>
+						<td class="big-cell">Всего</td>
+						<td>
+							<div class="ico_plus">
+								<a href="#">3</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="big-cell">Опубликовано (Актуальные)</td>
+						<td>
+							<div class="ico_plus">
+								<a href="#">2</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="big-cell">Не опубликовано (Черновик)</td>
+						<td>
+							<div class="ico_plus">
+								<a href="#">1</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="chart-stat">
+				<div class="chart-title">
+					Статистика по загрузке
+				</div>
+				<script type="text/javascript">
+				      google.load("visualization", "1", {packages:["corechart"]});
+				      google.setOnLoadCallback(drawChart);
+				      function drawChart() {
+
+				        var data = google.visualization.arrayToDataTable([
+				          ['Статистика по загрузке', 'Количество'],
+				          ['Опубликовано',     20],
+				          ['Черновик',  7],
+				        ]);
+				        var options = {
+				          pieHole: 0.3,
+				          colors: ['#00b05d', '#e01d28'],
+				          pieSliceText: 'none',
+				          pieSliceBorderColor: 'transparent',
+				          tooltip: {textStyle: {color: '#545454', fontSize: 12, fontName: 'Roboto', bold: false}, showColorCode: true},
+				          chartArea:{left:0,top:20,width:'100%',height:'80%'},
+				          legend: {textStyle: {fontSize: 13, fontName: 'Roboto',}, alignment: 'center'}
+				        };
+				        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+				        chart.draw(data, options);
+				      }
+				</script>
+				<div id="piechart" style="width: 430px; height: 200px;"></div>
+			</div>
+
+			<div class="search-result-title">
+				<a href="#" class="sprite ico_download">Скачать отчет в EXCEL</a>
+				<div class="search-result-preferences">
+					Выводить по: 
+					<div class="select-control">
+						<select name="search" id="search-result" class="selectpicker form-control">
+							<option>20</option>
+							<option>30</option>
+							<option>40</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<table class="report-table">
+				<tr>
+					<th>ID в ИМЛС</th>
+					<th>Раздел недвижимости</th>
+					<th>Операция</th>
+					<th>Ваш ID в XML</th>
+					<th>URL в ИМЛС</th>
+					<th>Статус</th>
+					<th>Ошибки</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td><nobr>Квартиры, Комнаты</nobr></td>
+					<td>Сдаю</td>
+					<td>2512</td>
+					<td><a href="#">ссылка</a></td>
+					<td>Опубликовано</td>
+					<td>Нет</td>
+				</tr>
+				<tr>
+					<td>220935</td>
+					<td>Квартиры, Комнаты</td>
+					<td>Сдаю</td>
+					<td><a href="">357899</a></td>
+					<td><a href="#">ссылка</a></td>
+					<td>Опубликовано</td>
+					<td>
+						<div class="error-report">
+							<p class="hidden-text">Нет обязательного поля (общ. пл, тип дома, материал стен, не указан подъезд, количество комнат)</p>
+							<div class="tooltip">Нет обязательного поля (общ. пл, тип дома, материал стен, не указан подъезд, количество комнат)</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Квартиры, Комнаты</td>
+					<td>Продам</td>
+					<td>4146</td>
+					<td>Нет</td>
+					<td>Нет</td>
+					<td>
+						<div class="error-report">
+							<p class="hidden-text">Нет обязательного поля (общ. пл, тип дома, материал стен, не указан подъезд, количество комнат)</p>
+							<div class="tooltip">Нет обязательного поля (общ. пл, тип дома, материал стен, не указан подъезд, количество комнат)</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="7"></td>
+				</tr>
+			</table>
+			<div class="pagination_list">
+				<ul>
+					<li><a href="#" class="prew"></a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#" class="next"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+//= template/footer.html

@@ -1,0 +1,52 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container profile">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Добавление вопроса-ответа</span></li>
+			</ul>
+		</div>
+		<h2>Добавление вопроса-ответа</h2>
+		<form action="" class="add-news">
+			<div class="step-row">
+				<div class="step-field width_5">
+					<p>Раздел</p>
+					<div class="select-control">
+						<select class="selectpicker form-control">
+							<option value="0" class="hidden" data-content="<span class='colorGrey'>Выберите раздел</span>">Выберите раздел</option>
+							<option value="1">раздел 1</option>
+							<option value="2">раздел 2</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<a href="#" target="_blank" class="orange-btn no-border_btn"> Добавить раздел</a>
+			<div class="step-field full_width mtop">
+				<p>Вопрос</p>
+				<textarea name="question" class="small-hight"></textarea>
+			</div>
+			<div class="step-field full_width">
+				<p>Полный текст</p>
+				<!-- <textarea cols="20" data-multiline-text="Content" data-val="true" data-val-required="Обязательное поле" id="Content" name="Content" rows="2" style="visibility: hidden; display: none;"></textarea> -->
+				<img src="images/temp/form.png" alt="picture" style="margin-bottom: 19px">
+			</div>
+			<div class="step-row">
+				<div class="step-field width_7">
+					<p>Вес</p>
+					<div class="custom-input-block">
+						<input name="" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="next-step">
+				<a href="#" class="no-border_btn btn_blue">Сохранить</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+//= template/footer.html

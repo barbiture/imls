@@ -1,0 +1,155 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content search-room">
+			//= template/header.html
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="index.html">Главная</a></li> /
+						<li><a href="">Продажа квартир в Москве</a></li> /
+						<li><a href="">Вторичное</a></li> /
+						<li><span>Купить 1-комнатную квартиру на вторичном в г Москве</span></li>
+					</ul>
+				</div>
+				<h1 class="blue">Купить 1-комнатную квартиру на вторичном в г Москве</h1>
+				<div role="tabpanel" class="tabpanel">
+					<div class="tabpanel-nav">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab"><span>Квартиры и комнаты</span></a></li>
+							<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab"><span>Дома, участки</span></a></li>
+							<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab"><span>Коммерческая недвижимость</span></a></li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="rooms">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+									<div class="search-banners">
+										<a href="#" target="_blank" class="search-banners_action sprite act3">
+											Хочу привлечь риелтора
+											<span class="q_info">
+												<span class="tooltip left">
+													Выберите риелтора и отправьте ему заявку на поиск объекта недвижимости.
+												</span>
+											</span>
+										</a>
+										<a href="#" target="_blank" class="search-banners_action sprite act1">
+											Хочу автоматизировать поиск
+											<span class="q_info">
+												<span class="tooltip left">
+													Сохраните данные параметры в виде запроса и получайте уведомления о новых подходящих объектах.
+												</span>
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="homes">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="commerce">
+							<div class="search">
+								<div class="search-min">
+									<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+								</div>
+								<div class="search-more"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-result table">
+				<div class="container scroll">
+					<div class="no-border_btn btn_grey" style="width: 260px">Уточнить параметры</div>
+					<div class="no-border_btn btn_red">Новый поиск</div>
+					<div class="search-result-title">
+						<div class="search-result-preferences">Выводить по: 
+							<div class="select-control">
+								<select class="selectpicker form-control" id="PageSizeSelect" name="PageSizeSelect" role="pageSize">
+									<option selected="selected" value="Ten">10</option>
+									<option value="Thirty">30</option>
+									<option value="Fifty">50</option>
+								</select>
+							</div>
+							<span id="tabl" class="tabl active"></span>
+							<span id="list" class="list"></span>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-item premium">
+					<div class="container">
+						//= template/object-item.html
+					</div>
+				</div>
+			</div>
+			<div class="container catalog-text">
+				<div class="bottom-links bottom-links_color">
+					<p><b>Также ищут:</b></p>
+					<a href="">Купить 2-комнатную квартиру на вторичном в г. Москве</a> | <a href="">Купить 3-комнатную квартиру на вторичном в г. Москве</a> | <a href="">Купить 4-комнатную квартиру на вторичном в г. Москве</a> | <a href="">Купить 5-комнатную квартиру на вторичном в г. Москве</a> | <a href="">Купить более 5-комнатную квартиру на вторичном в г. Москве </a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="search-banners">
+					<a href="/UserProfile/SearchRealEstateAgency" target="_blank" class="search-banners_action sprite act3" role="searchRealEstateAgency">
+						Хочу привлечь риелтора
+						<span class="q_info">
+							<span class="tooltip left">
+								Выберите риелтора и отправьте ему заявку на поиск объекта недвижимости.
+							</span>
+						</span>
+					</a>
+					<a href="/RequestHomeRe/SaveRequest" target="_blank" class="search-banners_action sprite act1" role="saveRequestBtn">
+						Хочу автоматизировать поиск
+						<span class="q_info">
+							<span class="tooltip left">
+								Сохраните данные параметры в виде запроса и получайте уведомления о новых подходящих объектах.
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="pagination">
+				<div class="container">
+					<div class="search-result-preferences sort-result">Сортировать: 
+						<div class="select-control">
+							<select class="selectpicker form-control" id="PageSizeSelect" name="PageSizeSelect" role="sortType" tabindex="-98">
+								<option selected="selected" value="Search">По умолчанию</option>
+								<option value="DateDesc">По дате (сначала новые)</option>
+								<option value="DateAsc">По дате (сначала старые)</option>
+								<option value="PriceAsc">По цене (сначала минимальная)</option>
+								<option value="PriceDesc">По цене (сначала максимальная)</option>
+								<option value="AreaAsc">По площади (сначала минимальная)</option>
+								<option value="AreaDesc">По площади (сначала максимальная)</option>
+							</select>
+						</div> 
+					</div>
+					<span class="pagination_list"><ul><li><a class="prew"></a></li><li class="active"><a>1</a></li><li><a href="" data-page="2">2</a></li><li><a href="" data-page="3">3</a></li><li><a href="" data-page="4">4</a></li><li><a href="" data-page="5">5</a></li><li><a href="" data-page="6">6</a></li><li><a href="" data-page="7">7</a></li><li><a href="" data-page="8">8</a></li><li>...</li><li><a href="" data-page="1503">1503</a></li><li><a href="" data-page="1504">1504</a></li><li><a href="" data-page="2"></a></li></ul></span>
+				</div>
+			</div>
+			<div class="container catalog-text">
+				<h2 class="catalog-subtitle">Продажа 1-комнатных квартир на вторичном в г Москве на ИМЛС</h2>
+				<p>Раньше покупка или продажа квартир  в Москве или любом другом городе, отнимала немало сил и времени. Прежде чем отыскать один-единственный подходящий объект, человеку приходилось просматривать десятки и даже сотни объявлений. Автоматизированная система ИМЛС в городе Москва избавит от ненужных трудностей. Поможет выбрать и приобрести квартир  за пару недель.</p>
+				<p>Также с помощью ИМЛС можно продать квартир. Этот сервис позволит выручить немалые деньги. Через него продажа квартир  в Москве может быть выполнена и физическим, и юридическим лицом. Каждому участнику доступны удобные условия.</p>
+				<p>Чтобы продать или купить квартир  в городе Москва, зарегистрируйтесь в системе. Получение учетной записи бесплатно. После регистрации представится возможность использовать поисковый инструмент на 100%:</p>
+				<ul>
+					<li>Рекламирует запрос. Использование рекламных возможностей помогает ускорить поиск квартир;</li>
+					<li>Получает уведомления о предложениях, которые совпадают с запросом. Система работает в автоматическом непрерывном режиме;</li>
+					<li>Назначает размер вознаграждения посредникам. Заявка становится заметной для профессионалов. С риелтором покупка квартир  и подготовка юридических бумаг отнимают у клиента меньше сил.</li>
+				</ul>
+				<h3>Преимущества для покупателя</h3>
+				<p>Интеллектуальный модуль предлагает варианты, которые соответствуют запросу. Не нужно просматривать двести-триста предложений, чтобы купить квартир в Москве или отыскать недвижимость с нужными параметрами.</p>
+			</div>
+		</div>
+
+//= template/footer.html

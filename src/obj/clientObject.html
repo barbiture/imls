@@ -1,0 +1,112 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container my_obj">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Объекты клиента</span></li>
+			</ul>
+		</div>
+		<h2>Объекты клиента <span class="cloud">квартиры, комнаты</span></h2>
+		<div class="search-result table client-profile">
+			<div class="search-result-item">
+				<div class="search-result-item_aside">
+					<div class="client-info">
+						<div class="img-wrap">
+							<div class="img-temp"><img src="images/ui/ava_m.png" height="120" width="120" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-item_main user_content">
+					<div class="general">
+						<div class="sprite user_ico-red">
+							<span>Сидельников Андрей Николаевич</span>
+						</div>
+						<div class="row user_info">
+							<div class="col col-3">
+								Тел:
+								<ul>
+									<li>
+										+7 (926) 212-4536
+									</li>
+									<li>
+										+7 (926) 234-4321
+									</li>
+								</ul>
+							</div>
+							<div class="col col-3">
+								E-mail:
+								<ul>
+									<li>
+										<a href="#">name@youmail.com</a>
+									</li>
+									<li>
+										<a href="#">name@youmail.com</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col col-3">
+								<ul>
+									<li class="sprite mail_ico">
+										//= template/mailto.html
+									</li>
+									<li class="sprite chat_ico">
+										<a href="#">Написать в чат</a>
+									</li>
+									<li class="sprite sms_ico">
+										<a href="#">Написать смс</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main_comment">
+						Нет описания
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div role="tabpanel" class="tabpanel">
+			<div class="tabpanel-nav">
+					<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab">Актуальные <span class="circle">23</span></a></li>
+					<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab">Архив <span class="circle">980000</span></a></li>
+					<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab">Черновики <span class="circle">11</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="search-result-title">
+			<div class="notif-select">
+				<div class="select-control checkbox-select">
+					<select name="search" id="search-result" class="selectpicker form-control">
+						<option class="hidden" data-content="<span class='checkbox sprite'></span>"></option>
+						<option data-content="<span class='incheckbox sprite'>Все</span>">Все</option>
+						<option data-content="<span class='checkbox sprite'>Ни одного</span>">Ни одного</option>
+						<option data-content="<span class='incheckbox sprite'>Прочитанные</span>">Прочитанные</option>
+						<option data-content="<span class='incheckbox sprite'>Непрочитанные</span>">Непрочитанные</option>
+					</select>
+				</div>
+				<div class="select-control">
+					<select name="search" id="search-result" class="selectpicker form-control">
+						<option class="hidden">Выбрать действия</option>
+						<option>Отметить прочитанным</option>
+						<option>Отметить непрочитанным</option>
+						<option>Удалить</option>
+					</select>
+				</div>
+			</div>
+			<h2>Отмечено: <span class="count">4</span></h2>
+		</div>
+	</div>
+
+	<div class="search-result table my_obj">
+		//= template/client-item.html
+	</div>
+</div>
+
+//= template/footer.html

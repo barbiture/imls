@@ -1,0 +1,86 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container register">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Регистрация в системе</span></li>
+			</ul>
+		</div>
+		<h2>Регистрация в системе</span>
+		</h2>
+		<div class="separator"><h2>укажите свой статус</h2></div>
+		<div class="advantages">
+			<div class="container">
+				<div class="row">
+					<div class="col col-3">
+						<div class="advantages-green advantages-block">
+							<div class="advantages-title title">
+								Пользователь
+							</div>
+							<div class="advantages_img-wrap"><img src="images/pic_people1.png" alt=""></div>
+							<div class="advantages-btn btn">
+								<a href="#">Собственник недвижимости</a>
+							</div>
+							<div class="advantages-btn btn">
+								<a href="#">Клиент (поиск недвижимости)</a>
+							</div>
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="advantages-red advantages-block">
+							<div class="advantages-title title">
+								Риелтор
+							</div>
+							<div class="advantages_img-wrap"><img src="images/pic_people3.png" alt=""></div>
+							<div class="advantages-btn btn">
+								<a href="#">Агентство недвижимости</a>
+							</div>
+							<div class="advantages-btn btn">
+								<a href="#">Риелтор</a>
+							</div>
+						</div>
+					</div>
+					<div class="col col-3">
+						<div class="advantages-sky advantages-block">
+							<div class="advantages-title title">
+								Партнер
+							</div>
+							<div class="advantages_img-wrap"><img src="images/pic9.png" alt=""></div>
+							<div class="advantages-btn btn">
+								<a href="#">Информационный партнер</a>
+							</div>
+							<div class="advantages-btn btn">
+								<a href="#">Застройщик</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function setEqualHeight(columns)
+			{
+			var tallestcolumn = 0;
+			columns.each(
+			function()
+			{
+			currentHeight = $(this).height();
+			if(currentHeight > tallestcolumn)
+			{
+			tallestcolumn = currentHeight;
+			}
+			}
+			);
+			columns.height(tallestcolumn);
+			}
+			$(document).ready(function() {
+			    setEqualHeight($(".advantages-block"));
+			});
+		</script>
+	</div>
+</div>
+//= template/footer.html

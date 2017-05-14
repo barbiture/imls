@@ -1,0 +1,80 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content register-page">
+		//= template/header.html
+		<div class="container register">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Главная</a></li> /
+					<li><span>Регистрация в системе</span></li>
+				</ul>
+			</div>
+			<h1>Регистрация в системе</h1>
+			<div class="conf">
+				<i class="ico-info"></i>
+				<b>Внимание!</b>
+				<p>После регистрации в системе вам будет доступен полный функционал ИМЛС, который включает в себя множество уникальных инструментов для риелторов, собственников и клиентов. Использование инструментов ИМЛС позволяет в разы повысить эффективность работы в сфере недвижимости и получить конкурентное преимущество.</p>
+			</div>
+			<form class="register-form">
+				<label class="register-form_label">Ваш статус</label>
+				<div class="register-form_field select-control">
+					<select class="selectpicker form-control">
+						<option value="agent">Агентство недвижимости</option>
+						<option value="rieltor">Частный риелтор</option>
+						<option value="owner">Собственник недвижимости</option>
+						<option value="klient">Клиент (поиск недвижимости)</option>
+					</select>
+				</div>
+				<div class="register-form_field">
+					<input type="radio" name="user" checked="checked" id="fis"> <label for="fis">Физическое лицо</label>
+					<input type="radio" name="user" id="yur" > <label for="yur">Юридическое лицо</label>
+				</div>
+				<label class="register-form_label">Название</label>
+				<div class="register-form_field">
+					<input type="text" placeholder="ИМЛС недвижимость" name="company" >
+					<div class="error"></div>
+				</div>
+				<label class="register-form_label">Имя</label>
+				<div class="register-form_field">
+					<input type="text" placeholder="Василий" name="names" >
+					<div class="error"></div>
+				</div>
+				<label class="register-form_label">Фамилия</label>
+				<div class="register-form_field">
+					<input type="text" placeholder="Петров" name="secondname" >
+					<div class="error"></div>
+				</div>
+				<label class="register-form_label">Телефон</label>
+				<div class="register-form_field">
+					<input type="tel" placeholder="+7 905 324-35-74" name="phone"  class="phone_mask">
+					<div class="error"></div>
+				</div>
+				<label class="register-form_label">E-mail</label>
+				<div class="register-form_field">
+					<input type="text" placeholder="name@yourmail.com" name="mail" >
+					<div class="error"></div>
+				</div>
+				<div class="register-form_field">
+					<span class="red_star">*</span>
+					<p>По указанному Вами телефону был выслан код подтверждения в бесплатном SMS от ИМЛС. Для подтверждения телефона введите его и нажмите на кнопку «подтвердить».
+						<i>
+							Зачем?
+							<span class="tooltip">Подтверждение номера телефона необходимо для вашей защиты от несанкционированного использования его другими лицами на сайте. Подтвердив телефон, вы исключаете возможность того, что другой пользователь будет его указывать, и получаете персональную возможность указывать его в своих обявлениях.</span>
+						</i>
+					</p>
+				</div>
+				<label for="" class="register-form_label">Введите код</label>
+				<div class="register-form_field">
+					<input type="text" placeholder="0000" name="codes" class="code-field" >
+					<a href="#">Отправить еще раз</a>
+					<div class="error"></div>
+				</div>
+				<div class="register-form_field">
+					<input class="no-border_btn btn_blue" onclick="validate(this.form)" value="Подтвердить" type="button">
+				</div>
+			</form>
+		</div>
+	</div>
+
+//= template/footer.html

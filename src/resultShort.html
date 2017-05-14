@@ -1,0 +1,581 @@
+//= template/head.html
+<body>
+	<div class="wrap">
+		<div class="content">
+		//= template/header.html
+	<div class="container">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="index.html">Главная</a></li> /
+				<li><span>Поиск недвижимости</span></li>
+			</ul>
+		</div>
+		<h2 class="blue" id="search-anchor">Поиск недвижимости <span class="cloud">квартиры, комнаты</span></h2>
+		<div role="tabpanel" class="tabpanel">
+			<div class="tabpanel-nav">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#rooms" aria-controls="rooms" role="tab" data-toggle="tab"><span>Квартиры и комнаты</span></a></li>
+					<li role="presentation"><a href="#homes" aria-controls="homes" role="tab" data-toggle="tab"><span>Дома, участки</span></a></li>
+					<li role="presentation"><a href="#commerce" aria-controls="commerce" role="tab" data-toggle="tab"><span>Коммерческая недвижимость</span></a></li>
+				</ul>
+			</div>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="rooms">
+					<div class="search">
+						<div class="search-min">
+							<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+						</div>
+						<div class="search-more"></div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="homes">
+					<div class="search">
+						<div class="search-min">
+							<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+						</div>
+						<div class="search-more"></div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="commerce">
+					<div class="search">
+						<div class="search-min">
+							<div class="find-obj">Найдено объектов: <span class="count">160</span></div>
+						</div>
+						<div class="search-more"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="search-result list">
+		<div class="container">
+			<div class="no-border_btn btn_grey" style="width: 260px">Уточнить параметры</div>
+			<div class="no-border_btn btn_red">Новый поиск</div>
+			<div class="search-result-title">
+				<div class="search-result-preferences">
+					Выводить по: 
+					<div class="select-control">
+						<select name="search" id="search-result" class="selectpicker form-control">
+							<option>20</option>
+							<option>30</option>
+							<option>40</option>
+						</select>
+					</div>
+					<span class="tabl"></span>
+					<span class="list active"></span>
+				</div>
+			</div>
+		</div>
+		<div class="search-result-item premium">
+			<div class="container">
+				<div class="search-result-item_aside">
+					<span class="sprite stat-ico ico_premium-red">
+						<span class="tooltip">Премиум объявление</span>
+					</span>
+					<span class="sprite stat-ico ico_vip">
+						<span class="tooltip">VIP объявление</span>
+					</span>
+					<span class="sprite stat-ico pub_ico3">
+						<span class="tooltip">Выделенное объявление</span>
+					</span>
+					<span class="sprite stat-ico pub_ico4">
+						<span class="tooltip">Поднятое объявление</span>
+					</span>
+					<div class="colorGrey">10.01.15, 02:02</div>
+					<div class="img-wrap">
+						<img src="images/temp/home.jpg" alt="">
+						<div class="media-ico">
+							<a href="#" class="sprite s-tour"></a>
+							<a href="#" class="sprite s-video"></a>
+							<a href="#" class="sprite s-photo"><span>20</span></a>
+						</div>
+					</div>
+					<div class="prel">
+						<div class="ico_group">
+							<ul>
+								<li>
+									<a class="ico_star active">
+										<span class="tooltip">Добавить в избранное</span>
+									</a>
+								</li>
+								<li class="button-dropdown">
+									<a class="ico_del dropdown-toggle">
+										<span class="tooltip">Пожаловаться на объект</span>
+										<span class="ico_bell-count">5</span>
+									</a>
+									<div class="tooltip form-complaint dropdown-modal">
+										<div class="close-tooltip sprite"></div>
+										<ul>
+											<li>
+												<input type="radio" name="compl-r2" id="compl-1.2">
+												<label class="sprite dotted-line" for="compl-1.2">Ложное объявление <span class="dotted"></span><span class="compl-count">2</span></label>
+											</li>
+											<li>
+												<input type="radio" name="compl-r2" id="compl-2.2">
+												<label class="sprite dotted-line" for="compl-2.2">Объект сдан/продан <span class="dotted"></span><span class="compl-count">2</span></label>
+											</li>
+											<li class="wrong">
+												<input type="radio" name="compl-r2" id="compl-3.2">
+												<label class="sprite dotted-line" for="compl-3.2">Неверные данные <span class="dotted"></span><span class="compl-count">2</span></label>
+												<ul>
+													<li><input type="checkbox" id="compl-4.2"><label class="sprite" for="compl-4.2">Цена объекта</label></li>
+													<li><input type="checkbox" id="compl-5.2"><label class="sprite" for="compl-5.2">Комиссия</label></li>
+													<li><input type="checkbox" id="compl-6.2"><label class="sprite" for="compl-6.2">Параметры объекта</label></li>
+													<li><input type="checkbox" id="compl-7.2"><label class="sprite" for="compl-7.2">Адрес</label></li>
+													<li><input type="checkbox" id="compl-8.2"><label class="sprite" for="compl-8.2">Фото</label></li>
+													<li><input type="checkbox" id="compl-9.2"><label class="sprite" for="compl-9.2">Контакты</label></li>
+												</ul>
+											</li>
+										</ul>
+										<span class="subm_btn">Пожаловаться</span>
+									</div>
+								</li>
+								<li class="button-dropdown">
+									<a class="ico_edit dropdown-toggle">
+										<span class="tooltip">Примечание</span>
+									</a>
+									<div class="tooltip add_comment dropdown-modal">
+										<div class="close-tooltip sprite"></div>
+										<textarea>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет... Сигнализация, Охрана... Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,</textarea>
+										<span class="subm_btn">Отправить</span>
+									</div>
+								</li>
+								<li>
+									<a class="ico_object">
+										<span class="tooltip">Карточка объекта</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" target="_blank" class="orange-btn sprite fast-ico">Сдать быстрее
+						<span class="tooltip">Подтверждение номера телефона необходимо для вашей защиты от несанкционированного</span>
+					</a>
+				</div>
+				<div class="search-result-item_main">
+					<div class="general">
+						<div class="price-block">
+							<div class="sprite cash_ico">
+								<span>400 000 000</span>
+								<span class="total_cost nobr tooltip-toggle">
+								<span class="dashed"><span class="currency">$</span> общ. ст.</span></span>
+								<div class="tooltip tooltip-click">
+									<div class="close-tooltip sprite"></div>
+									<table>
+										<tr>
+											<th>Ед. измерения</th>
+											<th><div class="sprite rub-ico"></div></th>
+											<th><div class="sprite usd-ico"></div></th>
+											<th><div class="sprite euro-ico"></div></th>
+										</tr>
+										<tr>
+											<td>Общ. ст :</td>
+											<td>400 000 000 000</td>
+											<td>8 000 <sup class="green">*</sup></td>
+											<td>7 500 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>Общ. ст.мес. :</td>
+											<td>400 500</td>
+											<td>8 000 <sup class="green">*</sup></td>
+											<td>7 500 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>Общ. ст. год :</td>
+											<td>400 500</td>
+											<td>6 451 612 <sup class="green">*</sup></td>
+											<td>6 151 612 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>Общ. ст день:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> :</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> в месяц:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> в год:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> в день:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+									</table>
+									<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+								</div>
+							</div>
+							<div class="tooltip tooltip-click">
+								<div class="close-tooltip sprite"></div>
+								<table>
+									<tr>
+										<th>Ед. измерения</th>
+										<th><div class="sprite rub-ico"></div></th>
+										<th><div class="sprite usd-ico"></div></th>
+										<th><div class="sprite euro-ico"></div></th>
+									</tr>
+									<tr>
+										<td>Общ. ст :</td>
+										<td>400 500</td>
+										<td>8 000 <sup class="green">*</sup></td>
+										<td>7 500 <sup class="green">*</sup></td>
+									</tr>
+									<tr>
+										<td>Общ. ст.мес. :</td>
+										<td>400 500</td>
+										<td>8 000 <sup class="green">*</sup></td>
+										<td>7 500 <sup class="green">*</sup></td>
+									</tr>
+									<tr>
+										<td>Общ. ст. год :</td>
+										<td>400 500</td>
+										<td>6 451 612 <sup class="green">*</sup></td>
+										<td>6 151 612 <sup class="green">*</sup></td>
+									</tr>
+									<tr>
+										<td>Общ. ст день:</td>
+										<td>6 500</td>
+										<td>100 <sup class="green">*</sup></td>
+										<td>95 <sup class="green">*</sup></td>
+									</tr>
+									<tr>
+										<td>М<sup>2</sup> :</td>
+										<td>6 500</td>
+										<td>100 <sup class="green">*</sup></td>
+										<td>95 <sup class="green">*</sup></td>
+									</tr>
+									<tr>
+										<td>М<sup>2</sup> в месяц:</td>
+										<td>6 500</td>
+										<td>100 <sup class="green">*</sup></td>
+										<td>95 <sup class="green">*</sup></td>
+									</tr>
+									<tr>
+										<td>М<sup>2</sup> в год:</td>
+										<td>6 500</td>
+										<td>100 <sup class="green">*</sup></td>
+										<td>95 <sup class="green">*</sup></td>
+									</tr>
+									<tr>
+										<td>М<sup>2</sup> в день:</td>
+										<td>6 500</td>
+										<td>100 <sup class="green">*</sup></td>
+										<td>95 <sup class="green">*</sup></td>
+									</tr>
+								</table>
+								<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+							</div>
+							<ul class="colorGrey">
+								<li class="bonus_ico sprite">
+									<p>2% <span class="nobr">(8 000 $)</span></p>
+									<div class="tooltip">Плачу комиссию посреднику</div>
+								</li>
+							</ul>
+						</div>
+						<div class="info-col">
+							<div class="sprite area_ico"> Площадь:<b>120</b> м<sup>2</sup></div>
+							<p>Тип здания: <b>административное административное административное</b></p>
+							<div>
+								<div class="info_ico">
+									<div class="sprite tooltip-toggle"></div>
+									<div class="tooltip align_right tooltip-click">
+										<div class="close-tooltip sprite"></div>
+										<p class="sprite icon icon6">Тип строения:
+											<span>Административное</span>
+										</p>
+										<p class="sprite icon icon7">Особенности строения:
+											<span>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод.</span>
+										</p>
+										<p class="sprite icon icon4">
+											Состояние:
+											<span>Евроремонт</span>
+										</p>
+										<p class="sprite icon icon3">Особенности объекта:
+											<span>Телефон, Интернет, Сигнализация.</span>
+										</p>
+										<p class="sprite icon icon5">
+											Дополнительно:
+											<span>Телефон, Интернет, Сигнализация.</span>
+										</p>
+									</div>
+								</div>
+								Этаж: <span>10/24</span>
+							</div>
+						</div>
+						<div class="general-title">
+							<div class="local_ico">
+								<span class="hidden_txt"><a href="#" class="dashed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officiis optio, dolore atque, eveniet at.</a></span>
+								<div class="tooltip align_right">
+									<p><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officiis optio, dolore atque, eveniet at.</a></p>
+								</div>
+							</div>
+							<div class="general-adress">
+								<ul>
+									<li>Москва рег., Москва г., Мичуринский пр-кт, д.34Москва рег., Москва г., Мичуринский пр-кт, д.34</li>
+									<li><span class="colorSky">м. Университет,</span>
+										<span class="colorOrange">м. Академическая</span>
+										<span class="colorOrange">м. Академическая</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main_comment">
+						<p class="open_comment"><a class="link_dashed">Ваш комментарий</a><a href="#" class="sprite expand_ico"></a></p>
+						<p class="colorGrey">
+							Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+							Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+							Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="search-result-item">
+			<div class="container">
+				<div class="search-result-item_aside">
+					<div class="colorGrey">10.01.15, 02:02</div>
+					<div class="img-wrap">
+						<img src="images/temp/home.jpg" alt="">
+						<div class="media-ico">
+							<a href="#" class="sprite s-video"></a>
+							<a href="#" class="sprite s-photo"><span>20</span></a>
+						</div>
+					</div>
+					<div class="prel">
+						<div class="ico_group">
+							<ul>
+								<li>
+									<a class="ico_star">
+										<span class="tooltip">Добавить в избранное</span>
+									</a>
+								</li>
+								<li class="button-dropdown">
+									<a class="ico_del dropdown-toggle">
+										<span class="tooltip">Пожаловаться на объект</span>
+										<span class="ico_bell-count">5</span>
+									</a>
+									<div class="tooltip form-complaint dropdown-modal">
+										<div class="close-tooltip sprite"></div>
+										<ul>
+											<li>
+												<input type="radio" name="compl-r2" id="compl-1.2">
+												<label class="sprite dotted-line" for="compl-1.2">Ложное объявление <span class="dotted"></span><span class="compl-count">2</span></label>
+											</li>
+											<li>
+												<input type="radio" name="compl-r2" id="compl-2.2">
+												<label class="sprite dotted-line" for="compl-2.2">Объект сдан/продан <span class="dotted"></span><span class="compl-count">2</span></label>
+											</li>
+											<li class="wrong">
+												<input type="radio" name="compl-r2" id="compl-3.2">
+												<label class="sprite dotted-line" for="compl-3.2">Неверные данные <span class="dotted"></span><span class="compl-count">2</span></label>
+												<ul>
+													<li><input type="checkbox" id="compl-4.2"><label class="sprite" for="compl-4.2">Цена объекта</label></li>
+													<li><input type="checkbox" id="compl-5.2"><label class="sprite" for="compl-5.2">Комиссия</label></li>
+													<li><input type="checkbox" id="compl-6.2"><label class="sprite" for="compl-6.2">Параметры объекта</label></li>
+													<li><input type="checkbox" id="compl-7.2"><label class="sprite" for="compl-7.2">Адрес</label></li>
+													<li><input type="checkbox" id="compl-8.2"><label class="sprite" for="compl-8.2">Фото</label></li>
+													<li><input type="checkbox" id="compl-9.2"><label class="sprite" for="compl-9.2">Контакты</label></li>
+												</ul>
+											</li>
+										</ul>
+										<span class="subm_btn">Пожаловаться</span>
+									</div>
+								</li>
+								<li class="button-dropdown">
+									<a class="ico_edit dropdown-toggle">
+										<span class="tooltip">Примечание</span>
+									</a>
+									<div class="tooltip add_comment dropdown-modal">
+										<div class="close-tooltip sprite"></div>
+										<textarea>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет... Сигнализация, Охрана... Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,</textarea>
+										<span class="subm_btn">Отправить</span>
+									</div>
+								</li>
+								<li>
+									<a class="ico_object">
+										<span class="tooltip">Карточка объекта</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-item_main">
+					<div class="general">
+						<div class="price-block">
+							<div class="sprite cash_ico">
+								<span>400 000 000</span>
+								<span class="total_cost nobr tooltip-toggle">
+								<span class="dashed"><span class="currency">₽</span> общ. ст.</span></span>
+								<div class="tooltip tooltip-click">
+									<div class="close-tooltip sprite"></div>
+									<table>
+										<tr>
+											<th>Ед. измерения</th>
+											<th><div class="sprite rub-ico"></div></th>
+											<th><div class="sprite usd-ico"></div></th>
+											<th><div class="sprite euro-ico"></div></th>
+										</tr>
+										<tr>
+											<td>Общ. ст :</td>
+											<td>400 000 000 000</td>
+											<td>8 000 <sup class="green">*</sup></td>
+											<td>7 500 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>Общ. ст.мес. :</td>
+											<td>400 500</td>
+											<td>8 000 <sup class="green">*</sup></td>
+											<td>7 500 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>Общ. ст. год :</td>
+											<td>400 500</td>
+											<td>6 451 612 <sup class="green">*</sup></td>
+											<td>6 151 612 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>Общ. ст день:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> :</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> в месяц:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> в год:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+										<tr>
+											<td>М<sup>2</sup> в день:</td>
+											<td>6 500</td>
+											<td>100 <sup class="green">*</sup></td>
+											<td>95 <sup class="green">*</sup></td>
+										</tr>
+									</table>
+									<div class="colorGrey"><sup class="green">*</sup>по курсу ЦБ на 28 июля 2015г.</div>
+								</div>
+							</div>
+							<ul class="colorGrey">
+								<li class="bonus_ico sprite">
+									<p>2% <span class="nobr">(8 000 $)</span></p>
+									<div class="tooltip">Плачу комиссию посреднику</div>
+								</li>
+							</ul>
+						</div>
+						<div class="info-col">
+							<span class="sprite area_ico"> Площадь:<b>120</b> м<sup>2</sup></span>
+							<p>Тип здания: <b>административное</b></p>
+							<div>
+								<div class="info_ico">
+									<div class="sprite tooltip-toggle"></div>
+									<div class="tooltip align_right tooltip-click">
+										<div class="close-tooltip sprite"></div>
+										<p class="sprite icon icon6">Тип строения:
+											<span>Административное</span>
+										</p>
+										<p class="sprite icon icon7">Особенности строения:
+											<span>Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод.</span>
+										</p>
+										<p class="sprite icon icon4">
+											Состояние:
+											<span>Евроремонт</span>
+										</p>
+										<p class="sprite icon icon3">Особенности объекта:
+											<span>Телефон, Интернет, Сигнализация.</span>
+										</p>
+										<p class="sprite icon icon5">
+											Дополнительно:
+											<span>Телефон, Интернет, Сигнализация.</span>
+										</p>
+									</div>
+								</div>
+								Этаж: <span>10/24</span>
+							</div>
+						</div>
+						<div class="general-title">
+							<div class="local_ico">
+								<span class="hidden_txt"><a href="#" class="dashed">Продаю магазин</a></span>
+							</div>
+							<div class="general-adress">
+								<ul>
+									<li>Москва рег., Москва г., Мичуринский пр-кт, д.34</li>
+									<li><span class="colorSky">м. Университет,</span>
+										<span class="colorOrange">м. Академическая</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main_comment">
+						<p class="open_comment"><a class="link_dashed">Ваш комментарий</a><a href="#" class="sprite expand_ico"></a></p>
+						<p class="colorGrey">
+							Охрана, Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+							Видеонаблюдение, Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация, Охрана,
+							Лифт, Автостоянка, Мусоропровод, Мебель, Телефон, Интернет, Сигнализация,
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagination">
+			<div class="container">
+				<div class="search-result-preferences">
+					Выводить по: 
+					<div class="select-control">
+						<select name="search" id="search-result" class="selectpicker form-control">
+							<option>20</option>
+							<option>30</option>
+							<option>40</option>
+						</select>
+					</div>
+				</div>
+				<div class="pagination_list">
+					<ul>
+						<li><a href="#" class="prew"></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#" class="next"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+//= template/footer.html
