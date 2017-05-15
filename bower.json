@@ -1,0 +1,20 @@
+{
+  "name": "imls",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "barbiture <delightrif@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/barbiture/imls",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.maskedinput": "^1.4.1"
+  }
+}
