@@ -5,10 +5,10 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://maps.yandex.ru/schemas/ymaps/1.x/ymaps.xsd">
     <repr:Representation>
-        <repr:Style gml:id="2">
+        <repr:Style gml:id="offices">
             <repr:iconStyle>
-                <repr:href>http://pagecreate.ru/rcevo/images/2.png</repr:href>
-                <repr:size x="42" y="52"/>
+                <repr:href>http://html.rozart.ru/imls/images/markG.png</repr:href>
+                <repr:size x="45" y="53"/>
                 <repr:offset x="-19" y="-15"/>
             </repr:iconStyle>
 
@@ -16,21 +16,11 @@
                 <repr:template>#balloonTemplate</repr:template>
             </repr:balloonContentStyle>
         </repr:Style>
-        <repr:Style gml:id="4">
-            <repr:iconStyle>
-                <repr:href>http://pagecreate.ru/rcevo/images/4.png</repr:href>
-                <repr:size x="42" y="52"/>
-                <repr:offset x="-19" y="-15"/>
-            </repr:iconStyle>
 
-            <repr:balloonContentStyle>
-                <repr:template>#balloonTemplate</repr:template>
-            </repr:balloonContentStyle>
-        </repr:Style>
-        <repr:Style gml:id="42">
+        <repr:Style gml:id="unread">
             <repr:iconStyle>
-                <repr:href>http://pagecreate.ru/rcevo/images/42.png</repr:href>
-                <repr:size x="42" y="73"/>
+                <repr:href>http://html.rozart.ru/imls/images/markB.png</repr:href>
+                <repr:size x="45" y="53"/>
                 <repr:offset x="-19" y="-15"/>
             </repr:iconStyle>
 
@@ -41,16 +31,151 @@
 
         <repr:Template gml:id="balloonTemplate">
             <repr:text><![CDATA[
-                    <div style="float: left; width:135px; margin: 10px 0 10px 10px;">
-                        <img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 100%" />
-                        <span class="icon $[metaDataProperty.AnyMetaData.item| ]"></span>
-                        <span class="icon $[metaDataProperty.AnyMetaData.item2| ]"></span>
+
+                    <div style="font-size:14px;font-weight:500;font-family: Roboto; margin-top: 10px">$[name]</div>
+                    <div style="font-size:14px;font-family: Roboto;text-align: right; margin: 6px 0 10px"><a href="#map-result" class="scroller" style="color:#0371ad; text-decoration: underline">$[metaDataProperty.AnyMetaData.count]</a></div>
+                    <div style="height: 1px; background: #dcdcdc"></div>
+                    <div style="max-height: 214px; overflow: auto">
+                        <table>
+                            <tr><td colspan="3" height="20"></td></tr>
+                            <tr class="baloon-item">
+                                <td valign="top">
+                                    <div class="img-wrap prel">
+                                        <a class="fancybox" rel="img1" href="http://$[metaDataProperty.AnyMetaData.pic|не задан]" title="Комментарий, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 130px"></a>
+                                        <div class="media-ico">
+                                            <a href="#" class="sprite s-tour"></a>
+                                            <a href="#" class="sprite s-video"></a>
+                                            <a href="#" class="sprite s-photo"><span>20</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="padding: 0 15px" valign="top">
+                                    <div style="font-size:16px;font-family: Roboto; font-weight: bold; color: #0371ad">$[metaDataProperty.AnyMetaData.price]</div>
+                                    <div><a href="" style="font-size:14px;font-family: Roboto; font-weight: bold; color: #333333; width: 175px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; border-bottom: 1px dashed;">$[metaDataProperty.AnyMetaData.descript]</a></div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #b752bb">$[metaDataProperty.AnyMetaData.metro]</div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #333333">$[metaDataProperty.AnyMetaData.more]</div>
+                                </td>
+                                <td valign="middle"><span class="star $[metaDataProperty.AnyMetaData.star| ]"></span></td>
+                            </tr>
+                            <tr><td colspan="3" height="20"></td></tr>
+                            <tr class="baloon-item">
+                                <td valign="top">
+                                    <div class="img-wrap prel">
+                                        <a class="fancybox" href="http://$[metaDataProperty.AnyMetaData.pic2|не задан]" title=""><img src="http://$[metaDataProperty.AnyMetaData.pic2|не задан]" alt="" style="width: 130px"/></a>
+                                    </div>
+                                </td>
+                                <td style="padding: 0 15px" valign="top">
+                                    <div style="font-size:16px;font-family: Roboto; font-weight: bold; color: #0371ad">$[metaDataProperty.AnyMetaData.price2]</div>
+                                    <div><a href="" style="font-size:14px;font-family: Roboto; font-weight: bold; color: #333333; width: 175px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; border-bottom: 1px dashed;">$[metaDataProperty.AnyMetaData.descript2]</a></div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #b752bb">$[metaDataProperty.AnyMetaData.metro2]</div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #333333">$[metaDataProperty.AnyMetaData.more2]</div>
+                                </td>
+                                <td valign="middle"><span class="star $[metaDataProperty.AnyMetaData.star2| ]"></span></td>
+                            </tr>
+                            <tr><td colspan="3" height="20"></td></tr>
+                            <tr class="baloon-item">
+                                <td valign="top">
+                                    <div class="img-wrap prel">
+                                        <a class="fancybox" rel="img1" href="http://$[metaDataProperty.AnyMetaData.pic|не задан]" title="Комментарий, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 130px"></a>
+                                        <div class="media-ico">
+                                            <a href="#" class="sprite s-tour"></a>
+                                            <a href="#" class="sprite s-video"></a>
+                                            <a href="#" class="sprite s-photo"><span>20</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="padding: 0 15px" valign="top">
+                                    <div style="font-size:16px;font-family: Roboto; font-weight: bold; color: #0371ad">$[metaDataProperty.AnyMetaData.price]</div>
+                                   <div><a href="" style="font-size:14px;font-family: Roboto; font-weight: bold; color: #333333; width: 175px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; border-bottom: 1px dashed;">$[metaDataProperty.AnyMetaData.descript]</a></div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #b752bb">$[metaDataProperty.AnyMetaData.metro]</div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #333333">$[metaDataProperty.AnyMetaData.more]</div>
+                                </td>
+                                <td valign="middle"><span class="star $[metaDataProperty.AnyMetaData.star| ]"></span></td>
+                            </tr>
+                            <tr><td colspan="3" height="20"></td></tr>
+                            <tr class="baloon-item">
+                                <td valign="top">
+                                    <div class="img-wrap prel">
+                                        <a class="fancybox" rel="img1" href="http://$[metaDataProperty.AnyMetaData.pic|не задан]" title="Комментарий, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 130px"></a>
+                                        <div class="media-ico">
+                                            <a href="#" class="sprite s-tour"></a>
+                                            <a href="#" class="sprite s-video"></a>
+                                            <a href="#" class="sprite s-photo"><span>20</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="padding: 0 15px" valign="top">
+                                    <div style="font-size:16px;font-family: Roboto; font-weight: bold; color: #0371ad">$[metaDataProperty.AnyMetaData.price]</div>
+                                    <div><a href="" style="font-size:14px;font-family: Roboto; font-weight: bold; color: #333333; width: 175px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; border-bottom: 1px dashed;">$[metaDataProperty.AnyMetaData.descript]</a></div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #b752bb">$[metaDataProperty.AnyMetaData.metro]</div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #333333">$[metaDataProperty.AnyMetaData.more]</div>
+                                </td>
+                                <td valign="middle"><span class="star $[metaDataProperty.AnyMetaData.star| ]"></span></td>
+                            </tr>
+                            <tr><td colspan="3" height="20"></td></tr>
+                            <tr class="baloon-item">
+                                <td valign="top">
+                                    <div class="img-wrap prel">
+                                        <a class="fancybox" rel="img1" href="http://$[metaDataProperty.AnyMetaData.pic|не задан]" title="Комментарий, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 130px"></a>
+                                        <div class="media-ico">
+                                            <a href="#" class="sprite s-tour"></a>
+                                            <a href="#" class="sprite s-video"></a>
+                                            <a href="#" class="sprite s-photo"><span>20</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="padding: 0 15px" valign="top">
+                                    <div style="font-size:16px;font-family: Roboto; font-weight: bold; color: #0371ad">$[metaDataProperty.AnyMetaData.price]</div>
+                                    <div><a href="" style="font-size:14px;font-family: Roboto; font-weight: bold; color: #333333; width: 175px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; border-bottom: 1px dashed;">$[metaDataProperty.AnyMetaData.descript]</a></div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #b752bb">$[metaDataProperty.AnyMetaData.metro]</div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #333333">$[metaDataProperty.AnyMetaData.more]</div>
+                                </td>
+                                <td valign="middle"><span class="star $[metaDataProperty.AnyMetaData.star| ]"></span></td>
+                            </tr>
+                            <tr><td colspan="3" height="20"></td></tr>
+                            <tr class="baloon-item">
+                                <td valign="top">
+                                    <div class="img-wrap prel">
+                                        <a class="fancybox" rel="img1" href="http://$[metaDataProperty.AnyMetaData.pic|не задан]" title="Комментарий, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 130px"></a>
+                                        <div class="media-ico">
+                                            <a href="#" class="sprite s-tour"></a>
+                                            <a href="#" class="sprite s-video"></a>
+                                            <a href="#" class="sprite s-photo"><span>20</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="padding: 0 15px" valign="top">
+                                    <div style="font-size:16px;font-family: Roboto; font-weight: bold; color: #0371ad">$[metaDataProperty.AnyMetaData.price]</div>
+                                    <div><a href="" style="font-size:14px;font-family: Roboto; font-weight: bold; color: #333333; width: 175px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; border-bottom: 1px dashed;">$[metaDataProperty.AnyMetaData.descript]</a></div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #b752bb">$[metaDataProperty.AnyMetaData.metro]</div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #333333">$[metaDataProperty.AnyMetaData.more]</div>
+                                </td>
+                                <td valign="middle"><span class="star $[metaDataProperty.AnyMetaData.star| ]"></span></td>
+                            </tr>
+                            <tr><td colspan="3" height="20"></td></tr>
+                            <tr class="baloon-item">
+                                <td valign="top">
+                                    <div class="img-wrap prel">
+                                        <a class="fancybox" rel="img1" href="http://$[metaDataProperty.AnyMetaData.pic|не задан]" title="Комментарий, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."><img src="http://$[metaDataProperty.AnyMetaData.pic|не задан]" alt="" style="width: 130px"></a>
+                                        <div class="media-ico">
+                                            <a href="#" class="sprite s-tour"></a>
+                                            <a href="#" class="sprite s-video"></a>
+                                            <a href="#" class="sprite s-photo"><span>20</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="padding: 0 15px" valign="top">
+                                    <div style="font-size:16px;font-family: Roboto; font-weight: bold; color: #0371ad">$[metaDataProperty.AnyMetaData.price]</div>
+                                    <div><a href="" style="font-size:14px;font-family: Roboto; font-weight: bold; color: #333333; width: 175px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; border-bottom: 1px dashed;">$[metaDataProperty.AnyMetaData.descript]</a></div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #b752bb">$[metaDataProperty.AnyMetaData.metro]</div>
+                                    <div style="font-size:14px;font-family: Roboto; color: #333333">$[metaDataProperty.AnyMetaData.more]</div>
+                                </td>
+                                <td valign="middle"><span class="star $[metaDataProperty.AnyMetaData.star| ]"></span></td>
+                            </tr>
+                            </tr>
+                        </table>
                     </div>
-                    <div style="font-size:12px; font-family: Open Sans; line-height: 22px; color: #fff; margin: 10px 0 10px 155px;">
-                        <div style="font-size:14px; font-weight:800; margin: 5px 0">$[name]</div>
-                        <div>$[metaDataProperty.AnyMetaData.address]</div>
-                        <div>Категория: $[metaDataProperty.AnyMetaData.category|не задан]</div>
-                    </div>]]></repr:text>
+                ]]></repr:text>
         </repr:Template>
     </repr:Representation>
 
@@ -58,82 +183,122 @@
         <gml:name>Объекты карте</gml:name>
         <gml:featureMembers>
             <ymaps:GeoObject>
-                <gml:name>Off-road трасса клуба RC2 в Крылатском</gml:name>
+                <ymaps:style>#unread</ymaps:style>
+                <gml:name>Москва, ул. Пушкина</gml:name>
                 <gml:metaDataProperty>
                     <ymaps:AnyMetaData>
-                        <pic>pagecreate.ru/rcevo/images/picture_map3.png</pic>
-                        <item>trofi</item>
-                        <item2>drift</item2>
-                        <address>Трасса для триала в Крылатском</address>
-                        <category>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Товарищи! рамки и место обучения кадров требуют определения и уточнения модели</category>
+                        <count>34 объекта</count>
+                        <pic>html.rozart.ru/imls/images/temp/home.jpg</pic>
+                        <price>12 000 000 руб.</price>
+                        <descript>2-х комнатная квартира в центре Москвы</descript>
+                        <metro>м. Тушинская</metro>
+                        <more>4/12</more>
+                        <pic2>html.rozart.ru/imls/images/temp/home.jpg</pic2>
+                        <price2>5 000 000 руб.</price2>
+                        <descript2>2-х комнатная квартира в центре Москвы</descript2>
+                        <metro2>м. Тушинская</metro2>
+                        <star2> </star2>
+                        <more2>4/12</more2>
                     </ymaps:AnyMetaData>
                 </gml:metaDataProperty>
                 <gml:Point>
                     <gml:pos>37.587937 55.733771</gml:pos>
                 </gml:Point>
-                <ymaps:style>#42</ymaps:style>
             </ymaps:GeoObject>
 
             <ymaps:GeoObject>
+                <ymaps:style>#offices</ymaps:style>
                 <gml:name>Участок № 4592</gml:name>
                 <gml:metaDataProperty>
                     <ymaps:AnyMetaData>
-                        <pic>pagecreate.ru/zem/img/item-img.png</pic>
-                        <item>trofi</item>
-                        <address>Одинцово</address>
-                        <category>земли сельскохозяйственного назначения</category>
+                        <count>4 объекта</count>
+                        <pic>html.rozart.ru/imls/images/temp/home.jpg</pic>
+                        <price>12 000 руб.</price>
+                        <descript>2-х комнатная квартира в центре Москвы</descript>
+                        <metro>Одинцово</metro>
+                        <star>active</star>
+                        <more>6/9</more>
+                        <pic2>html.rozart.ru/imls/images/temp/home.jpg</pic2>
+                        <price2>5 000 000 руб.</price2>
+                        <descript2>2-х комнатная квартира в центре Москвы</descript2>
+                        <metro2>м. Тушинская</metro2>
+                        <star2> </star2>
+                        <more2>4/12</more2>
                     </ymaps:AnyMetaData>
                 </gml:metaDataProperty>
                 <gml:Point>
                     <gml:pos>37.28875299999995 55.67814096829517</gml:pos>
                 </gml:Point>
-                <ymaps:style>#2</ymaps:style>
             </ymaps:GeoObject>
 
             <ymaps:GeoObject>
-                <gml:name>трасса клуба RC2 в Крылатском</gml:name>
-                <gml:metaDataProperty>
-                    <ymaps:AnyMetaData>
-                        <pic>pagecreate.ru/rcevo/images/picture_map3.png</pic>
-                        <item>trofi</item>
-                        <address>Трасса для триала в Крылатском</address>
-                        <category>Разнообразный и богатый опыт рамки и место обучения кадров играет важную роль в формировании направлений прогрессивного развития. Товарищи! рамки и место обучения кадров требуют определения и уточнения модели</category>
-                    </ymaps:AnyMetaData>
-                </gml:metaDataProperty>
-                <gml:Point>
-                    <gml:pos>37.644555 55.8</gml:pos>
-                </gml:Point>
-                <ymaps:style>#4</ymaps:style>
-            </ymaps:GeoObject>
-
-            <ymaps:GeoObject>
-                <gml:name>Офис Яндекса в Одессе</gml:name>
+                <ymaps:style>#offices</ymaps:style>
+                <gml:name>Москва</gml:name>
                 <gml:metaDataProperty>
                     <ymaps:AnyMetaData>
                         <pic>pagecreate.ru/zem/img/item-img.png</pic>
-                        <address>Адрес: Одесса, пр. Шевченко, дом 4-Д, офис 61</address>
-                        <category>+38 0482 33-8848 (3 линии), +38 044 232-6003</category>
+                        <metro>620062, Москва, ул. Гагарина, 8, офис 602.</metro>
                     </ymaps:AnyMetaData>
                 </gml:metaDataProperty>
                 <gml:Point>
-                    <gml:pos>30.748434 46.457741</gml:pos>
+                    <gml:pos>37.495 55.7</gml:pos>
                 </gml:Point>
-                <ymaps:style>#42</ymaps:style>
             </ymaps:GeoObject>
 
             <ymaps:GeoObject>
+                <ymaps:style>#offices</ymaps:style>
+                <gml:name>Москва</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/zem/img/item-img.png</pic>
+                        <metro>Адрес: Одесса, пр. Шевченко, дом 4-Д, офис 61</metro>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>37.333 55.68147</gml:pos>
+                </gml:Point>
+            </ymaps:GeoObject>
+
+            <ymaps:GeoObject>
+                <ymaps:style>#offices</ymaps:style>
                 <gml:name>Офис Яндекса в Киеве</gml:name>
                 <gml:metaDataProperty>
                     <ymaps:AnyMetaData>
                         <pic>pagecreate.ru/zem/img/item-img.png</pic>
-                        <address>Адрес: Киев, ул. Луначарского, 4</address>
-                        <category>+38 044 5864368</category>
+                        <metro>Адрес: Киев, ул. Луначарского, 4</metro>
                     </ymaps:AnyMetaData>
                 </gml:metaDataProperty>
                 <gml:Point>
                     <gml:pos>30.598379 50.45332</gml:pos>
                 </gml:Point>
-                <ymaps:style>#42</ymaps:style>
+            </ymaps:GeoObject>
+
+            <ymaps:GeoObject>
+                <ymaps:style>#offices</ymaps:style>
+                <gml:name>Офис Яндекса в Симферополе</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/zem/img/item-img.png</pic>
+                        <metro>Адрес: 95011, Симферополь, ул. Героев Аджимушкая, 6/13, второй этаж</metro>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>34.095482 44.949507</gml:pos>
+                </gml:Point>
+            </ymaps:GeoObject>
+
+            <ymaps:GeoObject>
+                <ymaps:style>#offices</ymaps:style>
+                <gml:name>Офис Яндекса в Burlingame</gml:name>
+                <gml:metaDataProperty>
+                    <ymaps:AnyMetaData>
+                        <pic>pagecreate.ru/zem/img/item-img.png</pic>
+                        <metro>Адрес: 3d floor, Suite 306, 330 Primrose Road Burlingame, CA 94010</metro>
+                    </ymaps:AnyMetaData>
+                </gml:metaDataProperty>
+                <gml:Point>
+                    <gml:pos>-122.348557 37.578894</gml:pos>
+                </gml:Point>
             </ymaps:GeoObject>
         </gml:featureMembers>
     </ymaps:GeoObjectCollection>
